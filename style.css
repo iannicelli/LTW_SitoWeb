@@ -1,0 +1,53 @@
+/*------------------------------------------------ Stile font */
+@font-face {
+    font-family: 'Lovelo';
+    src: url('/Lovelo/Lovelo/Commercial/TTF/Lovelo-Black.ttf') format('truetype');
+  }
+
+  h1, a {
+    font-family: 'Lovelo', sans-serif;
+  }
+
+/*------------------------------------------------ Stile per il menù */
+  nav {
+    background-color: #E19853;
+    color: #231f20;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+    margin-right: 20px;
+}
+nav ul li:last-child {
+    margin-right: 0;
+}
+nav a {
+    color: #231f20;
+    text-decoration: none;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+nav a:hover {
+    background-color: #555;
+}
+
+/*------------------------------------------------ Stile per centrare le immagine */
+
+.centrato {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.centrato img {
+    max-width: 2000%;
+    max-height: 2000%;
+}
