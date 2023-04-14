@@ -35,8 +35,11 @@ nav a {
     padding: 10px;
     transition: background-color 0.3s ease;
 }
+
 nav a:hover {
-    background-color: #555;
+    background-color: #e47e1f;
+   /* text-decoration: underline;*/
+    border-radius: 8px;
 }
 
 /*------------------------------------------------ Stile per centrare le immagine */
