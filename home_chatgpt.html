@@ -2,186 +2,221 @@
 <html lang="it">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Adozione Animali</title>
-  <!-- Link al file CSS di Bootstrap -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css" integrity="sha384-XEK3Lq3p0zY1wuYZyR/xOcJWsw0sfI5HpxaC/PvJpHQ6WfS78jY98gkswzvEJ0W4" crossorigin="anonymous">
-  <!-- Link al file CSS personalizzato -->
-  <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">  
+         <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <!-- Bootstrap CSS -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+      <link rel="stylesheet" type="text/css" href="style.css">
+
+      <!-- follie di chiara-->
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+      <style>
+          .w3-button {width:150px;}
+      </style>
+      <!-- follie di chiara-->
+	          <title>Parco Natura La Selvotta | Aree Attrezzate per famiglie e scuole</title>         
+            <!--importante-->
+            <link href="https://www.parconaturalaselvotta.it/wp-content/themes/yootheme/css/theme.1.css?ver=1678197475" rel="stylesheet">
+            <script src="https://www.parconaturalaselvotta.it/wp-content/themes/yootheme/vendor/assets/uikit/dist/js/uikit.js?ver=3.0.25"></script>
+
+ 
 </head>
 
-<body>
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Adozione Animali</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">I nostri animali</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Come adottare</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contattaci</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+<body style="height:2000px">
 
-  <!-- Jumbotron con un messaggio di benvenuto -->
-  <div class="jumbotron">
+  <nav class="navbar fixed-top navbar-expand-md navbar-light" style="background-color: #E19853;" hight="50px">
     <div class="container">
-      <div class="row align-items-center">
-        <div class="col-md-7">
-          <h1 class="display-4">Adotta un amico a quattro zampe</h1>
-          <p class="lead">Scegli il tuo compagno ideale tra i nostri animali in attesa di adozione.</p>
-          <a class="btn btn-primary btn-lg" href="#" role="button">Scopri i nostri animali</a>
-        </div>
-        <div class="col-md-5">
-          <img src="img/home.jpg" alt="Cucciolo di cane" class="img-fluid rounded">
-        </div>
-      </div>
-    </div>
-  </div>
+        <a 
+          class ="navbar-brand mb-0 h1"
+          href="#">
+          Tale of Tails - Racconti di animali
+        </a>
+        <button class="navbar-toggler"
+            type="button" 
+            data-bs-toggle="collapse" 
+            data-bs-target="#navbarNav"  
+            aria-controls="navbarNav" 
+            aria-expanded="false" 
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-  <!-- Sezione con le informazioni sui nostri animali -->
-  <div class="container">
-    <div class="row">
-      <div class="col-md-4">
-        <div class="card mb-4 rounded-3 shadow-sm">
-          <img src="img/cane.jpg" alt="Cane in adozione" class="card-img-top">
-          <div class="card-body">
-            <h2 class="card-title">Cani</h2>
-            <p class="card-text">Trova il
-                cane perfetto per te tra i nostri amici a quattro zampe.</p>
-                <a href="#" class="btn btn-primary">Scopri i nostri cani</a>
-              </div>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link active" href="#">  
+                    Home<span class="sr-only">(current)</span></a>
+                </a>
+            </li>
+            <li class="nav-item active" href="#" >
+                <a href="./AboutUs.html" class="nav-link active" >
+                    AboutUs
+                </a>    
+            </li>
+            <li class="nav-item active" href="#">
+                <a href="#" class="nav-link active">
+                    Pets
+                </a>
+            </li>
+
+            <a class="btn text-white" style="background-color: #E19853;" href="#!" role="button">
+                <i class="fab fa-facebook-f">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                    </svg>
+                </i>
+            </a>
+
+            <a class="btn text-white" style="background-color: #E19853;" href="#!" role="button">
+                <i class="bi bi-twitter">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                        <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                      </svg>
+                </i>
+            </a>
+
+
+
+          </ul>
+
+        </div>
+      
+    </div>
+  </nav> 
+
+
+<div class="centrato">
+  <img src="logo.png" style="width: 600px; height: 600px;">
+  <!--follie di chiara-->
+  
+</div>
+<div class="centrato_bottone">
+  <form action="Iscrizione.html">
+
+      <button type="submit" class="pulsante"> Trova un amico! </button>
+  </form>
+</div>
+  
+  <div class="uk-position-bottom-center uk-position-medium uk-visible@s">
+    
+    
+    </div>
+
+
+    <div id="page#5" class="uk-section-default uk-section" uk-scrollspy="target: [uk-scrollspy-class]; cls: uk-animation-scale-up; delay: 200;">
+        
+            
+            
+            
+                
+                    
+                        
+                        <div class="tm-grid-expand uk-child-width-1-1 uk-grid-margin" uk-grid>
+    <div class="uk-width-1-1">
+        
+            
+                
+                
+                
+                    
+                        
+    <h2 class="uk-h2 uk-font-tertiary uk-text-center" id="page#3" uk-scrollspy-class>        <br class="uk-hidden@s"> Scopri la nostra missione <br class="uk-hidden@s">    </h2>
+                    
+                
+            
+        
+    </div>
+    </div><div class="tm-grid-expand uk-grid-column-large uk-child-width-1-1 uk-grid-margin" uk-grid>
+    <div class="uk-width-1-1">
+        
+            
+                
+                
+                
+                    
+                        
+    <div id="page#4" class="uk-margin uk-width-2xlarge uk-margin-auto uk-text-center">
+        <div class="uk-child-width-1-1 uk-child-width-1-3@m uk-grid-match" uk-grid>        <div>
+    <a class="el-item uk-panel uk-margin-remove-first-child uk-transition-toggle uk-link-toggle uk-display-block" href="/dove-siamo/" aria-label="Scopri di più +" uk-scrollspy-class>
+        
+                    <div class="uk-inline-clip"></div>        
+                        
+    
+            
+                    <h3 class="el-title uk-margin-top uk-margin-remove-bottom">                        Chi siamo presenta                   </h3>        
+            
+        
+            
+            
+                    <div class="el-content uk-panel uk-margin-top">[-------------------------------------------------------------------------].</div>        
+            
+                    <div class="uk-margin-top"><div class="el-link uk-button uk-button-text">Scopri di più +</div></div>        
+            
+            
+        
+    </a></div>
+            <div>
+    <a class="el-item uk-panel uk-margin-remove-first-child uk-transition-toggle uk-link-toggle uk-display-block" href="/vivi-il-parco/" aria-label="Scopri di più +" uk-scrollspy-class>
+        
+                    <div class="uk-inline-clip"></div>        
+                        
+    
+            
+                    <h3 class="el-title uk-margin-top uk-margin-remove-bottom">                        I nostri amici                    </h3>        
+            
+        
+            
+            
+                    <div class="el-content uk-panel uk-margin-top">[-------------------------------------------------------------------------].</div>        
+            
+                    <div class="uk-margin-top"><div class="el-link uk-button uk-button-text">Scopri di più +</div></div>        
+            
+            
+        
+    </a></div>
+            <div>
+    <a class="el-item uk-panel uk-margin-remove-first-child uk-transition-toggle uk-link-toggle uk-display-block" href="/vivi-il-parco/" aria-label="Scopri di più +" uk-scrollspy-class>
+        
+                    <div class="uk-inline-clip"></div>        
+                        
+    
+            
+                    <h3 class="el-title uk-margin-top uk-margin-remove-bottom">                        Inserisci un amico                    </h3>        
+            
+        
+            
+            
+                    <div class="el-content uk-panel uk-margin-top">[-------------------------------------------------------------------------]..</div>        
+            
+                    <div class="uk-margin-top"><div class="el-link uk-button uk-button-text">Scopri di più +</div></div>        
+            
+            
+        
+    </a></div>
             </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card mb-4 rounded-3 shadow-sm">
-              <img src="img/gatto.jpg" alt="Gatto in adozione" class="card-img-top">
-              <div class="card-body">
-                <h2 class="card-title">Gatti</h2>
-                <p class="card-text">Trova il gatto perfetto per te tra i nostri adorabili felini.</p>
-                <a href="#" class="btn btn-primary">Scopri i nostri gatti</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card mb-4 rounded-3 shadow-sm">
-              <img src="img/coniglio.jpg" alt="Coniglio in adozione" class="card-img-top">
-              <div class="card-body">
-                <h2 class="card-title">Altri animali</h2>
-                <p class="card-text">Scopri i nostri altri amici a quattro zampe in cerca di una nuova casa.</p>
-                <a href="#" class="btn btn-primary">Scopri gli altri animali</a>
-              </div>
-            </div>
-          </div>
-        </div> </div>
-        <!-- Sezione con i testimonial -->
-        <div class="container">
-          <h2 class="text-center mb-4">Cosa dicono di noi</h2>
-          <div class="row">
-            <div class="col-md-4">
-              <div class="card mb-4 rounded-3 shadow-sm">
-                <div class="card-body">
-                  <p class="card-text">"Ho adottato un cane dal vostro rifugio e non potrei essere più felice. È un compagno fantastico e mi fa sorridere ogni giorno. Grazie per avermi aiutato a trovare il mio amico a quattro zampe!"</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <small class="text-muted">- Maria R.</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card mb-4 rounded-3 shadow-sm">
-                <div class="card-body">
-                  <p class="card-text">"Sono molto grata al vostro rifugio per avermi aiutato a trovare il mio gatto perfetto. Era spaventato all'inizio, ma adesso si è adattato bene alla sua nuova casa e mi fa sentire meno sola. Grazie!"</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <small class="text-muted">- Laura D.</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card mb-4 rounded-3 shadow-sm">
-                <div class="card-body">
-                  <p class="card-text">"Il vostro rifugio è fantastico. Siete così dedicati a trovare casa ai vostri animali e si vede che i vostri animali sono ben curati e amati. Ho adottato il mio cane da voi e non potrei essere più felice. Continuate così!"</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                  <small class="text-muted">- Marco F.</small>
-                  </div>
-                  </div>
-                  </div>
-                  </div>
-                  </div>
-                  
-                    </div>
-                    <!-- Sezione con informazioni sul rifugio -->
-                    <div class="container-fluid bg-light">
-                      <div class="container py-5">
-                        <div class="row">
-                          <div class="col-md-6">
-                            <h2>Il nostro rifugio</h2>
-                            <p>Il nostro rifugio è stato fondato nel 2005 con lo scopo di salvare e trovare casa a cani, gatti e altri animali in difficoltà. Siamo un'organizzazione no-profit e ci affidiamo esclusivamente alle donazioni per poter continuare a fare il nostro lavoro.</p>
-                            <a href="#" class="btn btn-primary">Scopri di più</a>
-                          </div>
-                          <div class="col-md-6">
-                            <img src="img/rifugio.jpg" alt="Rifugio degli animali" class="img-fluid rounded shadow">
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- Sezione con form per contatti -->
-                    <div class="container">
-                      <h2 class="text-center mb-4">Contattaci</h2>
-                      <div class="row">
-                        <div class="col-md-6 mx-auto">
-                          <form>
-                            <div class="form-group">
-                              <label for="name">Nome</label>
-                              <input type="text" class="form-control" id="name" required>
-                            </div>
-                            <div class="form-group">
-                              <label for="email">Email</label>
-                              <input type="email" class="form-control" id="email" required>
-                            </div>
-                            <div class="form-group">
-                              <label for="message">Messaggio</label>
-                              <textarea class="form-control" id="message" rows="5" required></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-primary">Invia</button>
-                          </form>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- Footer -->
-                    <footer class="bg-dark text-light py-3">
-                      <div class="container">
-                        <div class="row">
-                          <div class="col-md-6">
-                            <p>&copy; 2023 Rifugio degli Animali</p>
-                          </div>
-                          <div class="col-md-6 text-end">
-                            <p>Seguici su:</p>
-                            <a href="#" class="btn btn-outline-light me-2"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#" class="btn btn-outline-light me-2"><i class="fab fa-twitter"></i></a>
-                            <a href="#" class="btn btn-outline-light"><i class="fab fa-instagram"></i></a>
-                          </div>
-                        </div>
-                      </div>
-                    </footer>
-                    <!-- Script di Bootstrap -->
+    
+    </div>
+    
+                    
+                
+            
+        
+    </div>
+    </div>
+                    
+                
+            
+        
+    </div>
+  
+  <!-- Script di Bootstrap -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.3/umd/popper.min.js" integrity="sha512-4O8O7W0+nuFFPe5K5S/Nk5Jiy7WOr5+5ZdeHQezwLSDtFlW4t4ODnmiIx9fEghh/X5c5+cSfmTXvLntdQoswYw==" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.min.js" integrity="sha512-yM4m9Xy1lvKt4WPyAz73kbhS1el0ZpgYvj5wbcSwgIzvbu/hFyAaJCCD2IeB+7VErNYdZhxstGZl11W6uCl7Vg==" crossorigin="anonymous"></script>
+
+
 </body>
 
 </html>
