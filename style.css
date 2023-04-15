@@ -74,6 +74,7 @@ nav a:hover {
     border: solid 1px #E19854;
     background: #E19853;
     border-radius: 8px;
+    font-weight : bold ;
     }
 .pulsante:hover {
         background-color: #e47e1f;
