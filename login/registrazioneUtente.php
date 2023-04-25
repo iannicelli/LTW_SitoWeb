@@ -26,12 +26,11 @@
             <label>Email:</label>
             <input type="text" name="email" class="testo" placeholder="Email..." /><br>
             <label>Password:</label>
-            <input type="password" name="password" class="testo" placeholder="Password..." /><br>
+            <input type="password" name="pass1" class="testo" placeholder="Password..." /><br>
             <label>Conferma Password:</label>
             <input type="password" name="password2" class="testo" placeholder="Conferma password..." /><br>
         
-            <a href="registrazioneUtente.php"><input type="button" class="button" id="register" name="Register" value="Register" /></a>
-            <input type="submit" class="button" name="submit" value="Login" />
+            <input type="submit" class="button" name="submit" value="Registrati!" />
             </form>
         </div>
     </body>
