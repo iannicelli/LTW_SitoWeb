@@ -12,6 +12,9 @@ body {
     left: 50%;
     margin-top: -140px;
     margin-left: -225px;
+
+
+    
     
     background-color:#fff;
     
@@ -39,6 +42,7 @@ body {
    
    #register{
     margin-right:90px;}
+
     
    .button {
     width:125px;
@@ -48,6 +52,7 @@ body {
     font-size:20px;
     border-radius: 10px;
     border:1px solid #fff;
+    text-decoration: none;
    
     background: #E19853;
     box-shadow: 2px 2px 5px #000;
@@ -88,4 +93,10 @@ body {
    .testo:focus, .testo:hover{
         box-shadow:2px 2px 5px #000 ;
 
+    }
+
+    #testo{
+
+        padding: 50px;
+    text-align: center;
     }

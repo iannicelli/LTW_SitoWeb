@@ -18,6 +18,7 @@
             $_SESSION['email'] = $row['email'];
             $_SESSION['nome'] = $row['nome'];
             $_SESSION['cognome'] = $row['cognome'];
+            $_SESSION['ruolo']= $row['ruolo'] == 'ADMIN' ? $row['ruolo'] : 'LOGGED';
             $_SESSION['isLogged'] = true;
             
             header("location: Home.php");
