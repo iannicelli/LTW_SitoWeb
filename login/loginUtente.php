@@ -11,8 +11,12 @@
     $result = pg_query($db, $query);
     if(pg_num_rows($result) == 1) {
         $row = pg_fetch_assoc($result);
-        if(password_verify($pass, $row['password'])){
-
+        echo "password inserite: $pass";
+        $corretta =  $row['password'];
+        echo "password richiesta: $corretta";
+        if($pass == $corretta){
+            
+            
             session_start();
 
             $_SESSION['email'] = $row['email'];
@@ -21,12 +25,12 @@
             $_SESSION['ruolo']= $row['ruolo'] == 'ADMIN' ? $row['ruolo'] : 'LOGGED';
             $_SESSION['isLogged'] = true;
             
-            header("location: nav.html"); //da modificare in php
+            header("location: ../nav.php"); //da modificare in php
         }
         else {
             header("location: login.php?warning=3");
         }
     }else{
-        header("location: login.php?warning=1");
+        header("location: emailNonEsistente.html");
     }
 ?>

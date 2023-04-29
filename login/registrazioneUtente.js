@@ -23,7 +23,7 @@ function controlli(){
     var valore=document.reg.email.value;
 
     if (!(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(valore))){
-       alert("L'indirizzo email che hai inserito non e' valido");
+       alert("L'indirizzo email che hai inserito non è valido");
        reg.email.focus();
        return false;
     }

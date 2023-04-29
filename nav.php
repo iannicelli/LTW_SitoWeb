@@ -94,7 +94,7 @@
 					<?php
 						if(isLogged())
 							echo '<a href="#" class="nav-link active">
-								Ciao
+								<img src="omino.png" height="37" width="37"></img>
 							</a>';
 						else 
 							echo '<a href="./login/login.php" class="nav-link active">

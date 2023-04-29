@@ -23,7 +23,7 @@
             ?>  
             <form action="loginUtente.php" class="formlogin" method="post">
                 <label>Email:</label>
-                <input type="text" name="email" class="testo" placeholder="Email..." /><br>
+                <input type="text" required="required" name="email" class="testo" placeholder="Email..." /><br>
                 <label>Password:</label>
                 <input type="password" name="password" class="testo" placeholder="Password..." /><br>
                 
