@@ -2,6 +2,7 @@
     <head>
         <title>Form-Registrazione</title>
         <link rel="stylesheet" href="styleregistrazione.css" type="text/css" />
+        <script src="RegistrazioneUtente.js"></script>
     </head>
     <body background="./sfondo/giusta.jpg">
        <?php
@@ -16,15 +17,15 @@
         ?>
 
     <div class="content" id="login"><div id="titolologin"><label>Registrazione</label></div>
-            <form name = "reg" action="registrazioneUtenteDB.php" class="formlogin" method="post">
+            <form name = "reg" action="registrazioneUtenteDB.php" class="formlogin" method="post" onsubmit="return controlli();">
 
             <label>Nome:</label>
-            <input type="text" name="nome" class="testo" placeholder="Nome..." /><br>
+            <input type="text" name="nome" id="nome" class="testo" placeholder="Nome..." /><br>
             <label>Cognome:</label>
             <input type="text" name="cognome" class="testo" placeholder="Cognome..." /><br>
             
             <label>Email:</label>
-            <input type="text" name="email" class="testo" placeholder="Email..." /><br>
+            <input type="text" name="email" class="testo" placeholder="Email..."/><br>
             <label>Password:</label>
             <input type="password" name="pass1" class="testo" placeholder="Password..." /><br>
             <label>Conferma Password:</label>

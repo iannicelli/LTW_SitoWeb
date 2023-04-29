@@ -11,7 +11,7 @@
     $result = pg_query($db, $query);
     if(pg_num_rows($result) == 1) {
         $row = pg_fetch_assoc($result);
-        if(password_verify($pass, $row['pass'])){
+        if(password_verify($pass, $row['password'])){
 
             session_start();
 
@@ -21,7 +21,7 @@
             $_SESSION['ruolo']= $row['ruolo'] == 'ADMIN' ? $row['ruolo'] : 'LOGGED';
             $_SESSION['isLogged'] = true;
             
-            header("location: Home.php");
+            header("location: nav.html"); //da modificare in php
         }
         else {
             header("location: login.php?warning=3");

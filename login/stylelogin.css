@@ -37,8 +37,15 @@ body {
    
    }
    
-   #register{
-    margin-right:90px;}
+   #register {
+    float: left;
+    margin-right: 10px;
+  }
+
+    .button-wrapper {
+        text-align: right;
+        margin-top: 10px;
+      }
 
     
    .button {
@@ -49,12 +56,9 @@ body {
     font-size:20px;
     border-radius: 10px;
     border:1px solid #fff;
-    text-decoration: none;
-    position: absolute;
-    left: 50%;
-    top: 83%;
-    transform: translate(-50%, -50%);
    
+    display: inline-block;
+    margin-left: 10px;
     background: #E19853;
     box-shadow: 2px 2px 5px #000;
     }

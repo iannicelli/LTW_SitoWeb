@@ -6,8 +6,8 @@
     <body background="./sfondo/giusta.jpg">
         
         <div id="login"><div id="titolologin"><label>Login</label></div>
-            <?php 
-                include 'loginBD.php';
+          <?php 
+                include 'loginDB.php';
                 if(isset($_GET['warning'])){
                     $warning= $_GET['warning'];
                     switch($warning){
@@ -20,14 +20,17 @@
                     }
                         
                 }
-            ?>
+            ?>  
             <form action="loginUtente.php" class="formlogin" method="post">
                 <label>Email:</label>
                 <input type="text" name="email" class="testo" placeholder="Email..." /><br>
                 <label>Password:</label>
                 <input type="password" name="password" class="testo" placeholder="Password..." /><br>
-                <a href="registrazioneUtente.php"><input type="button" class="button" id="register" name="Register" value="Registrati" /></a>
-                <input type="submit" class="button" name="submit" value="Login" />
+                
+                <div class="button-wrapper">
+                    <a href="./registrazioneUtente.php"><input type="button" class="button" id="register" name="Register" value="Register!" /></a>
+                    <input type="submit" class="button" name="submit" value="Login" />
+                   </div>
             </form>
         </div>
     </body>

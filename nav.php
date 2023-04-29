@@ -30,6 +30,13 @@
     <title>Tale of Tails</title>
   </head>
   <body style="height:600px">
+	<?php
+         include "./login/checkIsLogged.php";
+
+        if(isLogged()){
+            echo '<i>'.$_SESSION['nome'].' '.$_SESSION['cognome'].'</i>';
+        }
+    ?>
 	<div class="banner">
     <nav class="navbar fixed-top navbar-expand-md navbar-light" style="background-color: #E19853;">
         <div class="container">
@@ -82,11 +89,19 @@
                           </svg>
                     </i>
                 </a>
-
+				
 				<li class="nav-item active" href="#">
-                    <a href="./login/index.html" class="nav-link active">
-                        Login
-                    </a>
+					<?php
+						if(isLogged())
+							echo '<a href="#" class="nav-link active">
+								Ciao
+							</a>';
+						else 
+							echo '<a href="./login/login.php" class="nav-link active">
+								Login
+							</a>';
+					?>
+
                 </li>
     
     

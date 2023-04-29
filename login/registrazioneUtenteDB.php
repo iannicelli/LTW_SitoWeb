@@ -30,6 +30,6 @@
 
     pg_close($db);
 
-    header("location: ../nav.html")
+    header("location: ./regCompleta.html")
 
 ?>
