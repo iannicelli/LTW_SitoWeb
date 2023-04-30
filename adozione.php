@@ -111,27 +111,56 @@
         <h4>Modulo di adozione</h4>
         <br>
         <br>
-    
-
-  <div class="row">
-    <div class="col">
-        <h5>Nome di chi adotterà l'animale*</h5>
-
-        <h5>Indirizzo di residenza*</h5>      
         
-        <h5>Provincia di residenza*</h5>
-
-        <h5>Recapito Telefonico*</h5>
-    </div>
+    
+    <form>
+    <div class="row">
+    <!---------primo colonna------------>
     <div class="col">
-    <h5>Cognome di chi adotterà l'animale*</h5>
+        <div class="mb-3">
+            <label for="nome" class="form-label">Nome di chi adotterà l'animale*</label>
+            <input type="text" class="form-control" id="nome" aria-describedby="emailHelp">
+        </div>
+        
+        <div class="mb-3">
+            <label for="indirizzo" class="form-label">Indirizzo di residenza*</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+        </div>
+        
+        <div class="mb-3">
+            <label for="provincia" class="form-label">Provincia di residenza*</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+        </div>
+        
+        <div class="mb-3">
+            <label for="telefono" class="form-label">Recapito telefonico*</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+        </div>
+        
+    </div>
 
-    <h5>Città di residenza*</h5>
-
-    <h5>CAP*</h5>
-
-    <h5>Email*</h5>
-
+    <div class="col">
+        <div class="mb-3">
+            <label for="cognome" class="form-label">Cognome di chi adotterà l'animale*</label>
+            <input type="text" class="form-control" id="nome" aria-describedby="emailHelp">
+        </div>
+        
+        <div class="mb-3">
+            <label for="indirizzo" class="form-label">Città di residenza*</label>
+            <input type="password" class="form-control" id="citta">
+        </div>
+        
+        <div class="mb-3">
+            <label for="provincia" class="form-label">CAP*</label>
+            <input type="password" class="form-control" id="cap">
+        </div>
+        
+        <div class="mb-3">
+            <label for="telefono" class="form-label">Email*</label>
+            <input type="password" class="form-control" id="email">
+        </div>
+              
+    
 
     </div>
   </div>
@@ -139,59 +168,72 @@
 
   <div class="row">
     <div class="col">
-    <label for="exampleFormControlFile1">Inserisci documento</label>
-    <input type="file" class="form-control-file" id="exampleFormControlFile1">
+    <label for="exampleFormControlFile1">Inserisci documento d'identità: </label>
+    <input type="file" class="form-control-file" id="doc">
   </div>
+  <br>
+  <br>
+  <br>
+
     <div class="form-group">
+    <br>
         <label for="input">Da dove nasce il desiderio di adottare l'animale?</label>
-        <textarea class="form-control" id="FormControlTextarea1" rows="2"></textarea>
+        <textarea class="form-control" id="desidero" rows="2"></textarea>
   </div>
-  <br>
-    
-  <div class="form-group">
-        <label for="input">Potendo scegliere, che carattere vorreste avesse il vostro gatto? E il sesso?</label>
-        <textarea class="form-control" id="FormControlTextarea1" rows="2"></textarea>
-  </div>
-  <br>
+ 
 
   <div class="form-group">
+  <br>
         <label for="input">Di quante persone si compone la famiglia?</label>
-        <textarea class="form-control" id="FormControlTextarea1" rows="2"></textarea>
+        <textarea class="form-control" id="famiglia" rows="2"></textarea>
   </div>
-  <br>
-
 
   <div class="form-group">
-        <label for="exampleInputEmail1">In famiglia ci sono bambini, anziani, persone con disabilità psico-fisiche o con particolari
+        <br>
+        <label for="input">In famiglia ci sono bambini, anziani, persone con disabilità psico-fisiche o con particolari
         patologie? Di che età?</label>
-        <textarea class="form-control" id="FormControlTextarea1" rows="2"></textarea>
+        <textarea class="form-control" id="famiglia" rows="2"></textarea>
   </div>
+  <br>
   <br>
 
   <div class="form-group">
-        <label for="exampleInputEmail1">Chi in famiglia si occuperà maggiormente dell'animale?</label>
-        <textarea class="form-control" id="FormControlTextarea1" rows="2"></textarea>
+  <br>
+        <label for="input">Chi in famiglia si occuperà maggiormente dell'animale?</label>
+        <textarea class="form-control" id="famiglia" rows="2"></textarea>
   </div>
   <br>
-
+  <br>
 
   <div class="form-group">
-        <label for="exampleInputEmail1">Possedete attualmente altri animali? Se sì, quanti e quali (cani, gatti, conigli, roditori, uccellini,
+  <br>
+        <label for="input">Possedete attualmente altri animali? Se sì, quanti e quali (cani, gatti, conigli, roditori, uccellini,
         galline, etc)?</label>
-        <textarea class="form-control" id="FormControlTextarea1" rows="2"></textarea>
+        <textarea class="form-control" id="animali" rows="2"></textarea>
   </div>
   <br>
+  <br>
+
 
     </div>
   </div>
 
 
 
+  <div class="mb-3 form-check">
+    <br>
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Accetto tutte le condizioni</label>
+    </div>
+
+    <br>
+       
+        <button type="submit" class="btn btn-primary">Submit</button>
+
+
+</form>
 
 </div>
-
-
-
 
 
 
