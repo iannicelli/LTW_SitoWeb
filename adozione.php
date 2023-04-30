@@ -7,6 +7,12 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="icon" href="./Immagini logo/favicon.png" type="image/png">
     <link rel="stylesheet" type="text/css" href="style.css">
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+        .w3-button {width:150px;}
+    </style>
+
     <title>Modulo adozione</title>
 </head>
 
@@ -84,31 +90,115 @@
 					?>
 
                 </li>
-    
-    
-
             </ul>
 
             </div>
 
         </div>
     </nav>
-
 	</div>
 
 
 
 
+    <div class="container-text-center">
+        <br>
+        <br>
+        <br>
+        <div class="prova" style="text-align: center;">
+            <img src="./immagini logo/Adozione.png" style="width: 200px; height: 200px;">
+        </div>
+        <h4>Modulo di adozione</h4>
+        <br>
+        <br>
+    
+
+  <div class="row">
+    <div class="col">
+        <h5>Nome di chi adotterà l'animale*</h5>
+
+        <h5>Indirizzo di residenza*</h5>      
+        
+        <h5>Provincia di residenza*</h5>
+
+        <h5>Recapito Telefonico*</h5>
+    </div>
+    <div class="col">
+    <h5>Cognome di chi adotterà l'animale*</h5>
+
+    <h5>Città di residenza*</h5>
+
+    <h5>CAP*</h5>
+
+    <h5>Email*</h5>
 
 
-	
+    </div>
+  </div>
+
+
+  <div class="row">
+    <div class="col">
+    <label for="exampleFormControlFile1">Inserisci documento</label>
+    <input type="file" class="form-control-file" id="exampleFormControlFile1">
+  </div>
+    <div class="form-group">
+        <label for="input">Da dove nasce il desiderio di adottare l'animale?</label>
+        <textarea class="form-control" id="FormControlTextarea1" rows="2"></textarea>
+  </div>
+  <br>
+    
+  <div class="form-group">
+        <label for="input">Potendo scegliere, che carattere vorreste avesse il vostro gatto? E il sesso?</label>
+        <textarea class="form-control" id="FormControlTextarea1" rows="2"></textarea>
+  </div>
+  <br>
+
+  <div class="form-group">
+        <label for="input">Di quante persone si compone la famiglia?</label>
+        <textarea class="form-control" id="FormControlTextarea1" rows="2"></textarea>
+  </div>
+  <br>
+
+
+  <div class="form-group">
+        <label for="exampleInputEmail1">In famiglia ci sono bambini, anziani, persone con disabilità psico-fisiche o con particolari
+        patologie? Di che età?</label>
+        <textarea class="form-control" id="FormControlTextarea1" rows="2"></textarea>
+  </div>
+  <br>
+
+  <div class="form-group">
+        <label for="exampleInputEmail1">Chi in famiglia si occuperà maggiormente dell'animale?</label>
+        <textarea class="form-control" id="FormControlTextarea1" rows="2"></textarea>
+  </div>
+  <br>
+
+
+  <div class="form-group">
+        <label for="exampleInputEmail1">Possedete attualmente altri animali? Se sì, quanti e quali (cani, gatti, conigli, roditori, uccellini,
+        galline, etc)?</label>
+        <textarea class="form-control" id="FormControlTextarea1" rows="2"></textarea>
+  </div>
+  <br>
+
+    </div>
+  </div>
+
+
+
+
+</div>
+
+
+
+
+
+
 
         <br>
             <!--follie di chiara-->
-            
-
-
-        
+                   
         <!-- CSS only -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
         

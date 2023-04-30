@@ -4,7 +4,7 @@
     src: url('/Lovelo/Lovelo/Commercial/TTF/Lovelo-Black.ttf') format('truetype');
   }
 
-  h1, a, h3 {
+  h1, a, h3, h4 {
     font-family: 'Lovelo', sans-serif;
   }
 
@@ -178,4 +178,14 @@ nav b:hover {
         text-align: center;
 
     }
+}
+
+.container-text-center h4{
+    font-size: 4em;
+    font-weight: bolder;
+    padding-bottom: 8px;
+    color: #E19853;
+    letter-spacing: normal;
+    text-align: center; /* orizzontale */
+    line-height: 80px; /* verticale */
 }
