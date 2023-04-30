@@ -1,0 +1,71 @@
+.wrapper {
+    display: block;
+    margin: 90px auto;
+    padding: 20px;
+  }
+
+.topnav {
+  overflow: hidden;
+}
+
+  #formContent {
+    border-radius: 10px 10px 10px 10px; 
+    background: #fff;
+    padding: 30px;
+    max-width: 800px;
+    box-shadow: 0 30px 60px 0 rgba(0, 255, 217, 0.568);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #icona{
+    text-align:center;
+  }
+
+  #formFooter {
+    border-radius: 10px 10px 10px 10px;
+    background: #fff;
+    padding: 15px;
+    max-width: 830px;
+    box-shadow: 0 30px 60px 0 rgba(0, 255, 217, 0.568); 
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  h3{
+    font-family: Tahoma;
+    color:#11d8aa;
+    text-transform: uppercase;
+    font-style: bold;
+    text-align: left;
+  }
+  
+  input[type=submit] {
+    background-color: #11d8aa;
+    border: none; 
+    color: white; 
+    padding: 15px 30px;
+    text-transform: uppercase;
+    font-size: 15px;
+    box-shadow: 0 10px 30px 0 rgba(42, 135, 181, 0.717); 
+    border-radius: 5px 5px 5px 5px;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #39ace7;
+  }
+
+  #pass{
+    margin-right: 40px;
+  }
+
+.topnav-right{
+  float: right;
+}
+
+.topnav-center{
+  float: center;
+}
+  

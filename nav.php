@@ -31,7 +31,7 @@
   </head>
   <body style="height:600px">
 	<?php
-         include "./login/checkIsLogged.php";
+        include "./login/checkIsLogged.php";
 
         if(isLogged()){
             echo '<i>'.$_SESSION['nome'].' '.$_SESSION['cognome'].'</i>';
@@ -93,7 +93,7 @@
 				<li class="nav-item active" href="#">
 					<?php
 						if(isLogged())
-							echo '<a href="#" class="nav-link active">
+							echo '<a href="./login/profiloUtente.php" class="nav-link active">
 								<img src="omino.png" height="37" width="37"></img>
 							</a>';
 						else 
