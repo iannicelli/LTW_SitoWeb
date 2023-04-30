@@ -1,60 +1,37 @@
-<!DOCTYPE html>
-<html lang="en">
-
 <html>
     <?php
         include 'loginDB.php';
         
-        include 'checkIsLogged.php';
+        include "checkIsLogged.php";
 
         if(isLogged()){
             $mail= $_SESSION['email'];
-        
-            $query = "SELECT * FROM utenti WHERE email='$mail';";
 
+            $query = "SELECT * FROM utenti WHERE email='$mail';";
             $res = pg_query($db, $query);
             if(!$res){
                 echo "ERRORE QUERY: " . pg_last_error($db);
                 exit;
             }
         }
-        
     ?>
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="icon" href="./Immagini logo/favicon.png" type="image/png">
-    <link rel="stylesheet" type="text/css" href="../style.css">
-    
-    <link rel="icon" href="../Immagini logo/favicon.png" type="image/png">
+    <head>
 
-    <!--da martina -->
-    <link rel="stylesheet", type="text/css", href="./daMartina/Layout.css">
-       <link rel="stylesheet", type="text/css", href="./daMartina/ProfiloUtente.css">
-       <link rel="stylesheet", type="text/css", href="./daMartina/card.css">
-    <!--da martina -->
+       <title>Profilo Utente</title>
+       <link rel="stylesheet", type="text/css", href="../style.css">
 
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <style>
-        .w3-button {width:150px;}
-    </style>
+       <meta charset="utf-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+       <html lang="it"> 
+    </head>
 
-    <title>Profilo Utente</title>
-</head>
+    <body>
 
-<body style="height:600px">
-	<?php
 
-        if(isLogged()){
-            echo '<i>'.$_SESSION['nome'].' '.$_SESSION['cognome'].'</i>';
-        }
-    ?>
-	<div class="banner_profiloUtente">
+	<div class="banner2">
     <nav class="navbar fixed-top navbar-expand-md navbar-light" style="background-color: #E19853;">
         <div class="container">
-            <a class ="navbar-brand mb-0 h1" href="../nav.php">
+            <a class ="navbar-brand mb-0 h1" href="#">
             <img class = "d-inline-block" src ="../Immagini logo/SITO WEB (1).png" height="40" />
             Tale of Tails - Racconti di animali
             </a>
@@ -76,12 +53,12 @@
                     </a>
                 </li>
                 <li class="nav-item active" href="#" >
-                    <a href="./AboutUs.html" class="nav-link active" >
+                    <a href="../AboutUs.html" class="nav-link active" >
                         AboutUs
                     </a>    
                 </li>
                 <li class="nav-item active" href="#">
-                    <a href="./pets.html" class="nav-link active">
+                    <a href="../pets.html" class="nav-link active">
                         Pets
                     </a>
                 </li>
@@ -105,9 +82,10 @@
                 </a>
 				
 				<li class="nav-item active" href="#">
-                    <a href="./logOut.php" class="nav-link active">
-                        LogOut
-                    </a>
+					<a href="#" class="nav-link active">
+								<img src="../omino.png" height="37" width="37"></img>
+					</a>
+			
                 </li>
     
     
@@ -118,84 +96,42 @@
 
         </div>
     </nav>
+	
 
-	</div>
-    <br>
-    <br>
-    <br>
-
-
-    <div class="wrapper">
+        <div class="wrapper">
 
             <div id="formContent">
                 
                 <div id="icona">
-                    <div class="round-image">
-                        <img src="./daMartina/giusta.png" width="70" height="70" />
-                    </div>
+                    <!-- <img src="LogIn.png" width="70" height="70" /> -->
+                    
                 </div>
 
                 <?php
-                if(isLogged()){
-                    $mail= $_SESSION['email'];
-                
-                    $query = "SELECT * FROM utenti WHERE email='$mail';";
-        
-                    $res = pg_query($db, $query);
-                    if(!$res){
-                        echo "ERRORE QUERY: " . pg_last_error($db);
-                        exit;
-                    }
-                
                 $row=pg_fetch_array($res);
                 echo "<p><b>Nome:</b> ".$row["nome"]."</p>";
                 echo "<p><b>Cognome:</b> ".$row["cognome"]."<p>"; 
-                echo "<p><b>E-mail:</b> ".$row["email"]."</p>";
-                }
+                echo "<p><b>E-mail:</b> ".$row["email"]."</p>"; 
                 ?>
                 <br>
-
                 <p style="text-align:center">
-                    <a href="ModificaPassword.php"> <input type='submit' id="pass" value='Modifica Password'></a>
-                    <a href="ModificaDati.php"> <input type='submit' id="dati" value='Modifica Dati'></a>
+                    <a href="#"> <input type='submit' id="pass" value='Modifica Password'></a>
+                    <a href="#"> <input type='submit' id="dati" value='Modifica Dati'></a>
                 </p>
     
             </div>
 
-    </div>
-    <div class="container_button">
-    <input type="button" id="bot_1" value="Le mie adozioni">
-    &emsp;
-    <input type="button" id="bot_2" value="Aggiungi un 
-    amico">
-    </div>
-    <br><br><br><br>
+        </div>
 
-    <div class="footer">
-            <img src="../Immagini logo/favicon.png" alt="Tale of Tails" width="40" height="40"/>
+
+        <div class="footer">
             &nbsp;
-            &copy; 2023 Tale of Tails
+            &copy; 2022 Sapori del Sud 
             &nbsp;
             <a href="https://protezionedatipersonali.it/informativa">Privacy</a> 
-            <a href="../AboutUs.html">Chi siamo</a>
-            &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-            Contatti: iannicelli.1957045@studenti.uniroma1.it / lavini.1941986@studenti.uniroma1.it
-    </div>
+            <a href="Contatti.html">Chi siamo</a>
+        </div>
 
+    </body>
 
-
-            <!--follie di chiara-->
-            
-
-
-        
-        <!-- CSS only -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
-        
-        <!-- JavaScript Bundle with Popper -->
-        
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
-
-</body>
 </html>

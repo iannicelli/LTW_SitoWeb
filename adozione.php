@@ -7,6 +7,12 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="icon" href="./Immagini logo/favicon.png" type="image/png">
     <link rel="stylesheet" type="text/css" href="style.css">
+    
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+        .w3-button {width:150px;}
+    </style>
+    
     <title>Modulo adozione</title>
 </head>
 
@@ -18,7 +24,7 @@
             echo '<i>'.$_SESSION['nome'].' '.$_SESSION['cognome'].'</i>';
         }
     ?>
-	<div class="banner2">
+	<div class="banner">
     <nav class="navbar fixed-top navbar-expand-md navbar-light" style="background-color: #E19853;">
         <div class="container">
             <a class ="navbar-brand mb-0 h1" href="#">

@@ -178,4 +178,14 @@ nav b:hover {
         text-align: center;
 
     }
+
+    /*-------------------sotto------------*/
+    .footer {
+        background-color: #E19853; 
+        padding: 10px;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+    }
+
 }
