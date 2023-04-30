@@ -131,7 +131,7 @@
                 <button type="submit" class="pulsante"> Trova un amico! </button>
             </form>
         </div>
-		<video autoplay muted plays-inline>
+		<video autoplay loop muted plays-inline>
 			<source src="./immagini animali/Pixie.mp4" type="video/mp4">
 		</video>
 
