@@ -1,0 +1,29 @@
+ANIMALI
+id (primary jey) | nome (non nullo) | casa provvisoria (non nullo) | età | tipologia | descrizione | razza | adottato (true/false) | adottato da | caricato da  
+
+numeri crescenti (fare con javascript)
+
+DA FARE:
+completare profilo standard animali
+connetterlo al database
+controllare in generale pagine :pets e connetterle al profilo standard per ogni animale
+consentire l'adozione solo con il login, altrimenti rimandare alla registrazione
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
