@@ -151,6 +151,8 @@
                 echo "<p><b>Nome:</b> ".$row["nome"]."</p>";
                 echo "<p><b>Cognome:</b> ".$row["cognome"]."<p>"; 
                 echo "<p><b>E-mail:</b> ".$row["email"]."</p>";
+                echo "<p><b>N animali adottati:</b> ".$row["n_adottati"]."</p>";
+                echo "<p><b>N animali inseriti:</b> ".$row["n_caricati"]."</p>";
                 }
                 ?>
                 <br>
@@ -164,7 +166,7 @@
 
     </div>
     <div class="container_button">
-    <input type="button" id="bot_1" value="Le mie adozioni">
+    <input type="button" id="bot_1" value="Adotta un amico">
     &emsp;
     <input type="button" id="bot_2" value="Aggiungi un 
     amico">
