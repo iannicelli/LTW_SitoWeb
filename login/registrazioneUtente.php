@@ -31,7 +31,10 @@
             <label>Conferma Password:</label>
             <input type="password" name="password2" class="testo" placeholder="Conferma password..." /><br>
         
-            <input type="submit" class="button" name="submit" value="Registrati!" />
+            <div class="button-wrapper">
+                    <a href="../nav.php"><input type="button" class="button" id="register" name="Register" value="Home" /></a>
+                    <input type="submit" class="button" name="submit" value="Registrati!" />
+                   </div>
             </form>
         </div>
     </body>

@@ -1,9 +1,7 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
-  }
   
-  * {
     box-sizing: border-box;
+    background-image: url("./login/sfondo/giusta.jpg");
   }
   
   /* Style inputs */
@@ -17,21 +15,23 @@ body {
   }
   
   input[type=submit] {
-    background-color: #04AA6D;
-    color: white;
+    background-color:  #E19853;
+    background-image: url("./login/sfondo/per_bottone.jpg");
+    color: black;
     padding: 12px 20px;
     border: none;
     cursor: pointer;
+    border-radius: 8px;
   }
   
   input[type=submit]:hover {
-    background-color: #45a049;
+    background-color: #e47e1f;
   }
   
   /* Style the container/contact section */
   .container {
     border-radius: 5px;
-    background-color: #f2f2f2;
+    background-color: #E19853;
     padding: 10px;
   }
   

@@ -67,7 +67,7 @@
                     </a>    
                 </li>
                 <li class="nav-item active" href="#">
-                    <a href="./pets.html" class="nav-link active">
+                    <a href="./immagini_animali/drive/index.html" class="nav-link active">
                         Pets
                     </a>
                 </li>
