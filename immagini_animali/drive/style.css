@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap);
 
 *{
   margin: 0;
@@ -126,6 +126,15 @@ h3::before{
 
 .image-container{
   cursor: pointer;
+  /*da eliminare se non funziona*/
+  position: relative;
+}
+
+/*da eliminare se non funziona*/
+.image-container img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .image-container::before{
@@ -143,6 +152,9 @@ h3::before{
   transition: .3s;
   transition-delay: .2s;
 }
+
+/*da eliminare se non funziona*/
+
 .image-container::after{
   content: "";
   position: absolute;
@@ -153,10 +165,13 @@ h3::before{
   height: 0;
   background-color: rgba(0, 0, 0, .4);
   transition: .3s;
+  margin-top: -100%; /* Modifica qui */
 }
 
+
+
 .image-container:hover::after{
-  height: 100%;
+  height: calc(100%); 
 }
 
 .image-container :hover::before{
@@ -164,3 +179,23 @@ h3::before{
   opacity: 1;
 }
 
+.image-overlay-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #E19853;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  z-index: 999;
+}
+
+.image-container:hover .image-overlay-button {
+  opacity: 1;
+}

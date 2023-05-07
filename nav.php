@@ -67,7 +67,7 @@
                     </a>    
                 </li>
                 <li class="nav-item active" href="#">
-                    <a href="./immagini_animali/drive/index.html" class="nav-link active">
+                    <a href="./immagini_animali/drive/index.php" class="nav-link active">
                         Pets
                     </a>
                 </li>
@@ -132,7 +132,7 @@
             </form>
         </div>
 		<video autoplay loop muted plays-inline>
-			<source src="./immagini animali/Pixie.mp4" type="video/mp4">
+			<source src="./immagini_animali/Pixie.mp4" type="video/mp4">
 		</video>
 
 	</div>
@@ -171,7 +171,7 @@
 	<div class="box">
 	<!--img-box---------->
 	<div class="slide-img">
-	<img src="./immagini animali/animali-da-reddito.jpg" alt="1">
+	<img src="./immagini_animali/animali-da-reddito.jpg" alt="1">
 	<!--overlayer---------->
 	<div class="overlay">
 	<!--buy-btn------>	
@@ -198,7 +198,7 @@
 	<div class="box">
 	<!--img-box---------->
 	<div class="slide-img">
-	<img src="./immagini animali/corgi-.jpg" alt="2">
+	<img src="./immagini_animali/corgi-.jpg" alt="2">
 	<!--overlayer---------->
 	<div class="overlay">
 	<!--buy-btn------>	
@@ -225,7 +225,7 @@
 	<div class="box">
 	<!--img-box---------->
 	<div class="slide-img">
-	<img src="./immagini animali/happy-cat-month-1.webp" alt="3">
+	<img src="./immagini_animali/happy-cat-month-1.webp" alt="3">
 	<!--overlayer---------->
 	<div class="overlay">
 	<!--buy-btn------>	
@@ -252,7 +252,7 @@
 	<div class="box">
 	<!--img-box---------->
 	<div class="slide-img">
-	<img src="./immagini animali/lontre.webp" alt="4">
+	<img src="./immagini_animali/lontre.webp" alt="4">
 	<!--overlayer---------->
 	<div class="overlay">
 	<!--buy-btn------>	
@@ -279,7 +279,7 @@
 	<div class="box">
 	<!--img-box---------->
 	<div class="slide-img">
-	<img src="./immagini animali/WhatsApp Image 2023-04-15 at 22.28.59.jpeg" alt="5">
+	<img src="./immagini_animali/WhatsApp Image 2023-04-15 at 22.28.59.jpeg" alt="5">
 	<!--overlayer---------->
 	<div class="overlay">
 	<!--buy-btn------>	
@@ -306,7 +306,7 @@
 	<div class="box">
 	<!--img-box---------->
 	<div class="slide-img">
-	<img src="./immagini animali/foto-divertenti-animali-buffi-cv.jpg" alt="6">
+	<img src="./immagini_animali/foto-divertenti-animali-buffi-cv.jpg" alt="6">
 	<!--overlayer---------->
 	<div class="overlay">
 	<!--buy-btn------>	
@@ -333,7 +333,7 @@
 	<div class="box">
 	<!--img-box---------->
 	<div class="slide-img">
-	<img src="./immagini animali/WhatsApp Image 2023-04-15 at 22.44.19.jpeg" alt="7">
+	<img src="./immagini_animali/WhatsApp Image 2023-04-15 at 22.44.19.jpeg" alt="7">
 	<!--overlayer---------->
 	<div class="overlay">
 	<!--buy-btn------>	
@@ -360,7 +360,7 @@
 	<div class="box">
 	<!--img-box---------->
 	<div class="slide-img">
-	<img src="./immagini animali/WhatsApp Image 2023-04-15 at 22.44.58.jpeg" alt="8">
+	<img src="./immagini_animali/WhatsApp Image 2023-04-15 at 22.44.58.jpeg" alt="8">
 	<!--overlayer---------->
 	<div class="overlay">
 	<!--buy-btn------>	

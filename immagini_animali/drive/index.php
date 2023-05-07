@@ -4,21 +4,17 @@
 	<title>Pets</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
+
+<!--
+    DA FARE:
+    - aggiungere bottone su ogni animale
+    - sostiuire immagini animali con vere immagini dal database
+    - capire come popolare la pagina con immagini dal database (solo un tot)
+
+-->
+
 <?php
-// Connessione al database
-    include '../../login/loginDB.php';
-
-// Query per recuperare i primi 10 animali dal database
-    $query = "SELECT * FROM animali LIMIT 4";
-    $result = pg_query($db, $query);
-
-    if ($result && pg_num_rows($result) > 0) {
-      // Recuperare i dati dell'animale dal risultato della query in un array
-      $animali = pg_fetch_all($result);
-    } else {
-        // Nessun animale trovato con l'id specificato
-        echo "Animale non trovato.";
-    }
+  include '../inserisci.php';
 ?>
 
 <body>
@@ -28,62 +24,58 @@
     </div>
     <div class="box">
       
-        <div class="dream">
-            <div class="image-container">
-                <?php
-                // Recupera l'immagine dal database
-                $animale = $animali[0];
-                $data = pg_unescape_bytea($animale['image']);
-                $file_name = $animale['nome'] . ".jpeg";
-                $img = fopen($file_name, 'wb') or die("cannot open image\n");
-                fwrite($img, $data) or die("cannot write image data\n");
-                echo '<img src="' . $file_name . '">';
+      <div class="dream">
+        <div class="image-container">
 
-                ?>
-            </div>
-            <div class="image-container">
-                <?php
-                // Recupera l'immagine dal database
-                $animale = $animali[1];
-                $data = pg_unescape_bytea($animale['image']);
-                $file_name = $animale['nome'] . ".jpeg";
-                $img = fopen($file_name, 'wb') or die("cannot open image\n");
-                fwrite($img, $data) or die("cannot write image data\n");
-                echo '<img src="' . $file_name . '">';
+          <?php
+            inserisci(0);
+          ?>
+          <a href='../../animale.php?id=1'><input type="button" class="image-overlay-button" value="Adotta!"></a>
 
-                ?>
-            </div>
-            <div class="image-container">
-                <?php
-                // Recupera l'immagine dal database
-                $animale = $animali[2];
-                $data = pg_unescape_bytea($animale['image']);
-                $file_name = $animale['nome'] . ".jpeg";
-                $img = fopen($file_name, 'wb') or die("cannot open image\n");
-                fwrite($img, $data) or die("cannot write image data\n");
-                echo '<img src="' . $file_name . '">';
-
-                ?>
-            </div>
-            <div class="image-container">
-                <?php
-                // Recupera l'immagine dal database
-                $animale = $animali[3];
-                $data = pg_unescape_bytea($animale['image']);
-                $file_name = $animale['nome'] . ".jpeg";
-                $img = fopen($file_name, 'wb') or die("cannot open image\n");
-                fwrite($img, $data) or die("cannot write image data\n");
-                echo '<img src="' . $file_name . '">';
-
-                ?>
-            </div>
         </div>
-    </div>
+        
+        <div class="image-container">
+          <?php
+            inserisci(1);
+          ?>
+        </div>
 
-    <div class="dream">
-        <img src="../lingua-animali-2.avif">
-         <img src="../foto-divertenti-animali-buffi-cv.jpg">
-          <img src="../shutterstock_1673818144-560x700.jpg">
+        <div class="image-container">
+          <?php
+            inserisci(2);
+          ?>
+        </div>
+
+        <div class="image-container">
+        <?php
+            inserisci(3);
+          ?>
+        </div>
+
+          <div class="image-container">
+          <?php
+            inserisci(4);
+          ?>
+          </div>
+            
+      </div>
+
+        <div class="dream">
+        <?php
+        
+        inserisci(5);
+
+        ?>
+          <?php
+        
+          inserisci(6);
+
+          ?>
+            <?php
+        
+            inserisci(7);
+
+            ?>
            <img src="../lontre.webp">
             <img src="../images.jfif">
             
@@ -102,7 +94,6 @@
 
 
     </div>
-
     <div class="btn">
       <a href="#">More</a>
     </div>
