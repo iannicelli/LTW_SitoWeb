@@ -38,78 +38,109 @@
           <?php
             inserisci(1);
           ?>
+          <a href='../../animale.php?id=2'><input type="button" class="image-overlay-button" value="Adotta!"></a>
         </div>
 
         <div class="image-container">
           <?php
             inserisci(2);
           ?>
+          <a href='../../animale.php?id=3'><input type="button" class="image-overlay-button" value="Adotta!"></a>
         </div>
 
         <div class="image-container">
         <?php
             inserisci(3);
           ?>
+          <a href='../../animale.php?id=4'><input type="button" class="image-overlay-button" value="Adotta!"></a>
         </div>
 
           <div class="image-container">
           <?php
             inserisci(4);
           ?>
+          <a href='../../animale.php?id=5'><input type="button" class="image-overlay-button" value="Adotta!"></a>
           </div>
             
       </div>
 
         <div class="dream">
+        <div class="image-container">
         <?php
         
         inserisci(5);
 
         ?>
+        <a href='../../animale.php?id=6'><input type="button" class="image-overlay-button" value="Adotta!"></a>
+        </div>
+          <div class="image-container">
           <?php
-        
+          
           inserisci(6);
 
           ?>
+          <a href='../../animale.php?id=7'><input type="button" class="image-overlay-button" value="Adotta!"></a>
+          </div>
+            <div class="image-container">
             <?php
         
             inserisci(7);
 
             ?>
+            <a href='../../animale.php?id=8'><input type="button" class="image-overlay-button" value="Adotta!"></a>
+            </div>
+           <div class="image-container">
            <?php
         
             inserisci(8);
 
             ?>
+            <a href='../../animale.php?id=9'><input type="button" class="image-overlay-button" value="Adotta!"></a>
+            </div>
+            <div class="image-container">
             <?php
         
               inserisci(9);
 
             ?>
+            <a href='../../animale.php?id=10'><input type="button" class="image-overlay-button" value="Adotta!"></a>
+            </div>
             
       </div>
 
         <div class="dream">
+        <div class="image-container">
         <?php
         
           inserisci(10);
 
           ?>
+          <a href='../../animale.php?id=11'><input type="button" class="image-overlay-button" value="Adotta!"></a>
+          </div>
+         <div class="image-container">
          <?php
         
           inserisci(11);
 
           ?>
+          <a href='../../animale.php?id=13'><input type="button" class="image-overlay-button" value="Adotta!"></a>
+          </div>
+          <div class="image-container">
           <?php
         
             inserisci(12);
 
           ?>
-           <?php
+          <a href='../../animale.php?id=14'><input type="button" class="image-overlay-button" value="Adotta!"></a>
+          </div>
+          <div class="image-container">
+          <?php
         
             inserisci(13);
 
             ?>
+            <a href='../../animale.php?id=12'><input type="button" class="image-overlay-button" value="Adotta!"></a>
+            </div>
             
       </div>
 

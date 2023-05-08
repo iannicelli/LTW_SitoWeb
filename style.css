@@ -191,6 +191,9 @@ nav a:hover {
 
 }
 
+.form-control{
+    border-color: #E19854 ;
+}
 .container-text-center h4{
     font-size: 4em;
     font-weight: bolder;
@@ -206,3 +209,32 @@ nav a:hover {
     border-color: #FF0000;
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 0, 0, 0.6);
   }
+
+.col1{
+
+    width: 30px;
+}
+
+.col2{
+
+    width: 700px;
+}
+.btn-btn-primary{
+    font-family: 'Arial';
+    outline: none;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    padding: 10px 20px;
+    border: solid 1px #E19854;
+    background: #E19853;
+    border-radius: 8px;
+    font-weight : bold ;
+    border-spacing: 100;
+    
+
+}
+.btn-btn-primary:hover{
+    background-color: #e47e1f;
+}

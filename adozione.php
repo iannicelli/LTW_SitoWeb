@@ -26,7 +26,7 @@
             echo '<i>'.$_SESSION['nome'].' '.$_SESSION['cognome'].'</i>';
         }
     ?>
-	<div class="banner1">
+	<div class="banneradozione">
     <nav class="navbar fixed-top navbar-expand-md navbar-light" style="background-color: #E19853;">
         <div class="container">
             <a class ="navbar-brand mb-0 h1" href="#">
@@ -137,6 +137,11 @@
     
     <!--<form name="adozione" action="./adozioneDB.php?id=10" class="formadozione" method="post" enctype="multipart/form-data">-->
     <div class="row">
+    <!---------padding------------>
+
+    <div class="col1">
+        <br>
+    </div>
     <!---------primo colonna------------>
     <div class="col">
         <div class="mb-3">
@@ -185,10 +190,18 @@
     
 
     </div>
+    <!---------padding------------>
+    <div class="col1">
+        <br>
+    </div>
   </div>
 
 
+
   <div class="row">
+  <div class="col1">
+        <br>
+    </div>
     <div class="col">
     <label for="exampleFormControlFile1">Inserisci documento d'identità: </label>
     <input type="file" name="image" >
@@ -198,66 +211,84 @@
   <br>
   <br>
   <br>
-
-    <div class="form-group">
-    <br>
-        <label for="input">Da dove nasce il desiderio di adottare l'animale?</label>
-        <textarea class="form-control" name="desiderio" id="desidero" rows="2"></textarea>
-  </div>
+  <div class="row">
+    <div class="col1">
+            <br>
+    </div>
+    
+    <div class="col">
+            <br>
+    
+        <div class="form-group">
+            <br>
+            <label for="input">Da dove nasce il desiderio di adottare l'animale?</label>
+            <textarea class="form-control" name="desiderio" id="desidero" rows="2"></textarea>
+        </div>
  
 
-  <div class="form-group">
-  <br>
-        <label for="input">Di quante persone si compone la famiglia?</label>
-        <textarea class="form-control" name="famiglia" id="famiglia" rows="2"></textarea>
-  </div>
+        <div class="form-group">
+            <br>
+            <label for="input">Di quante persone si compone la famiglia?</label>
+            <textarea class="form-control" name="famiglia" id="famiglia" rows="2"></textarea>
+        </div>
 
-  <div class="form-group">
+        <div class="form-group">
+            <br>
+            <label for="input">In famiglia ci sono bambini, anziani, persone con disabilità psico-fisiche o con particolari
+            patologie? Di che età?</label>
+            <textarea class="form-control" name="varie" id="varie" rows="2"></textarea>
+        </div>
         <br>
-        <label for="input">In famiglia ci sono bambini, anziani, persone con disabilità psico-fisiche o con particolari
-        patologie? Di che età?</label>
-        <textarea class="form-control" name="varie" id="varie" rows="2"></textarea>
-  </div>
-  <br>
-  <br>
+        <br>
 
-  <div class="form-group">
-  <br>
-        <label for="input">Chi in famiglia si occuperà maggiormente dell'animale?</label>
-        <textarea class="form-control" name="occuparsi" id="occuparsi" rows="2"></textarea>
-  </div>
-  <br>
-  <br>
+        <div class="form-group">
+        <br>
+            <label for="input">Chi in famiglia si occuperà maggiormente dell'animale?</label>
+            <textarea class="form-control" name="occuparsi" id="occuparsi" rows="2"></textarea>
+        </div>
+        <br>
+        <br>
 
-  <div class="form-group">
-  <br>
-        <label for="input">Possedete attualmente altri animali? Se sì, quanti e quali (cani, gatti, conigli, roditori, uccellini,
-        galline, etc)?</label>
-        <textarea class="form-control" name="altri" id="altri" rows="2"></textarea>
-  </div>
-  <br>
-  <br>
+        <div class="form-group">
+        <br>
+            <label for="input">Possedete attualmente altri animali? Se sì, quanti e quali (cani, gatti, conigli, roditori, uccellini,
+            galline, etc)?</label>
+            <textarea class="form-control" name="altri" id="altri" rows="2"></textarea>
+        </div>
+        <br>
+        <br>
 
-
-    </div>
-  </div>
-
-
-
-  <div class="mb-3 form-check">
-    <br>
+        <div class="mb-3 form-check">
+        <br>
             <input type="checkbox" required class="form-check-input" id="exampleCheck1">
             <label class="form-check-label" for="exampleCheck1">Accetto tutte le condizioni</label>
+        </div>
+
+        <br>
+
+    </div> <!--chiudo l'unica grande colonna-->
+   
+    <div class="col1">
+            <br>
+    </div>
+    </div> <!--chiudo l'ultima row-->
     </div>
 
-    <br>
-       
-        <button type="submit" class="btn btn-primary">Submit</button>
+    <div class="row">
+    <div class="col2">
+            <br>
+    </div>
+    <div class="col">
+        <button type="submit" class="btn-btn-primary">Submit</button>
+    </div>
+    <div class="col2">
+            <br>
+    </div>
+    </div>
 
         <?php
         //verifico caricament
         if(!isset($_FILES['image']) || !is_uploaded_file($_FILES['image']['tmp_name'])){
-            echo 'File non inviato';
             exit;
         }
 
@@ -275,12 +306,12 @@
             echo 'Caricamento invalido';
         }
     ?>
-
 </form>
 
 </div>
 
-
+<br><br><br>
+<!--aggiungere footer-->
 
 
         <br>
