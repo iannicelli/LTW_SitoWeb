@@ -159,7 +159,8 @@
         ?>
         </label> 
         <br>
-        <br><br><br><br><input type="submit" value="Adotta!">
+        <br><br><br><br>
+        <a href="./adozione.php?id=<?php echo $id; ?>"><input type = "button" class="button" value="Adotta!"></a>
       </form>
     </div>
   </div>

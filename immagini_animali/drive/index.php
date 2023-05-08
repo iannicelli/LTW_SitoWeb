@@ -76,17 +76,40 @@
             inserisci(7);
 
             ?>
-           <img src="../lontre.webp">
-            <img src="../images.jfif">
+           <?php
+        
+            inserisci(8);
+
+            ?>
+            <?php
+        
+              inserisci(9);
+
+            ?>
             
       </div>
 
         <div class="dream">
-        <img src="../comportamenti-animali-3.avif">
-         <img src="../scimmia-che-conta_1020x680.avif">
-          <img src="../images (1).jfif">
-           <img src="../WhatsApp Image 2023-04-15 at 22.44.19.jpeg">
-            <img src="../WhatsApp Image 2023-04-15 at 22.44.58.jpeg">
+        <?php
+        
+          inserisci(10);
+
+          ?>
+         <?php
+        
+          inserisci(11);
+
+          ?>
+          <?php
+        
+            inserisci(12);
+
+          ?>
+           <?php
+        
+            inserisci(13);
+
+            ?>
             
       </div>
 

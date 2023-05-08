@@ -5,7 +5,7 @@
     include '../../login/loginDB.php';
 
     // Query per recuperare i primi 10 animali dal database
-        $query = "SELECT * FROM animali LIMIT 8";
+        $query = "SELECT * FROM animali";
         $result = pg_query($db, $query);
     
         if ($result && pg_num_rows($result) > 0) {

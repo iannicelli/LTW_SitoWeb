@@ -19,8 +19,9 @@
     $es_data = pg_escape_bytea($data);
     fclose($img);
 
+
     $query = "INSERT INTO animali (id, nome, image, casa_provvisoria, età, tipologia, descrizione, razza, adottato, adottato_da, caricato_da)
-     VALUES (8,'$nome', '$es_data', '$casa', '$eta', '$tipologia', '$descrizione', '$razza', false, null, null)";
+     VALUES (12,'$nome', '$es_data', '$casa', '$eta', '$tipologia', '$descrizione', '$razza', false, null, null)";
     
     pg_query($dbconn, $query); 
     pg_close($dbconn);

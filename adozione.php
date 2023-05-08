@@ -26,7 +26,7 @@
             echo '<i>'.$_SESSION['nome'].' '.$_SESSION['cognome'].'</i>';
         }
     ?>
-	<div class="banner">
+	<div class="banner1">
     <nav class="navbar fixed-top navbar-expand-md navbar-light" style="background-color: #E19853;">
         <div class="container">
             <a class ="navbar-brand mb-0 h1" href="#">
@@ -110,33 +110,53 @@
         <div class="prova" style="text-align: center;">
             <img src="./immagini logo/Adozione.png" style="width: 200px; height: 200px;">
         </div>
-        <h4>Modulo di adozione</h4>
+        <?php 
+            include './login/loginDB.php';
+
+            $id = $_GET['id'];
+
+            $query = "SELECT * FROM animali WHERE id = $id";
+            $result = pg_query($db, $query);
+            if ($result && pg_num_rows($result) > 0) {
+                // Recuperare i dati dell'animale dal risultato della query
+                $animale = pg_fetch_assoc($result);
+                
+              } else {
+                // Nessun animale trovato con l'id specificato
+                echo "Animale non trovato.";
+              }
+
+        echo " <h4>Modulo di adozione di ".$animale['nome']."</h4>"
+        ?>
+        
         <br>
         <br>
         
+    <!-- aggiungere un js con controlli -->
+    <form name="adozione" action="adozioneBD?id=<?php echo $id; ?>" class="formadozione" method="post" enctype="multipart/form-data">
     
-    <form>
+    <!--<form name="adozione" action="./adozioneDB.php?id=10" class="formadozione" method="post" enctype="multipart/form-data">-->
     <div class="row">
     <!---------primo colonna------------>
     <div class="col">
         <div class="mb-3">
             <label for="nome" class="form-label">Nome di chi adotterà l'animale*</label>
-            <input type="text" class="form-control" id="nome" aria-describedby="emailHelp">
+            <input type="text" required name= "nome" class="form-control" id="nome" aria-describedby="emailHelp">
         </div>
         
         <div class="mb-3">
             <label for="indirizzo" class="form-label">Indirizzo di residenza*</label>
-            <input type="password" class="form-control" id="exampleInputPassword1">
+            <input type="text" required name="indirizzo" class="form-control" id="indirizzo">
         </div>
         
         <div class="mb-3">
             <label for="provincia" class="form-label">Provincia di residenza*</label>
-            <input type="password" class="form-control" id="exampleInputPassword1">
+            <input type="text"required  name = "provincia" class="form-control" id="provincia">
         </div>
         
         <div class="mb-3">
             <label for="telefono" class="form-label">Recapito telefonico*</label>
-            <input type="password" class="form-control" id="exampleInputPassword1">
+            <input type="text"required name="telefono" class="form-control" id="telefono">
         </div>
         
     </div>
@@ -144,22 +164,22 @@
     <div class="col">
         <div class="mb-3">
             <label for="cognome" class="form-label">Cognome di chi adotterà l'animale*</label>
-            <input type="text" class="form-control" id="nome" aria-describedby="emailHelp">
+            <input type="text" required name="cognome" class="form-control" id="cognome" aria-describedby="emailHelp">
         </div>
         
         <div class="mb-3">
             <label for="indirizzo" class="form-label">Città di residenza*</label>
-            <input type="password" class="form-control" id="citta">
+            <input type="text" required name="citta" class="form-control" id="citta">
         </div>
         
         <div class="mb-3">
             <label for="provincia" class="form-label">CAP*</label>
-            <input type="password" class="form-control" id="cap">
+            <input type="text" required name="cap" class="form-control" id="cap">
         </div>
         
         <div class="mb-3">
             <label for="telefono" class="form-label">Email*</label>
-            <input type="password" class="form-control" id="email">
+            <input type="text" required name="email" class="form-control" id="email">
         </div>
               
     
@@ -171,7 +191,9 @@
   <div class="row">
     <div class="col">
     <label for="exampleFormControlFile1">Inserisci documento d'identità: </label>
-    <input type="file" class="form-control-file" id="doc">
+    <input type="file" name="image" >
+
+    
   </div>
   <br>
   <br>
@@ -180,21 +202,21 @@
     <div class="form-group">
     <br>
         <label for="input">Da dove nasce il desiderio di adottare l'animale?</label>
-        <textarea class="form-control" id="desidero" rows="2"></textarea>
+        <textarea class="form-control" name="desiderio" id="desidero" rows="2"></textarea>
   </div>
  
 
   <div class="form-group">
   <br>
         <label for="input">Di quante persone si compone la famiglia?</label>
-        <textarea class="form-control" id="famiglia" rows="2"></textarea>
+        <textarea class="form-control" name="famiglia" id="famiglia" rows="2"></textarea>
   </div>
 
   <div class="form-group">
         <br>
         <label for="input">In famiglia ci sono bambini, anziani, persone con disabilità psico-fisiche o con particolari
         patologie? Di che età?</label>
-        <textarea class="form-control" id="famiglia" rows="2"></textarea>
+        <textarea class="form-control" name="varie" id="varie" rows="2"></textarea>
   </div>
   <br>
   <br>
@@ -202,7 +224,7 @@
   <div class="form-group">
   <br>
         <label for="input">Chi in famiglia si occuperà maggiormente dell'animale?</label>
-        <textarea class="form-control" id="famiglia" rows="2"></textarea>
+        <textarea class="form-control" name="occuparsi" id="occuparsi" rows="2"></textarea>
   </div>
   <br>
   <br>
@@ -211,7 +233,7 @@
   <br>
         <label for="input">Possedete attualmente altri animali? Se sì, quanti e quali (cani, gatti, conigli, roditori, uccellini,
         galline, etc)?</label>
-        <textarea class="form-control" id="animali" rows="2"></textarea>
+        <textarea class="form-control" name="altri" id="altri" rows="2"></textarea>
   </div>
   <br>
   <br>
@@ -224,7 +246,7 @@
 
   <div class="mb-3 form-check">
     <br>
-            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <input type="checkbox" required class="form-check-input" id="exampleCheck1">
             <label class="form-check-label" for="exampleCheck1">Accetto tutte le condizioni</label>
     </div>
 
@@ -232,6 +254,27 @@
        
         <button type="submit" class="btn btn-primary">Submit</button>
 
+        <?php
+        //verifico caricament
+        if(!isset($_FILES['image']) || !is_uploaded_file($_FILES['image']['tmp_name'])){
+            echo 'File non inviato';
+            exit;
+        }
+
+        //impostiamo il percorso della cartella dove mettere il file
+        $uploaddir = 'documenti/';
+        //recupero il percorso temporaneo del file
+        $immagine_tmp = $_FILES['image']['tmp_name'];
+        //recupero il nome originale del file caricato
+        $immagine_name = $_FILES['image']['name'];
+        //verifico tramite function se il file è stato spostato nella cartella scelta
+        if(move_uploaded_file($immagine_tmp, $uploaddir.$immagine_name)){
+            echo 'Documento inviato';
+        }
+        else{
+            echo 'Caricamento invalido';
+        }
+    ?>
 
 </form>
 
