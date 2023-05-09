@@ -15,6 +15,7 @@
 
 <?php
   include '../inserisci.php';
+  include './checkIsAdopted.php';
 ?>
 
 <body>
@@ -28,17 +29,31 @@
         <div class="image-container">
 
           <?php
+
             inserisci(0);
+            if(!isAdopted(1)){
+              
+              echo '<a href="../../animale.php?id=1"><input type="button" class="image-overlay-button" value="Adotta!"></a>';
+            }
+            else{
+              echo '<a href="./giaAdottato.html"><input type="button" class="image-overlay-button" value="Adottato"></a>';
+            }
+          
           ?>
-          <a href='../../animale.php?id=1'><input type="button" class="image-overlay-button" value="Adotta!"></a>
 
         </div>
         
         <div class="image-container">
           <?php
             inserisci(1);
+            if(!isAdopted(2)){
+              
+              echo '<a href="../../animale.php?id=2"><input type="button" class="image-overlay-button" value="Adotta!"></a>';
+            }
+            else{
+              echo '<a href="giaAdottato.html"><input type="button" class="image-overlay-button" value="Adottato"></a>';
+            }
           ?>
-          <a href='../../animale.php?id=2'><input type="button" class="image-overlay-button" value="Adotta!"></a>
         </div>
 
         <div class="image-container">
