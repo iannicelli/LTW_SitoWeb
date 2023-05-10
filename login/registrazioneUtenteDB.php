@@ -15,7 +15,7 @@
 
     if(pg_num_rows($result) > 0) {
         
-        header("location: RegistrazioneUtente.php?warning=1 && mail=$email");
+        header("location: ../generica.php?messaggio=emailPresente");
     }
 
     $query= "INSERT INTO utenti (cognome, nome, email, password) 

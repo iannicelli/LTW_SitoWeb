@@ -113,6 +113,24 @@
          
                      </div>';
              }
+
+             else if($messaggio == 'emailPresente'){
+                echo' <div id="login"><div id="titolologin"><label>Email presente</label></div>
+             
+                     <div id="testo">
+                     <br>
+                     <br>
+                     
+                 Questa email risulta già registrata nel nostro database!<br>
+                 Clicca sul pulsante in basso per essere reindirizzato alla pagina di registrazione e provare con una nuova email.
+                 </label><br>
+                 </div>
+         
+                 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                     <a href="./login/registrazioneUtente.php"><input type="button" class="button" id="button" name="Back" value="Registrati!" /></a>
+         
+                     </div>';
+             }
              
         ?>
         

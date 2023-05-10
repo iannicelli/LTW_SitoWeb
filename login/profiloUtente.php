@@ -72,17 +72,17 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item active">
-                    <a class="nav-link active" href="#"> <!-- disabled-->
-                        Home<span class="sr-only">(current)</span></a>
+                    <a class="nav-link active" href="../nav.php"> <!-- disabled-->
+                        Home<span class="sr-only"></span></a>
                     </a>
                 </li>
-                <li class="nav-item active" href="#" >
-                    <a href="./AboutUs.html" class="nav-link active" >
+                <li class="nav-item active" href="../AboutUs.html" >
+                    <a href="../AboutUs.html" class="nav-link active" >
                         AboutUs
                     </a>    
                 </li>
-                <li class="nav-item active" href="#">
-                    <a href="./pets.html" class="nav-link active">
+                <li class="nav-item active" href="../immagini_animali/drive/pets.php">
+                    <a href="../immagini_animali/drive/pets.php" class="nav-link active">
                         Pets
                     </a>
                 </li>
@@ -160,14 +160,13 @@
 
                 <p style="text-align:center">
                     <a href="ModificaPassword.php"> <input type='submit' id="pass" value='Modifica Password'></a>
-                    <a href="ModificaDati.php"> <input type='submit' id="dati" value='Modifica Dati'></a>
                 </p>
     
             </div>
 
     </div>
     <div class="container_button">
-    <input type="button" id="bot_1" value="Adotta un amico">
+    <a href="../immagini_animali/drive/pets.php"><input type="button" id="bot_1" value="Adotta un amico"></a>
     &emsp;
     <input type="button" id="bot_2" value="Aggiungi un 
     amico">
@@ -189,7 +188,7 @@
         <nav_bassa></nav_bassa>
     </div>
 
-    <script type="application/javascript" src="./nav_bassa.js"></script>
+    <script type="application/javascript" src="../nav_bassa.js"></script>
 
             <!--follie di chiara-->
             

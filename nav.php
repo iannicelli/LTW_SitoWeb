@@ -25,7 +25,8 @@
         .w3-button {width:150px;}
     </style>
     <!-- follie di chiara-->
-
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
     <link rel="icon" href="./Immagini logo/favicon.png" type="image/png">
     <title>Tale of Tails</title>
   </head>
@@ -231,7 +232,12 @@
 </section>
 
 	
-	
+<div id="nav_bassa">
+        <nav_bassa></nav_bassa>
+    </div>
+
+    <script type="application/javascript" src="../nav_bassa.js"></script>
+
 	
 <!--script-link----------->
 <script type="text/javascript" src="./Responsive Ecommrence Slider/js/script.js"></script>
