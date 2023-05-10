@@ -163,6 +163,12 @@
 
 
 <!-------------CAROSELLO------------------------->
+
+<?php
+	include './login/loginDB.php'
+
+	
+?>
 <section class="slider">
 	<ul id="autoWidth" class="cs-hidden">
 	<!--1------------------------------------>	
