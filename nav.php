@@ -165,231 +165,70 @@
 <!-------------CAROSELLO------------------------->
 
 <?php
-	include './login/loginDB.php'
+	include './login/loginDB.php';
+	$query = "SELECT * FROM animali order by id limit 9 ";
+	$result = pg_query($db, $query);
 
+	if ($result && pg_num_rows($result) > 0) {
+	  // Recuperare i dati dell'animale dal risultato della query in un array
+	  $animali = pg_fetch_all($result);
+	} else {
+		// Nessun animale trovato con l'id specificato
+		echo "Animale non trovato.";
+	}
+
+	
 	
 ?>
 <section class="slider">
 	<ul id="autoWidth" class="cs-hidden">
-	<!--1------------------------------------>	
-  <li class="item-a">
-<!--box-slider--------------->
-	<div class="box">
-	<!--img-box---------->
-	<div class="slide-img">
-	<img src="./immagini_animali/animali-da-reddito.jpg" alt="1">
-	<!--overlayer---------->
-	<div class="overlay">
-	<!--buy-btn------>	
-	<a href="#" class="buy-btn">Adotta</a>	
-	</div>
-	</div>
-	<!--detail-box--------->
-	<div class="detail-box">
-	<!--type-------->
-	<div class="type">
-	<a href="#">Rabbed Cardigan</a>
-	<span>Noe Arrival</span>
-	</div>
-	<!--price-------->
-	<a href="#" class="price">$23</a>
+		<!--1------------------------------------>	
+		<?php
+			$j = 1;
+			for($i = 0; $i < 9; $i++){
+				echo '
+					<li class="item-a">
+						<!--box-slider--------------->
+						<div class="box">
+							<!--img-box---------->
+							<div class="slide-img">
+				';			
+								$animale = $animali[$i];
+								$data = pg_unescape_bytea($animale['image']);
+								$file_name = $animale['nome'] . ".jpeg";
+								$img = fopen($file_name, 'wb') or die("cannot open image\n");
+								fwrite($img, $data) or die("cannot write image data\n");
+								echo '<img src="' . $file_name . '" alt="'.$j.'">';
+
+								echo '
+								<!--overlayer---------->
+								<div class="overlay">
+									<!--buy-btn------>
+									<a href="#" class="buy-btn">Adotta</a>
+								</div>
+							</div>
+							<!--detail-box--------->
+							<div class="detail-box">
+								<!--type-------->
+								<div class="type">';
+									echo $animale['nome'];
+									echo'
+									<a href="./animale.php?id='.$j.'">Scopri di più su di me</a>
+								</div>
+								<!--price-------->
+								<a href="#" class="price"><img src="./zampa.png"  width="30" height="30"></a>
+							</div>
+						</div>
+					</li>
+				';
+				$j++;	
+			}
+
+		?>
 		
-	</div>
 	
-	</div>		
-</li>
-	<!--2------------------------------------>	
-  <li class="item-b">
-<!--box-slider--------------->
-	<div class="box">
-	<!--img-box---------->
-	<div class="slide-img">
-	<img src="./immagini_animali/corgi-.jpg" alt="2">
-	<!--overlayer---------->
-	<div class="overlay">
-	<!--buy-btn------>	
-	<a href="#" class="buy-btn">Adotta</a>	
-	</div>
-	</div>
-	<!--detail-box--------->
-	<div class="detail-box">
-	<!--type-------->
-	<div class="type">
-	<a href="#">Rabbed Cardigan</a>
-	<span>Noe Arrival</span>
-	</div>
-	<!--price-------->
-	<a href="#" class="price">$20</a>
-		
-	</div>
-	
-	</div>		
-</li>
-	<!--3------------------------------------>	
-  <li class="item-c">
-<!--box-slider--------------->
-	<div class="box">
-	<!--img-box---------->
-	<div class="slide-img">
-	<img src="./immagini_animali/happy-cat-month-1.webp" alt="3">
-	<!--overlayer---------->
-	<div class="overlay">
-	<!--buy-btn------>	
-	<a href="#" class="buy-btn">Adotta</a>	
-	</div>
-	</div>
-	<!--detail-box--------->
-	<div class="detail-box">
-	<!--type-------->
-	<div class="type">
-	<a href="#">Rabbed Cardigan</a>
-	<span>Noe Arrival</span>
-	</div>
-	<!--price-------->
-	<a href="#" class="price">$26</a>
-		
-	</div>
-	
-	</div>		
-</li>
-	<!--4------------------------------------>	
-  <li class="item-d">
-<!--box-slider--------------->
-	<div class="box">
-	<!--img-box---------->
-	<div class="slide-img">
-	<img src="./immagini_animali/lontre.webp" alt="4">
-	<!--overlayer---------->
-	<div class="overlay">
-	<!--buy-btn------>	
-	<a href="#" class="buy-btn">Adotta</a>	
-	</div>
-	</div>
-	<!--detail-box--------->
-	<div class="detail-box">
-	<!--type-------->
-	<div class="type">
-	<a href="#">Rabbed Cardigan</a>
-	<span>Noe Arrival</span>
-	</div>
-	<!--price-------->
-	<a href="#" class="price">$27</a>
-		
-	</div>
-	
-	</div>		
-</li>
-	<!--5------------------------------------>	
-  <li class="item-e">
-<!--box-slider--------------->
-	<div class="box">
-	<!--img-box---------->
-	<div class="slide-img">
-	<img src="./immagini_animali/WhatsApp Image 2023-04-15 at 22.28.59.jpeg" alt="5">
-	<!--overlayer---------->
-	<div class="overlay">
-	<!--buy-btn------>	
-	<a href="#" class="buy-btn">Adotta</a>	
-	</div>
-	</div>
-	<!--detail-box--------->
-	<div class="detail-box">
-	<!--type-------->
-	<div class="type">
-	<a href="#">Rabbed Cardigan</a>
-	<span>Noe Arrival</span>
-	</div>
-	<!--price-------->
-	<a href="#" class="price">$26</a>
-		
-	</div>
-	
-	</div>		
-</li>
-	<!--6------------------------------------>	
-  <li class="item-f">
-<!--box-slider--------------->
-	<div class="box">
-	<!--img-box---------->
-	<div class="slide-img">
-	<img src="./immagini_animali/foto-divertenti-animali-buffi-cv.jpg" alt="6">
-	<!--overlayer---------->
-	<div class="overlay">
-	<!--buy-btn------>	
-	<a href="#" class="buy-btn">Adotta</a>	
-	</div>
-	</div>
-	<!--detail-box--------->
-	<div class="detail-box">
-	<!--type-------->
-	<div class="type">
-	<a href="#">Rabbed Cardigan</a>
-	<span>Noe Arrival</span>
-	</div>
-	<!--price-------->
-	<a href="#" class="price">$30</a>
-		
-	</div>
-	
-	</div>		
-</li>
-	<!--7------------------------------------>	
-  <li class="item-g">
-<!--box-slider--------------->
-	<div class="box">
-	<!--img-box---------->
-	<div class="slide-img">
-	<img src="./immagini_animali/WhatsApp Image 2023-04-15 at 22.44.19.jpeg" alt="7">
-	<!--overlayer---------->
-	<div class="overlay">
-	<!--buy-btn------>	
-	<a href="#" class="buy-btn">Adotta</a>	
-	</div>
-	</div>
-	<!--detail-box--------->
-	<div class="detail-box">
-	<!--type-------->
-	<div class="type">
-	<a href="#">Rabbed Cardigan</a>
-	<span>Noe Arrival</span>
-	</div>
-	<!--price-------->
-	<a href="#" class="price">$33</a>
-		
-	</div>
-	
-	</div>		
-</li>
-	<!--8------------------------------------>	
-  <li class="item-h">
-<!--box-slider--------------->
-	<div class="box">
-	<!--img-box---------->
-	<div class="slide-img">
-	<img src="./immagini_animali/WhatsApp Image 2023-04-15 at 22.44.58.jpeg" alt="8">
-	<!--overlayer---------->
-	<div class="overlay">
-	<!--buy-btn------>	
-	<a href="#" class="buy-btn">Adotta</a>	
-	</div>
-	</div>
-	<!--detail-box--------->
-	<div class="detail-box">
-	<!--type-------->
-	<div class="type">
-	<a href="#">Rabbed Cardigan</a>
-	<span>Noe Arrival</span>
-	</div>
-	<!--price-------->
-	<a href="#" class="price">$43</a>
-		
-	</div>
-	
-	</div>		
-</li>
-  
-</ul>
-	</section>
+	</ul>
+</section>
 
 	
 	
