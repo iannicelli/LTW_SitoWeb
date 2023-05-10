@@ -29,9 +29,9 @@
             header("location: ../nav.php");
         }
         else {
-            header("location: ./generica.php?messaggio=passwordErrata");
+            header("location: ../generica.php?messaggio=passwordErrata");
         }
     }else{
-        header("location: ./generica.php?messaggio=emailNonEsistente");
+        header("location: ../generica.php?messaggio=emailNonEsistente");
     }
 ?>

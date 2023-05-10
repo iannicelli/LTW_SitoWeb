@@ -18,7 +18,18 @@ body {
     border-radius:25px;
     -webkit-border-radius:25px;
     -moz-border-radius: 25px;
-    }
+      /* Imposta la visibilità del box a nascosto */
+      opacity: 0;
+      visibility: hidden;
+      transition: all 1s ease-out; /* Imposta la transizione con una durata di 1 secondo e una funzione di accelerazione */
+  
+      }
+      
+      #login.visible {
+          /* Imposta la visibilità del box a visibile */
+          opacity: 1;
+          visibility: visible;
+        }
     
    #titolologin{
     font-family: 'Arial';

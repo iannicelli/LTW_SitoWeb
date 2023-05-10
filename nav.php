@@ -67,7 +67,7 @@
                     </a>    
                 </li>
                 <li class="nav-item active" href="#">
-                    <a href="./immagini_animali/drive/index.php" class="nav-link active">
+                    <a href="./immagini_animali/drive/pets.php" class="nav-link active">
                         Pets
                     </a>
                 </li>
@@ -126,7 +126,7 @@
 		<br>
 		<br>
 		<div class="centrato_bottone">
-            <form action="Iscrizione.html">
+            <form action="./immagini_animali/drive/pets.php">
 
                 <button type="submit" class="pulsante"> Trova un amico! </button>
             </form>

@@ -29,6 +29,6 @@
 
     pg_close($db);
 
-    header("location: ./generica.php?messaggio=registrazioneCompletata")
+    header("location: ../generica.php?messaggio=registrazioneCompletata")
 
 ?>

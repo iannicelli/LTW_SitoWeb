@@ -17,6 +17,7 @@
         }
         
         // Recupera l'immagine dal database
+        $x--;
         $animale = $animali[$x];
         $data = pg_unescape_bytea($animale['image']);
         $file_name = $animale['nome'] . ".jpeg";

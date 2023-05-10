@@ -238,3 +238,8 @@ nav a:hover {
 .btn-btn-primary:hover{
     background-color: #e47e1f;
 }
+
+.btn {
+    display: inline-block; /* oppure "display: inline;" */
+    margin: 0 10px;
+  }

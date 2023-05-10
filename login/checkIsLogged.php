@@ -8,9 +8,5 @@
         return false;
  }
 
- function isAdmin() {
-    if(isset($_SESSION['ruolo']))
-        return $_SESSION['ruolo'] == "ADMIN";
- }
 
 ?>

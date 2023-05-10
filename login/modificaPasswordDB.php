@@ -28,7 +28,7 @@
                 exit;
             } 
 
-            header("location: generica.php?messaggio=modificaEffettuata");
+            header("location: ../generica.php?messaggio=modificaEffettuata");
         }else{
         header("location: ModificaPassword.php?errore=1");
         }

@@ -1,3 +1,12 @@
+
+$(document).ready(function() {
+    $("#login").fadeIn(600); // Imposta il tempo in millisecondi per l'animazione
+});
+
+$(document).ready(function() {
+    $("#login").addClass("visible");
+});
+
 function controlli(){
     if (document.reg.nome.value == ""){
         alert("Devi inserire un nome");
@@ -36,4 +45,6 @@ function controlli(){
     }
     return true;
 };
+
+
 

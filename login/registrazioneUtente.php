@@ -2,6 +2,7 @@
     <head>
         <title>Form-Registrazione</title>
         <link rel="stylesheet" href="styleregistrazione.css" type="text/css" />
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src="RegistrazioneUtente.js"></script>
     </head>
     <body background="./sfondo/giusta.jpg">
@@ -16,7 +17,7 @@
             }  
         ?>
 
-    <div class="content" id="login"><div id="titolologin"><label>Registrazione</label></div>
+    <div id="login"><div id="titolologin"><label>Registrazione</label></div>
             <form name = "reg" action="registrazioneUtenteDB.php" class="formlogin" method="post" onsubmit="return controlli();">
 
             <label>Nome:</label>
