@@ -5,6 +5,7 @@
   <?php
 
     include './login/loginDB.php';
+    include "./login/checkIsLogged.php";
 
     $id = $_GET['id'];
     $query = "SELECT * FROM animali WHERE id = $id";
@@ -28,7 +29,8 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <link rel="stylesheet" type="text/css" href="animale.css">
 
     <!-- follie di chiara-->
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -160,8 +162,16 @@
         </label> 
         <br>
         <br><br><br><br>
-        <a href="./adozione.php?id=<?php echo $id; ?>"><input type = "button" class="button" value="Adotta!"></a>
-      </form>
+        <?php
+          if(isLogged()){
+            echo '<a href="./adozione.php?id='.$id.'"><input type = "button" class="button" value="Adotta!"></a>';
+          }
+          else {
+            echo '<a href="./generica.php?messaggio=nonLoggato"><input type = "button" class="button" value="Adotta!"></a>';
+          }
+        ?>
+
+        </form>
     </div>
   </div>
 </div>

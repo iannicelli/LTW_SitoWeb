@@ -14,7 +14,7 @@ body {
     resize: vertical;
   }
   
-  button {
+  .button {
     background-color:  #E19853;
     background-image: url("./login/sfondo/per_bottone.jpg");
     color: black;
@@ -24,7 +24,7 @@ body {
     border-radius: 8px;
   }
   
-  button:hover {
+  .button:hover {
     background-color: #e47e1f;
   }
   

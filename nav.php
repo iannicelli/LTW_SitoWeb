@@ -204,7 +204,7 @@
 								<!--overlayer---------->
 								<div class="overlay">
 									<!--buy-btn------>
-									<a href="#" class="buy-btn">Adotta</a>
+									<a href="./animale.php?id='.$j.'" class="buy-btn">Adotta</a>
 								</div>
 							</div>
 							<!--detail-box--------->
