@@ -18,7 +18,6 @@
         header("location: RegistrazioneUtente.php?warning=1 && mail=$email");
     }
 
-    //$password= password_hash($pass, PASSWORD_DEFAULT);
     $query= "INSERT INTO utenti (cognome, nome, email, password) 
             VALUES ('$cognome', '$nome', '$email', '$password');";
 
@@ -30,6 +29,6 @@
 
     pg_close($db);
 
-    header("location: ./regCompleta.html")
+    header("location: ./generica.php?messaggio=registrazioneCompletata")
 
 ?>
