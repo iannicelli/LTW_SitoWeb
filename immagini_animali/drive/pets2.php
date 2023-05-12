@@ -14,19 +14,10 @@
 ?>
 
 <body>
-  <section>
   <div class="container">
     <div class="heading">
       <h3>I nostri amici</h3>
     </div>
-    <ul>
-            <li class="list active" data-filter="all">All</li>
-            <li class="list" data-filter="cane">Cane</li>
-            <li class="list" data-filter="gatto">Gatto</li>
-            <li class="list" data-filter="coniglio">Coniglio</li>
-            <li class="list" data-filter="criceto">Criceto</li>
- 
-          </ul>
     <div class="box">
       <div class="dream">
         
@@ -119,24 +110,6 @@
 
 
   </div>
-
-  <script type="text/javascript">
-        $(document).ready(function(){
-            $('.list').click(function(){
-                const value = $(this).attr('data-filter');
-                if(value == 'all'){
-                    $('.itemBox').show('1000');
-                }
-                else{
-                    $('.itemBox').not('.'+value).hide('1000');
-                    $('.itemBox').filter('.'+value).show('1000');
-                }
-            })
-            $('.list').click(function(){
-                $(this).addClass('active').siblings().removeClass('active');
-            })
-        })
-    </script>
 
 </body>
 </html>

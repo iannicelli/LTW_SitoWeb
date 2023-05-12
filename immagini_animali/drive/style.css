@@ -7,6 +7,25 @@
   font-family: 'Poppins', sans-serif;
 }
 
+ul{
+  display: flex;
+  margin-bottom: 10px;
+}
+
+ul li{
+  list-style: none;
+  background: #eee;
+  padding: 8px 20px;
+  margin: 5px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  z-index: 1000;
+}
+ul li.active{
+  background: #E19853;
+  color: black;
+}
+
 .container{
   display: flex;
   flex-direction: column;

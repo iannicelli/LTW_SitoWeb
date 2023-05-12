@@ -19,4 +19,5 @@ CREATE TABLE immagini (
     valore BYTEA
 );
 
-select * from animali
+
+select * from animali order by id

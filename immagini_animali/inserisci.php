@@ -23,6 +23,6 @@
         $file_name = $animale['nome'] . ".jpeg";
         $img = fopen($file_name, 'wb') or die("cannot open image\n");
         fwrite($img, $data) or die("cannot write image data\n");
-        echo '<img src="' . $file_name . '">';
+        echo '<img class="itemBox '.$animale['tipologia'].'" src="' . $file_name . '">';
     }
 ?>
