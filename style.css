@@ -180,6 +180,17 @@ nav b:hover {
     }
 }
 
+
+.container-text-center{
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 40px;
+}
+
+.row2{
+    margin-right: 25%;
+}
+
 .container-text-center h4{
     font-size: 4em;
     font-weight: bolder;
@@ -195,3 +206,11 @@ nav b:hover {
     border-color: #FF0000;
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 0, 0, 0.6);
   }
+
+
+
+#bottone{
+    background-color: #E19853;
+    border-color: #E19853;
+    float:right;
+}

@@ -139,6 +139,7 @@
         
     </div>
 
+    <!---------seconda colonna------------>
     <div class="col">
         <div class="mb-3">
             <label for="cognome" class="form-label">Cognome di chi adotterà l'animale*</label>
@@ -166,15 +167,14 @@
   </div>
 
 
-  <div class="row">
+  <!---------unica colonna------------>
+  <div class="row2">
     <div class="col">
-    <label for="exampleFormControlFile1">Inserisci documento d'identità: </label>
+    <label class="aiuto" for="exampleFormControlFile1">Inserisci documento d'identità: </label>
     <input type="file" class="form-control-file" id="doc">
   </div>
-  <br>
-  <br>
-  <br>
 
+  <br>
     <div class="form-group">
     <br>
         <label for="input">Da dove nasce il desiderio di adottare l'animale?</label>
@@ -195,15 +195,11 @@
         <textarea class="form-control" id="famiglia" rows="2"></textarea>
   </div>
   <br>
-  <br>
 
   <div class="form-group">
-  <br>
         <label for="input">Chi in famiglia si occuperà maggiormente dell'animale?</label>
         <textarea class="form-control" id="famiglia" rows="2"></textarea>
   </div>
-  <br>
-  <br>
 
   <div class="form-group">
   <br>
@@ -212,14 +208,11 @@
         <textarea class="form-control" id="animali" rows="2"></textarea>
   </div>
   <br>
-  <br>
 
 
     </div>
-  </div>
 
-
-
+    
   <div class="mb-3 form-check">
     <br>
             <input type="checkbox" class="form-check-input" id="exampleCheck1">
@@ -228,7 +221,11 @@
 
     <br>
        
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" class="btn btn-primary" id="bottone">Submit</button>
+
+
+  </div>
+
 
 
 </form>
