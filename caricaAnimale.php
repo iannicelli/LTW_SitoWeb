@@ -171,7 +171,7 @@
       <option>Gatto</option>
       <option>Criceto</option>
       <option>Coniglio</option>
-      <option>Rettile</option>
+      <option>Uccello</option>
     </select>
   </div>
        
