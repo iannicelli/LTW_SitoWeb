@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="icon" href="./Immagini logo/favicon.png" type="image/png">
-    <link rel="stylesheet" type="text/css" href="style.css">
     
 
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -15,7 +14,7 @@
     </style>
     
 
-    <title>Modulo adozione</title>
+    <title>Modulo inserimento del trovatello</title>
 </head>
 
 <body style="height:600px">
@@ -126,7 +125,7 @@
                 echo "Animale non trovato.";
               }
 
-        echo " <h4>Modulo di adozione di ".$animale['nome']."</h4>"
+        echo " <h4>Modulo di inserimento di ".$animale['nome']."</h4>"
         ?>
         
         <br>
@@ -145,51 +144,73 @@
     <!---------primo colonna------------>
     <div class="col">
         <div class="mb-3">
-            <label for="nome" class="form-label">Nome di chi adotterà l'animale*</label>
+            <label for="nome" class="form-label">Nome del trovatello (sarai tu a darlo, opta per un bel nome!)</label>
             <input type="text" required name= "nome" class="form-control" id="nome" aria-describedby="emailHelp">
         </div>
         
         <div class="mb-3">
-            <label for="indirizzo" class="form-label">Indirizzo di residenza*</label>
+            <label for="indirizzo" class="form-label">Indirizzo della casa provvisoria*</label>
             <input type="text" required name="indirizzo" class="form-control" id="indirizzo">
         </div>
         
         <div class="mb-3">
-            <label for="provincia" class="form-label">Provincia di residenza*</label>
+            <label for="provincia" class="form-label">Provincia della casa provvisoria*</label>
             <input type="text"required  name = "provincia" class="form-control" id="provincia">
         </div>
         
         <div class="mb-3">
-            <label for="telefono" class="form-label">Recapito telefonico*</label>
-            <input type="text"required name="telefono" class="form-control" id="telefono">
+            <label for="descrizione" class="form-label">Descrizione* (lascia una descrizione che invogli gli altri ad adottare il trovatello)</label>
+            <input type="text"required name="descrizione" class="form-control" id="descrizione">
         </div>
+
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Tipologia
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Cane</a></li>
+                <li><a class="dropdown-item" href="#">Gatto</a></li>
+                <li><a class="dropdown-item" href="#">Criceto</a></li>
+                <li><a class="dropdown-item" href="#">Rettile</a></li>
+                <li><a class="dropdown-item" href="#">Coniglio</a></li>
+            </ul>
+        </div>
+
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Taglia
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Piccola</a></li>
+                <li><a class="dropdown-item" href="#">Media</a></li>
+                <li><a class="dropdown-item" href="#">Grande</a></li>
+            </ul>
+        </div>
+
+        
         
     </div>
 
     <div class="col">
         <div class="mb-3">
-            <label for="cognome" class="form-label">Cognome di chi adotterà l'animale*</label>
-            <input type="text" required name="cognome" class="form-control" id="cognome" aria-describedby="emailHelp">
+            <label for="eta" class="form-label">Età del trovatello</label>
+            <input type="text" required name="eta" class="form-control" id="eta" aria-describedby="emailHelp">
         </div>
         
         <div class="mb-3">
-            <label for="indirizzo" class="form-label">Città di residenza*</label>
+            <label for="indirizzo" class="form-label">Città della casa provvisoria*</label>
             <input type="text" required name="citta" class="form-control" id="citta">
         </div>
         
         <div class="mb-3">
-            <label for="provincia" class="form-label">CAP*</label>
+            <label for="provincia" class="form-label">CAP della casa provvisoria*</label>
             <input type="text" required name="cap" class="form-control" id="cap">
         </div>
-        
-        <div class="mb-3">
-            <label for="telefono" class="form-label">Email*</label>
-            <input type="text" required name="email" class="form-control" id="email">
-        </div>
-              
+
     
 
     </div>
+
     <!---------padding------------>
     <div class="col1">
         <br>
@@ -197,60 +218,24 @@
   </div>
 
 
-
-  <div class="row">
-  <div class="col1">
-        <br>
-    </div>
-    <div class="col">
-    <label for="exampleFormControlFile1">Inserisci documento d'identità: </label>
-    <input type="file" name="image" >
-
     
   </div>
-  <br>
   <div class="row">
     <div class="col1">
-            <br>
     </div>
     
     <div class="col">
-            <br>
-    
+        <br>
+
         <div class="form-group">
-            <br>
-            <label for="input">Da dove nasce il desiderio di adottare l'animale?</label>
+            <label for="input">Descrizione del trovatello</label>
             <textarea class="form-control" name="desiderio" id="desidero" rows="2"></textarea>
         </div>
- 
 
-        <div class="form-group">
-            <br>
-            <label for="input">Di quante persone si compone la famiglia?</label>
-            <textarea class="form-control" name="famiglia" id="famiglia" rows="2"></textarea>
-        </div>
-
-        <div class="form-group">
-            <br>
-            <label for="input">In famiglia ci sono bambini, anziani, persone con disabilità psico-fisiche o con particolari
-            patologie? Di che età?</label>
-            <textarea class="form-control" name="varie" id="varie" rows="2"></textarea>
-        </div>
+    <div class="col">
         <br>
-
-        <div class="form-group">
-            <label for="input">Chi in famiglia si occuperà maggiormente dell'animale?</label>
-            <textarea class="form-control" name="occuparsi" id="occuparsi" rows="2"></textarea>
-        </div>
-        <br>
-
-        <div class="form-group">
-            <label for="input">Possedete attualmente altri animali? Se sì, quanti e quali (cani, gatti, conigli, roditori, uccellini,
-            galline, etc)?</label>
-            <textarea class="form-control" name="altri" id="altri" rows="2"></textarea>
-        </div>
-        <br>
-        <br>
+    <label for="exampleFormControlFile1">Inserisci foto: </label>
+    <input type="file" name="image" >
 
         <div class="mb-3 form-check">
         <br>
@@ -277,6 +262,16 @@
 
     </div>
     <div class="col2">
+    <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Dropdown button
+  </button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#">Action</a></li>
+    <li><a class="dropdown-item" href="#">Another action</a></li>
+    <li><a class="dropdown-item" href="#">Something else here</a></li>
+  </ul>
+</div>
             <br>
     </div>
     </div>
@@ -302,6 +297,9 @@
         }
     ?>
 </form>
+
+
+
 
 </div>
 

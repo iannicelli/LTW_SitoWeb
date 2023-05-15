@@ -1,5 +1,6 @@
 ANIMALI
-id (primary jey) | nome (non nullo) | casa provvisoria (non nullo) | età | tipologia | descrizione | razza | adottato (true/false) | adottato da | caricato da  
+id (primary jey) | nome (non nullo) | casa provvisoria (non nullo) | età | tipologia | descrizione | razza | adottato (true/false) | adottato da | caricato da  | taglia (si potrebbe
+fare un filtro per taglia grande/piccola)
 
 numeri crescenti (fare con javascript)
 
@@ -18,14 +19,60 @@ una votla inviato il form dell'adozione -> che succede?
 
 
 
+Gioco "Animal Match - Trova il tuo compagno perfetto":
+Come dovrebbe essere il tuo nuovo compagno?
+    Morbido da accarezzare
+    Un compagno fedele
+    Deve aiutatmi a stare in forma
+    Non essere troppo impegnativo
+
+Quanto puoi investire in termini di denato?
+    Molto poco
+    Poco
+    Abbastanza
+    Tanto
+
+Com'è la tua giornata tipo?
+    Di solito tranquilla
+    Piena di impegni, sempre di corsa
+    Ben organizzata, ti lasci del tempo per te stesso
+    Dipende da quello che devo fare
+
+Hai allergie a qualche animale?
 
 
+Se vuoi rilasssarti preferisci...
+    Stare a casa a leggere o guardare una serie
+    Fare un giro in centro città
+    Dormire
+    Fare una passeggiata al parco o al mare
+
+Nella Famiglia ci sono altri animali domestici
+
+Come definiresti la tua personalità?
+    Curiosa e intraprendente
+    Aperta e socievole
+    Timida e riservata
+    Lunatica e imprevedibile
+
+Ti infastidisce fare delle rinunce?
+    Un po'
+    No
+    Abbastanza
+
+Ti paice viaggiare?
+    Sono sempre con la valigia in mano
+    Non amo i viaggi 
+    Mi piacciono ma brevi
+
+Com'è la tua casa?
+    Vissuta
+    Logico disordine
+    Sempre ordinata
 
 
+cane gatto uccelli o rettili coniglio criceto
 
+alla fine del gioco esce un animale tra cane, gatto, uccello ecc tra quelli disponibili (ovviamente in coerenza con la risposta) + tasto adotta + tasto trova altri 
+compagni che fanno per te
 
-
-
-
-
- 
