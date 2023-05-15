@@ -76,3 +76,16 @@ cane gatto uccelli o rettili coniglio criceto
 alla fine del gioco esce un animale tra cane, gatto, uccello ecc tra quelli disponibili (ovviamente in coerenza con la risposta) + tasto adotta + tasto trova altri 
 compagni che fanno per te
 
+
+
+
+
+FEDE:
+- moduo carica animale
+- giochino
+- about us
+- home about us
+
+
+CHIARA:
+- veditela tu
