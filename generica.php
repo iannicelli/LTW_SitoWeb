@@ -78,6 +78,22 @@
                  <a href="./nav.php"><input type="button" class="button" id="button" name="Register" value="Home" /></a>
                      </div>';
              }
+             else if($messaggio == 'nonLoggato2'){
+                echo' <div id="login"><div id="titolologin"><label>Effettuare login</label></div>
+             
+                     <div id="testo">
+                     <br>
+                     <br>
+                     <br>
+                 Puoi caricare un animale solo dopo aver fatto il login.<br>
+                 Clicca sul pulsante Home per essere rendirizzato alla pagina Home ed effettuare il login.    
+                 </label><br>
+                 </div>
+         
+                 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                 <a href="./nav.php"><input type="button" class="button" id="button" name="Register" value="Home" /></a>
+                     </div>';
+             }
             else if($messaggio=='modificaEffettuata'){
                 echo' <div id="login"><div id="titolologin"><label>Modifica completata</label></div>
             
@@ -131,6 +147,41 @@
          
                      </div>';
              }
+             else if($messaggio == 'caricamentoRiuscito'){
+                echo' <div id="login"><div id="titolologin"><label>Caricamento Completato</label></div>
+             
+                     <div id="testo">
+                     <br>
+                     <br>
+                     
+                 Inserimento completato con successo!<br>
+                 Speriamo questo animale trovi una casa accogliente al più presto.<br>
+                 Clicca sul tasto Home per essere rendirizzato alla pagina principale. </label>
+                 </div>
+         
+                 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                 <a href="./nav.php"><input type="button" class="button" id="button" name="Register" value="Home" /></a>
+
+                     </div>';
+             }
+             else if($messaggio == 'adozioneRiuscita'){
+                echo' <div id="login"><div id="titolologin"><label>Adozione Completata</label></div>
+             
+                     <div id="testo">
+                     <br>
+                     <br>
+                     
+                 Adozione completata con successo!<br>
+                 Speriamo tratterai questo animale con amore, affetto e rispetto.<br>
+                 Clicca sul tasto Home per essere rendirizzato alla pagina principale. </label>
+                 </div>
+         
+                 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                 <a href="./nav.php"><input type="button" class="button" id="button" name="Register" value="Home" /></a>
+
+                     </div>';
+             }
+             
              
         ?>
         

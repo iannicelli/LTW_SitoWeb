@@ -109,9 +109,18 @@
 
 
     <div class="row">
-        <a href="#"> <input type="button" class="btn-btn-primary" value="More"></a>
+        <a href="./more.php"> <input type="button" class="btn-btn-primary" value="More"></a>
         &emsp;&emsp;
         <a href="../../nav.php"> <input type="button" class="btn-btn-primary" value="Home"></a>
+        &emsp;&emsp;
+        <?php
+          if(isLogged()){
+            echo '<a href="../../caricaAnimale.php"> <input type="button" class="btn-btn-primary" value="Carica"></a>';
+          }
+          else{
+            echo '<a href="../../generica.php?messaggio=nonLoggato2"> <input type="button" class="btn-btn-primary" value="Carica"></a>';
+          }
+        ?>
       </div>
     </div>
 

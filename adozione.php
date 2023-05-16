@@ -29,7 +29,7 @@
 	<div class="banneradozione">
     <nav class="navbar fixed-top navbar-expand-md navbar-light" style="background-color: #E19853;">
         <div class="container">
-            <a class ="navbar-brand mb-0 h1" href="#">
+            <a class ="navbar-brand mb-0 h1" href="./nav.php">
             <img class = "d-inline-block" src ="./Immagini logo/SITO WEB (1).png" height="40" />
             Tale of Tails - Racconti di animali
             </a>
@@ -133,7 +133,7 @@
         <br>
         
     <!-- aggiungere un js con controlli -->
-    <form name="adozione" action="adozioneBD?id=<?php echo $id; ?>" class="formadozione" method="post" enctype="multipart/form-data">
+    <form name="adozione" action="adozioneDB.php?id=<?php echo $id; ?>" class="formadozione" method="post" enctype="multipart/form-data">
     
     <!--<form name="adozione" action="./adozioneDB.php?id=10" class="formadozione" method="post" enctype="multipart/form-data">-->
     <div class="row">

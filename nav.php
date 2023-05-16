@@ -131,7 +131,14 @@
 		<div class="centrato_bottone">
             <form action="./immagini_animali/drive/pets.php">
 
-                <button type="submit" class="pulsante"> Trova un amico! </button>
+                <button type="submit" class="pulsante"> Trova un amico! </button><br>
+
+            </form>
+            <br> &emsp;&emsp;
+            <form action="./immagini_animali/drive/pets.php">
+
+                <button type="submit" class="pulsante"> Carica un amico! </button>
+
             </form>
         </div>
 		<video autoplay loop muted plays-inline>
