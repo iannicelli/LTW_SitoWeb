@@ -108,8 +108,11 @@
         <br>
         <br>
         <div class="prova" style="text-align: center;">
-            <img src="./immagini logo/Adozione.png" style="width: 200px; height: 200px;">
+            <img src="./immagini_animali/modulo_carica.png" style="width: 200px; height: 200px;">
         </div>
+        <h4>Modulo di inserimento</h4>
+
+
         <?php 
             include './login/loginDB.php';
 
@@ -159,42 +162,25 @@
             <input type="text"required  name = "provincia" class="form-control" id="provincia">
         </div>
         
-        <div class="mb-3">
-            <label for="descrizione" class="form-label">Descrizione* (lascia una descrizione che invogli gli altri ad adottare il trovatello)</label>
-            <input type="text"required name="descrizione" class="form-control" id="descrizione">
-        </div>
 
-        <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Tipologia
-            </button>
-            <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Cane</a></li>
-                <li><a class="dropdown-item" href="#">Gatto</a></li>
-                <li><a class="dropdown-item" href="#">Criceto</a></li>
-                <li><a class="dropdown-item" href="#">Rettile</a></li>
-                <li><a class="dropdown-item" href="#">Coniglio</a></li>
-            </ul>
-        </div>
-
-        <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Taglia
-            </button>
-            <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Piccola</a></li>
-                <li><a class="dropdown-item" href="#">Media</a></li>
-                <li><a class="dropdown-item" href="#">Grande</a></li>
-            </ul>
-        </div>
-
-        
+        <div class="form-group">
+    <label for="exampleFormControlSelect1">Tipologia</label>
+    <select class="form-control" id="exampleFormControlSelect1">
+      <option></option>
+      <option>Cane</option>
+      <option>Gatto</option>
+      <option>Criceto</option>
+      <option>Coniglio</option>
+      <option>Uccello</option>
+    </select>
+  </div>
+       
         
     </div>
 
     <div class="col">
         <div class="mb-3">
-            <label for="eta" class="form-label">Età del trovatello</label>
+            <label for="eta" class="form-label">Età del trovatello, anche indicativa</label>
             <input type="text" required name="eta" class="form-control" id="eta" aria-describedby="emailHelp">
         </div>
         
@@ -207,6 +193,7 @@
             <label for="provincia" class="form-label">CAP della casa provvisoria*</label>
             <input type="text" required name="cap" class="form-control" id="cap">
         </div>
+        
 
     
 
@@ -229,7 +216,7 @@
         <br>
 
         <div class="form-group">
-            <label for="input">Descrizione del trovatello</label>
+            <label for="input">Lascia una descrizione che invogli gli altri utenti ad adottare il trovatello</label>
             <textarea class="form-control" name="desiderio" id="desidero" rows="2"></textarea>
         </div>
 
@@ -245,6 +232,14 @@
         </div>
 
     </div> <!--chiudo l'unica grande colonna-->
+
+
+      <!---------padding------------>
+      <div class="col1">
+        <br>
+    </div>
+  </div>
+
    
     <div class="col1">
 
@@ -262,17 +257,6 @@
         <br>
 
     </div>
-    <div class="col2">
-    <div class="dropdown">
-  <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-    Dropdown button
-  </button>
-  <ul class="dropdown-menu">
-    <li><a class="dropdown-item" href="#">Action</a></li>
-    <li><a class="dropdown-item" href="#">Another action</a></li>
-    <li><a class="dropdown-item" href="#">Something else here</a></li>
-  </ul>
-</div>
             <br>
     </div>
     </div>
