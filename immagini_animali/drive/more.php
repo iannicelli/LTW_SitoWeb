@@ -54,12 +54,12 @@
                         fwrite($img, $data) or die("cannot write image data\n");
                         
                         echo '<div class="image-container">';
-                        echo '<img class="itemBox '.$animale['tipologia'].'" src="' . $file_name . '">';
+                        echo '<img class="itemBox '.$animale['tipologia'].'" src="' . $file_name . '" width="500px" height="350px">';
         
                         if(!isAdopted($animale['id'])){
                             if(isLogged()){
-                    
-                                echo '<a href="../../animale.php?id='.$i.'"><input type="button" class="image-overlay-button" value="Adotta!"></a>';
+                              $x = $i + 15;
+                              echo '<a href="../../animale.php?id='.$x.'"><input type="button" class="image-overlay-button" value="Adotta!"></a>';
                             }
                         else echo '<a href="../../generica.php?messaggio=nonLoggato"><input type="button" class="image-overlay-button" value="Adotta!"></a>';
                         }
@@ -82,12 +82,12 @@
                     fwrite($img, $data) or die("cannot write image data\n");
                         
                     echo '<div class="image-container">';
-                    echo '<img class="itemBox '.$animale['tipologia'].'" src="' . $file_name . '">';
+                    echo '<img class="itemBox '.$animale['tipologia'].'" src="' . $file_name . '"> &emsp;';
         
                     if(!isAdopted($animale['id'])){
                       if(isLogged()){
-                    
-                        echo '<a href="../../animale.php?id='.$i.'"><input type="button" class="image-overlay-button" value="Adotta!"></a>';
+                        $x = $i + 15;
+                        echo '<a href="../../animale.php?id='.$x.'"><input type="button" class="image-overlay-button" value="Adotta!"></a>';
                       }
                       else echo '<a href="../../generica.php?messaggio=nonLoggato"><input type="button" class="image-overlay-button" value="Adotta!"></a>';
                     }

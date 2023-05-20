@@ -1,5 +1,6 @@
 <?php
     include './login/loginDB.php';
+    include './login/checkIsLogged.php';
 
     //per l'id_animale utilizzare get
 

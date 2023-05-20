@@ -113,7 +113,7 @@
             }
 
             else if($messaggio == 'adottato'){
-                echo' <div id="login"><div id="titolologin"><label>Registrazione completata</label></div>
+                echo' <div id="login"><div id="titolologin"><label>Adottato</label></div>
              
                      <div id="testo">
                      <br>

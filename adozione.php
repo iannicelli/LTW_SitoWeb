@@ -13,7 +13,8 @@
     <style>
         .w3-button {width:150px;}
     </style>
-    
+
+
 
     <title>Modulo adozione</title>
 </head>
@@ -46,8 +47,8 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item active">
-                    <a class="nav-link active" href="#"> <!-- disabled-->
-                        Home<span class="sr-only">(current)</span></a>
+                    <a class="nav-link active" href="./nav.php"> <!-- disabled-->
+                        Home<span class="sr-only"></span></a>
                     </a>
                 </li>
                 <li class="nav-item active" href="#" >
@@ -306,10 +307,7 @@
 </div>
 
 <br><br><br>
-<!--aggiungere footer-->
-
-
-        <br>
+      <br>
             <!--follie di chiara-->
                    
         <!-- CSS only -->

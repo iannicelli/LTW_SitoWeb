@@ -135,7 +135,15 @@
 
             </form>
             <br> &emsp;&emsp;
-            <form action="./immagini_animali/drive/pets.php">
+            <?php
+                if(isLogged()){
+                    echo '<form action="./caricaAnimale.php">';
+                }
+                else{
+                    echo '<form action="./generica.php" method="GET">
+                            <input type="hidden" name="messaggio" value="nonLoggato2">';
+                }
+            ?>
 
                 <button type="submit" class="pulsante"> Carica un amico! </button>
 
@@ -244,17 +252,6 @@
         <nav_bassa></nav_bassa>
 </div>
 
-<!--<div class="footer">
-            <img src="../Immagini logo/favicon.png" alt="Tale of Tails" width="40" height="40"/>
-            &nbsp;
-            &copy; 2023 Tale of Tails
-            &nbsp;
-            <a href="https://protezionedatipersonali.it/informativa">Privacy</a> 
-            <a href="../AboutUs.html">Chi siamo</a>
-            &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-            Contatti: iannicelli.1957045@studenti.uniroma1.it / lavini.1941986@studenti.uniroma1.it
-    </div>-->
 
     <script type="application/javascript" src="./nav_bassa.js"></script>
 

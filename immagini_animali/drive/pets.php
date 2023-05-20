@@ -69,7 +69,7 @@
                     else echo '<a href="../../generica.php?messaggio=nonLoggato"><input type="button" class="image-overlay-button" value="Adotta!"></a>';
                   }
                 else{
-                  echo '<a href="./giaAdottato.html"><input type="button" class="image-overlay-button" value="Adottato"></a>';
+                  echo '<a href="../../generica.php?messaggio=adottato"><input type="button" class="image-overlay-button" value="Adottato"></a>';
                 }
 
                 echo '</div>';
@@ -93,7 +93,7 @@
                     else echo '<a href="../../generica.php?messaggio=nonLoggato"><input type="button" class="image-overlay-button" value="Adotta!"></a>';
                   }
                 else{
-                  echo '<a href="./giaAdottato.html"><input type="button" class="image-overlay-button" value="Adottato"></a>';
+                  echo '<a href="../../generica.php?messaggio=adottato"><input type="button" class="image-overlay-button" value="Adottato"></a>';
                 }
 
                 echo '</div>';
