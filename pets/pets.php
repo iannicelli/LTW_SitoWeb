@@ -8,9 +8,9 @@
 </head>
 
 <?php
-  include '../inserisci.php';
+  include './inserisci.php';
   include './checkIsAdopted.php';
-  include "../../login/checkIsLogged.php";
+  include "../login/checkIsLogged.php";
 ?>
 
 <body>
@@ -39,12 +39,12 @@
                 if(!isAdopted($i)){
                   if(isLogged()){
                 
-                    echo '<a href="../../animale.php?id='.$i.'"><input type="button" class="image-overlay-button" value="Adotta!"></a>';
+                    echo '<a href="../animale.php?id='.$i.'"><input type="button" class="image-overlay-button" value="Adotta!"></a>';
                   }
-                  else echo '<a href="../../generica.php?messaggio=nonLoggato"><input type="button" class="image-overlay-button" value="Adotta!"></a>';
+                  else echo '<a href="../generica.php?messaggio=nonLoggato"><input type="button" class="image-overlay-button" value="Adotta!"></a>';
                 }
                 else{
-                  echo '<a href="../../generica.php?messaggio=adottato"><input type="button" class="image-overlay-button" value="Adottato"></a>';
+                  echo '<a href="../generica.php?messaggio=adottato"><input type="button" class="image-overlay-button" value="Adottato"></a>';
                 }
 
                 echo '</div>';
@@ -64,12 +64,12 @@
                 if(!isAdopted($i)){
                   if(isLogged()){
                 
-                    echo '<a href="../../animale.php?id='.$i.'"><input type="button" class="image-overlay-button" value="Adotta!"></a>';
+                    echo '<a href="../animale.php?id='.$i.'"><input type="button" class="image-overlay-button" value="Adotta!"></a>';
                     }
-                    else echo '<a href="../../generica.php?messaggio=nonLoggato"><input type="button" class="image-overlay-button" value="Adotta!"></a>';
+                    else echo '<a href="../generica.php?messaggio=nonLoggato"><input type="button" class="image-overlay-button" value="Adotta!"></a>';
                   }
                 else{
-                  echo '<a href="../../generica.php?messaggio=adottato"><input type="button" class="image-overlay-button" value="Adottato"></a>';
+                  echo '<a href="../generica.php?messaggio=adottato"><input type="button" class="image-overlay-button" value="Adottato"></a>';
                 }
 
                 echo '</div>';
@@ -88,12 +88,12 @@
                 if(!isAdopted($i)){
                   if(isLogged()){
                 
-                    echo '<a href="../../animale.php?id='.$i.'"><input type="button" class="image-overlay-button" value="Adotta!"></a>';
+                    echo '<a href="../animale.php?id='.$i.'"><input type="button" class="image-overlay-button" value="Adotta!"></a>';
                     }
-                    else echo '<a href="../../generica.php?messaggio=nonLoggato"><input type="button" class="image-overlay-button" value="Adotta!"></a>';
+                    else echo '<a href="../generica.php?messaggio=nonLoggato"><input type="button" class="image-overlay-button" value="Adotta!"></a>';
                   }
                 else{
-                  echo '<a href="../../generica.php?messaggio=adottato"><input type="button" class="image-overlay-button" value="Adottato"></a>';
+                  echo '<a href="../generica.php?messaggio=adottato"><input type="button" class="image-overlay-button" value="Adottato"></a>';
                 }
 
                 echo '</div>';
@@ -115,10 +115,10 @@
         &emsp;&emsp;
         <?php
           if(isLogged()){
-            echo '<a href="../../caricaAnimale.php"> <input type="button" class="btn-btn-primary" value="Carica"></a>';
+            echo '<a href="../caricaAnimale.php"> <input type="button" class="btn-btn-primary" value="Carica"></a>';
           }
           else{
-            echo '<a href="../../generica.php?messaggio=nonLoggato2"> <input type="button" class="btn-btn-primary" value="Carica"></a>';
+            echo '<a href="../generica.php?messaggio=nonLoggato2"> <input type="button" class="btn-btn-primary" value="Carica"></a>';
           }
         ?>
       </div>

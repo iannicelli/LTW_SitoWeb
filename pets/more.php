@@ -8,9 +8,9 @@
 </head>
 
 <?php
-  include '../../login/loginDB.php';
+  include '../login/loginDB.php';
   include './checkIsAdopted.php';
-  include "../../login/checkIsLogged.php";
+  include "../login/checkIsLogged.php";
 ?>
 
 <body>
@@ -59,12 +59,12 @@
                         if(!isAdopted($animale['id'])){
                             if(isLogged()){
                               $x = $i + 15;
-                              echo '<a href="../../animale.php?id='.$x.'"><input type="button" class="image-overlay-button" value="Adotta!"></a>';
+                              echo '<a href="../animale.php?id='.$x.'"><input type="button" class="image-overlay-button" value="Adotta!"></a>';
                             }
-                        else echo '<a href="../../generica.php?messaggio=nonLoggato"><input type="button" class="image-overlay-button" value="Adotta!"></a>';
+                        else echo '<a href="../generica.php?messaggio=nonLoggato"><input type="button" class="image-overlay-button" value="Adotta!"></a>';
                         }
                         else{
-                            echo '<a href="../../generica.php?messaggio=adottato"><input type="button" class="image-overlay-button" value="Adottato"></a>';
+                            echo '<a href="../generica.php?messaggio=adottato"><input type="button" class="image-overlay-button" value="Adottato"></a>';
                         }
 
                         echo '</div>';
@@ -87,12 +87,12 @@
                     if(!isAdopted($animale['id'])){
                       if(isLogged()){
                         $x = $i + 15;
-                        echo '<a href="../../animale.php?id='.$x.'"><input type="button" class="image-overlay-button" value="Adotta!"></a>';
+                        echo '<a href="../animale.php?id='.$x.'"><input type="button" class="image-overlay-button" value="Adotta!"></a>';
                       }
-                      else echo '<a href="../../generica.php?messaggio=nonLoggato"><input type="button" class="image-overlay-button" value="Adotta!"></a>';
+                      else echo '<a href="../generica.php?messaggio=nonLoggato"><input type="button" class="image-overlay-button" value="Adotta!"></a>';
                     }
                     else{
-                      echo '<a href="../../generica.php?messaggio=adottato"><input type="button" class="image-overlay-button" value="Adottato"></a>';
+                      echo '<a href="../generica.php?messaggio=adottato"><input type="button" class="image-overlay-button" value="Adottato"></a>';
                     }
 
                   echo '</div>';
@@ -113,14 +113,14 @@
 
     <div class="row">
 
-        <a href="../../nav.php"> <input type="button" class="btn-btn-primary" value="Home"></a>
+        <a href="../nav.php"> <input type="button" class="btn-btn-primary" value="Home"></a>
         &emsp;&emsp;
         <?php
           if(isLogged()){
-            echo '<a href="../../caricaAnimale.php"> <input type="button" class="btn-btn-primary" value="Carica"></a>';
+            echo '<a href="../caricaAnimale.php"> <input type="button" class="btn-btn-primary" value="Carica"></a>';
           }
           else{
-            echo '<a href="../../generica.php?messaggio=nonLoggato2"> <input type="button" class="btn-btn-primary" value="Carica"></a>';
+            echo '<a href="../generica.php?messaggio=nonLoggato2"> <input type="button" class="btn-btn-primary" value="Carica"></a>';
           }
         ?>
       </div>
