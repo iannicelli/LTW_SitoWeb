@@ -5,7 +5,7 @@ body {
    #login {
     width:450px;
     border:1px solid black;
-    height:470px;
+    height:485px;
     font-family: 'Arial';
     position: absolute;
     top: 50%;
@@ -112,3 +112,30 @@ body {
         box-shadow:2px 2px 5px #c35d09 ;
 
     }
+
+    #ProgressBar {
+        width: 100%;
+        background-color: #ddd;
+        max-width:300px;
+      }
+      #bar {
+        width: 1%;
+    
+        height: 17px;
+        background-color: #4CAF50;
+        max-width:300px;
+          text-align:center;
+          color: antiquewhite;
+          margin-bottom:15px;
+  
+      }
+      #txt {
+        margin-bottom:5px;
+        padding:5px;
+  
+      }
+      #alert {
+        font-weight:bold;
+        text-align:center;
+        color: antiquewhite;
+      }
