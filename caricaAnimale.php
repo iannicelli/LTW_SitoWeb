@@ -130,7 +130,7 @@
     <!---------primo colonna------------>
     <div class="col">
         <div class="mb-3">
-            <label for="nome" class="form-label">Nome del trovatello (sarai tu a darlo, opta per un bel nome!)</label>
+            <label for="nome" class="form-label">Nome del trovatello (sarai tu a darlo, opta per un bel nome!)*</label>
             <input type="text" required name= "nome_animale" class="form-control" id="nome" aria-describedby="emailHelp">
         </div>
         
@@ -141,13 +141,13 @@
         
         <div class="mb-3">
             <label for="provincia" class="form-label">Provincia della casa provvisoria*</label>
-            <input type="text"required  name="provincia" class="form-control" id="provincia">
+            <input type="text" required name="provincia" class="form-control" id="provincia">
         </div>
         
 
         <div class="form-group">
-    <label for="exampleFormControlSelect1">Tipologia</label>
-    <select class="form-control" name="tipologia" id="exampleFormControlSelect1">
+    <label for="exampleFormControlSelect1">Tipologia*</label>
+    <select class="form-control" required name="tipologia" id="exampleFormControlSelect1">
       <option></option>
       <option>cane</option>
       <option>gatto</option>
@@ -163,7 +163,7 @@
     <div class="col">
         <div class="mb-3">
             <label for="eta" class="form-label">Età del trovatello, anche indicativa</label>
-            <input type="text" required name="eta" class="form-control" id="eta" aria-describedby="emailHelp">
+            <input type="text" name="eta" class="form-control" id="eta" aria-describedby="emailHelp">
         </div>
         
         <div class="mb-3">
@@ -198,20 +198,23 @@
         <br>
 
         <div class="form-group">
-            <label for="input">Lascia una descrizione che invogli gli altri utenti ad adottare il trovatello</label>
-            <textarea class="form-control" name="descrizione" id="desidero" rows="2"></textarea>
+            <label for="input">Lascia una descrizione che invogli gli altri utenti ad adottare il trovatello*</label>
+            <textarea class="form-control" required name="descrizione" id="desidero" rows="2"></textarea>
         </div>
 
     <div class="col">
         <br>
-    <label for="exampleFormControlFile1">Inserisci foto: </label>
-    <input type="file" name="image" >
+    <label for="exampleFormControlFile1">Inserisci foto: *</label>
+    <input type="file" required id="foto_carica" name="image" class="form-control" aria-label="file example">
+    <div class="invalid-feedback">Example invalid form file feedback</div>
 
         <div class="mb-3 form-check">
         <br>
             <input type="checkbox" required class="form-check-input" id="exampleCheck1">
-            <label class="form-check-label" for="exampleCheck1">Accetto tutte le condizioni</label>
+            <label class="form-check-label" for="exampleCheck1">Accetto tutte le condizioni*</label>
         </div>
+
+        <label class="form-check-label" id="ok">"*": campo obbligatorio</label>
 
     </div> <!--chiudo l'unica grande colonna-->
 
