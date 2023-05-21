@@ -9,13 +9,13 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     
-    <link rel="stylesheet" type="text/css" href="./Responsive Ecommrence Slider/css/style.css">
+    <link rel="stylesheet" type="text/css" href="./slider/css/style.css">
     <!--light-slider.css------------->
-    <link rel="stylesheet" type="text/css" href="./Responsive Ecommrence Slider/css/lightslider.css">
+    <link rel="stylesheet" type="text/css" href="./slider/css/lightslider.css">
     <!--Jquery-------------------->
-    <script type="text/javascript" src="./Responsive Ecommrence Slider/js/Jquery.js"></script>
+    <script type="text/javascript" src="./slider/js/Jquery.js"></script>
     <!--lightslider.js--------------->
-    <script type="text/javascript" src="./Responsive Ecommrence Slider/js/lightslider.js"></script>
+    <script type="text/javascript" src="./slider/js/lightslider.js"></script>
     
     
     <link rel="stylesheet" type="text/css" href="style.css">
@@ -70,7 +70,7 @@
                     </a>    
                 </li>
                 <li class="nav-item active" href="#">
-                    <a href="./immagini_animali/drive/pets.php" class="nav-link active">
+                    <a href="./pets/pets.php" class="nav-link active">
                         Pets
                     </a>
                 </li>
@@ -129,7 +129,7 @@
 		<br>
 		<br>
 		<div class="centrato_bottone">
-            <form action="./immagini_animali/drive/pets.php">
+            <form action="./pets/pets.php">
 
                 <button type="submit" class="pulsante"> Trova un amico! </button><br>
 
@@ -150,7 +150,7 @@
             </form>
         </div>
 		<video autoplay loop muted plays-inline>
-			<source src="./immagini_animali/Pixie.mp4" type="video/mp4">
+			<source src="./pets/Pixie.mp4" type="video/mp4">
 		</video>
 
 	</div>
@@ -267,7 +267,7 @@
 
 	
 <!--script-link----------->
-<script type="text/javascript" src="./Responsive Ecommrence Slider/js/script.js"></script>
+<script type="text/javascript" src="./slider/js/script.js"></script>
 </body>
 </html>
 

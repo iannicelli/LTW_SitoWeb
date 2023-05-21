@@ -125,7 +125,7 @@
                  </div>
          
                  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-                     <a href="./immagini_animali/drive/pets.php"><input type="button" class="button" id="button" name="Back" value="Pets" /></a>
+                     <a href="./pets/pets.php"><input type="button" class="button" id="button" name="Back" value="Pets" /></a>
          
                      </div>';
              }

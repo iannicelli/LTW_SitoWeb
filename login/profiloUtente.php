@@ -81,8 +81,8 @@
                         AboutUs
                     </a>    
                 </li>
-                <li class="nav-item active" href="../immagini_animali/drive/pets.php">
-                    <a href="../immagini_animali/drive/pets.php" class="nav-link active">
+                <li class="nav-item active" href="../pets/pets.php">
+                    <a href="../pets/pets.php" class="nav-link active">
                         Pets
                     </a>
                 </li>
@@ -166,7 +166,7 @@
 
     </div>
     <div class="container_button">
-    <a href="../immagini_animali/drive/pets.php"><input type="button" id="bot_1" value="Adotta un amico"></a>
+    <a href="../pets/pets.php"><input type="button" id="bot_1" value="Adotta un amico"></a>
     &emsp;
     <a href="../caricaAnimale.php"><input type="button" id="bot_2" value="Aggiungi un 
     amico">

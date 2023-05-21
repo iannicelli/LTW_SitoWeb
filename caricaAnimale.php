@@ -108,7 +108,7 @@
         <br>
         <br>
         <div class="prova" style="text-align: center;">
-            <img src="./immagini_animali/modulo_carica.png" style="width: 200px; height: 200px;">
+            <img src="./pets/modulo_carica.png" style="width: 200px; height: 200px;">
         </div>
         <h4>Modulo di inserimento</h4>
 
