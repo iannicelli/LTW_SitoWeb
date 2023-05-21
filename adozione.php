@@ -146,45 +146,51 @@
     <!---------primo colonna------------>
     <div class="col">
         <div class="mb-3">
-            <label for="validationDefault01" class="form-label">Nome di chi adotterà l'animale</label>
+            <label for="validationTooltip01" class="form-label">Nome di chi adotterà l'animale*</label>
             <input type="text" required name= "nome" class="form-control" id="validationDefault01">
         </div>
+
         
         <div class="mb-3">
-            <label for="indirizzo" class="form-label">Indirizzo di residenza</label>
+            <label for="indirizzo" class="form-label">Indirizzo di residenza*</label>
             <input type="text" required name="indirizzo" class="form-control" id="indirizzo">
         </div>
         
         <div class="mb-3">
-            <label for="provincia" class="form-label">Provincia di residenza</label>
+            <label for="provincia" class="form-label">Provincia di residenza*</label>
             <input type="text"required  name = "provincia" class="form-control" id="provincia">
         </div>
         
         <div class="mb-3">
-            <label for="telefono" class="form-label">Recapito telefonico</label>
+            <label for="telefono" class="form-label">Recapito telefonico*</label>
             <input type="text"required name="telefono" class="form-control" id="telefono">
         </div>
+
+        <label for="exampleFormControlFile1">Inserisci documento d'identità: *</label>
+          <input type="file" name="image" class="form-control" aria-label="file example" required>
+          <div class="invalid-feedback">Example invalid form file feedback</div>
+       
         
     </div>
 
     <div class="col">
         <div class="mb-3">
-            <label for="cognome" class="form-label">Cognome di chi adotterà l'animale</label>
+            <label for="cognome" class="form-label">Cognome di chi adotterà l'animale*</label>
             <input type="text" required name="cognome" class="form-control" id="cognome" aria-describedby="emailHelp">
         </div>
         
         <div class="mb-3">
-            <label for="indirizzo" class="form-label">Città di residenza</label>
+            <label for="indirizzo" class="form-label">Città di residenza*</label>
             <input type="text" required name="citta" class="form-control" id="citta">
         </div>
         
         <div class="mb-3">
-            <label for="provincia" class="form-label">CAP</label>
+            <label for="provincia" class="form-label">CAP*</label>
             <input type="text" required name="cap" class="form-control" id="cap">
         </div>
         
         <div class="mb-3">
-            <label for="telefono" class="form-label">Email</label>
+            <label for="telefono" class="form-label">Email*</label>
             <input type="text" required name="email" class="form-control" id="email">
         </div>
               
@@ -203,12 +209,7 @@
   <div class="col1">
         <br>
     </div>
-    <div class="col">
-    <label for="exampleFormControlFile1">Inserisci documento d'identità: </label>
-    <input type="file" name="image" >
 
-    
-  </div>
   <br>
   <div class="row">
     <div class="col1">
@@ -256,8 +257,10 @@
         <div class="mb-3 form-check">
         <br>
             <input type="checkbox" required class="form-check-input" id="exampleCheck1">
-            <label class="form-check-label" for="exampleCheck1">Accetto tutte le condizioni</label>
+            <label class="form-check-label" required for="exampleCheck1">Accetto tutte le condizioni*</label>
         </div>
+
+        <label class="form-check-label" id="ok">"*": campo obbligatorio</label>
 
     </div> <!--chiudo l'unica grande colonna-->
    
