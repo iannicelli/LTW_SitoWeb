@@ -251,3 +251,129 @@ nav a:hover {
     font-size: 1.0em;
 
 }
+
+/*-------------------about us------------*/
+#wrapperAU{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Lovelo', sans-serif;
+    text-align: center;
+    color:#fff;
+    line-height: 1.5;
+    letter-spacing: 1px;
+
+    min-height:100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url('./sfondo_about_us/BONUS-ANIAMLI-DOMESTICI-696x464.webp');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#testimonialAU{
+    padding: 30px 100px;
+    box-sizing: border-box;
+    font-family: 'Lovelo', sans-serif;
+    text-align: center;
+    color:#fff;
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+
+article h8{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Lovelo', sans-serif;
+    text-align: center;
+    color:#fff;
+    line-height: 1.5;
+    font-size: 50px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+
+}
+
+article h8:after{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Lovelo', sans-serif;
+    text-align: center;
+    color:#fff;
+    line-height: 1.5;
+    letter-spacing: 1px;
+
+
+    content: "";
+    height: 5px;
+    width: 225px;
+    background-color: #fff;
+    display: block;
+    margin: auto;
+
+}
+
+#ImmagineAU{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Lovelo', sans-serif;
+    text-align: center;
+    color:#fff;
+    line-height: 1.5;
+    letter-spacing: 1px;
+
+
+    height: 225px;
+    width: 200px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+#blockquoteAU{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Lovelo', sans-serif;
+    text-align: center;
+    color:#fff;
+    line-height: 1.5;
+    letter-spacing: 1px;
+
+    margin-top: 30px;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+article h9{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Lovelo', sans-serif;
+    text-align: center;
+    color:#fff;
+    line-height: 1.5;
+
+
+    text-transform: uppercase;
+    font-size: 28px;
+    margin-top: 30px;
+    letter-spacing: 1.5px;
+}
+
+article p{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Lovelo', sans-serif;
+    text-align: center;
+    color:#fff;
+    line-height: 1.5;
+    letter-spacing: 1px;
+
+    font-size: 17px;
+}

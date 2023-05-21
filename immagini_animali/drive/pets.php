@@ -69,7 +69,7 @@
                     else echo '<a href="../../generica.php?messaggio=nonLoggato"><input type="button" class="image-overlay-button" value="Adotta!"></a>';
                   }
                 else{
-                  echo '<a href="./giaAdottato.html"><input type="button" class="image-overlay-button" value="Adottato"></a>';
+                  echo '<a href="../../generica.php?messaggio=adottato"><input type="button" class="image-overlay-button" value="Adottato"></a>';
                 }
 
                 echo '</div>';
@@ -93,7 +93,7 @@
                     else echo '<a href="../../generica.php?messaggio=nonLoggato"><input type="button" class="image-overlay-button" value="Adotta!"></a>';
                   }
                 else{
-                  echo '<a href="./giaAdottato.html"><input type="button" class="image-overlay-button" value="Adottato"></a>';
+                  echo '<a href="../../generica.php?messaggio=adottato"><input type="button" class="image-overlay-button" value="Adottato"></a>';
                 }
 
                 echo '</div>';
@@ -109,9 +109,18 @@
 
 
     <div class="row">
-        <a href="#"> <input type="button" class="btn-btn-primary" value="More"></a>
+        <a href="./more.php"> <input type="button" class="btn-btn-primary" value="More"></a>
         &emsp;&emsp;
         <a href="../../nav.php"> <input type="button" class="btn-btn-primary" value="Home"></a>
+        &emsp;&emsp;
+        <?php
+          if(isLogged()){
+            echo '<a href="../../caricaAnimale.php"> <input type="button" class="btn-btn-primary" value="Carica"></a>';
+          }
+          else{
+            echo '<a href="../../generica.php?messaggio=nonLoggato2"> <input type="button" class="btn-btn-primary" value="Carica"></a>';
+          }
+        ?>
       </div>
     </div>
 

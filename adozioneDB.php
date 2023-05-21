@@ -1,5 +1,6 @@
 <?php
     include './login/loginDB.php';
+    include './login/checkIsLogged.php';
 
     //per l'id_animale utilizzare get
 
@@ -39,14 +40,49 @@
         exit;
     } 
 
-    //aggiungere +1 al numero animali adottati a la persona con quella particolare email
     //modificare nel database animali che quell'animale adottato = "true"
+    $query2 = "UPDATE animali
+                SET adottato = true
+                WHERE id = $id;
+    ";
+    $res2=pg_query($db, $query2);
+    if(!$res2){
+        echo "ERRORE QUERY: " . pg_last_error($db);
+        exit;
+    }
 
+    //aggiungere +1 al numero animali adottati a la persona con quella particolare email    
+    if(isLogged()){
+        $mail= $_SESSION['email'];
+     }
+     else{
+        header("location: ./generica.php?messaggio=nonLoggato");
+     }
+    $query3 = "UPDATE utenti
+                SET n_adottati = n_adottati + 1
+                WHERE email = 'email';
+    ";
+    $res3=pg_query($db, $query3);
+    if(!$res3){
+        echo "ERRORE QUERY: " . pg_last_error($db);
+        exit;
+    }
+
+    //aggiungere la mail dell'utente che ha adottato l'animale
+    $query4 = "UPDATE animali
+                SET adottato_da = '$mail'
+                WHERE id = $id; 
+    ";  
+    $res4=pg_query($db, $query4);   
+    if(!$res4){
+        echo "ERRORE QUERY: " . pg_last_error($db);
+        exit;
+    }
     pg_close($db);
 
 
     //decidere dove deve finire l'adozione
-    header("location: ./login/regCompleta.html")
+    header("location: ./generica.php?messaggio=adozioneRiuscita")
     
     
 ?>

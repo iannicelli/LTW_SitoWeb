@@ -4,7 +4,7 @@ nav_bassa.component("nav_bassa", {
 
     data(){
         return {
-            image: "../Immagini logo/favicon.png"
+            image: "./Immagini logo/favicon.png"
         }
     },
 

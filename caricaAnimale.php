@@ -23,7 +23,7 @@
          include "./login/checkIsLogged.php";
 
         if(isLogged()){
-            echo '<i>'.$_SESSION['nome'].' '.$_SESSION['cognome'].'</i>';
+            //echo '<i>'.$_SESSION['nome'].' '.$_SESSION['cognome'].'</i>';
         }
     ?>
 	<div class="banneradozione">
@@ -112,31 +112,13 @@
         </div>
         <h4>Modulo di inserimento</h4>
 
-
-        <?php 
-            include './login/loginDB.php';
-
-            $id = $_GET['id'];
-
-            $query = "SELECT * FROM animali WHERE id = $id";
-            $result = pg_query($db, $query);
-            if ($result && pg_num_rows($result) > 0) {
-                // Recuperare i dati dell'animale dal risultato della query
-                $animale = pg_fetch_assoc($result);
-                
-              } else {
-                // Nessun animale trovato con l'id specificato
-                echo "Animale non trovato.";
-              }
-
-        echo " <h4>Modulo di inserimento di ".$animale['nome']."</h4>"
-        ?>
         
         <br>
         <br>
-        
+        <br>
+
     <!-- aggiungere un js con controlli -->
-    <form name="adozione" action="adozioneBD?id=<?php echo $id; ?>" class="formadozione" method="post" enctype="multipart/form-data">
+    <form name="caricamento" action="caricaAnimaleDB.php" class="formadozione" method="post" enctype="multipart/form-data">
     
     <!--<form name="adozione" action="./adozioneDB.php?id=10" class="formadozione" method="post" enctype="multipart/form-data">-->
     <div class="row">
@@ -149,29 +131,29 @@
     <div class="col">
         <div class="mb-3">
             <label for="nome" class="form-label">Nome del trovatello (sarai tu a darlo, opta per un bel nome!)</label>
-            <input type="text" required name= "nome" class="form-control" id="nome" aria-describedby="emailHelp">
+            <input type="text" required name= "nome_animale" class="form-control" id="nome" aria-describedby="emailHelp">
         </div>
         
         <div class="mb-3">
-            <label for="indirizzo" class="form-label">Indirizzo della casa provvisoria*</label>
+            <label for="indirizzo" name="indirizzo" class="form-label">Indirizzo della casa provvisoria*</label>
             <input type="text" required name="indirizzo" class="form-control" id="indirizzo">
         </div>
         
         <div class="mb-3">
             <label for="provincia" class="form-label">Provincia della casa provvisoria*</label>
-            <input type="text"required  name = "provincia" class="form-control" id="provincia">
+            <input type="text"required  name="provincia" class="form-control" id="provincia">
         </div>
         
 
         <div class="form-group">
     <label for="exampleFormControlSelect1">Tipologia</label>
-    <select class="form-control" id="exampleFormControlSelect1">
+    <select class="form-control" name="tipologia" id="exampleFormControlSelect1">
       <option></option>
-      <option>Cane</option>
-      <option>Gatto</option>
-      <option>Criceto</option>
-      <option>Coniglio</option>
-      <option>Uccello</option>
+      <option>cane</option>
+      <option>gatto</option>
+      <option>criceto</option>
+      <option>coniglio</option>
+      <option>uccello</option>
     </select>
   </div>
        
@@ -217,7 +199,7 @@
 
         <div class="form-group">
             <label for="input">Lascia una descrizione che invogli gli altri utenti ad adottare il trovatello</label>
-            <textarea class="form-control" name="desiderio" id="desidero" rows="2"></textarea>
+            <textarea class="form-control" name="descrizione" id="desidero" rows="2"></textarea>
         </div>
 
     <div class="col">
@@ -268,14 +250,14 @@
         }
 
         //impostiamo il percorso della cartella dove mettere il file
-        $uploaddir = 'documenti/';
+        $uploaddir = 'nuovi_animali/';
         //recupero il percorso temporaneo del file
         $immagine_tmp = $_FILES['image']['tmp_name'];
         //recupero il nome originale del file caricato
         $immagine_name = $_FILES['image']['name'];
         //verifico tramite function se il file è stato spostato nella cartella scelta
         if(move_uploaded_file($immagine_tmp, $uploaddir.$immagine_name)){
-            echo 'Documento inviato';
+            echo 'Foto inviata';
         }
         else{
             echo 'Caricamento invalido';

@@ -168,22 +168,11 @@
     <div class="container_button">
     <a href="../immagini_animali/drive/pets.php"><input type="button" id="bot_1" value="Adotta un amico"></a>
     &emsp;
-    <input type="button" id="bot_2" value="Aggiungi un 
+    <a href="../caricaAnimale.php"><input type="button" id="bot_2" value="Aggiungi un 
     amico">
     </div>
     <br><br><br><br>
 
-    <!--<div class="footer">
-            <img src="../Immagini logo/favicon.png" alt="Tale of Tails" width="40" height="40"/>
-            &nbsp;
-            &copy; 2023 Tale of Tails
-            &nbsp;
-            <a href="https://protezionedatipersonali.it/informativa">Privacy</a> 
-            <a href="../AboutUs.html">Chi siamo</a>
-            &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-            Contatti: iannicelli.1957045@studenti.uniroma1.it / lavini.1941986@studenti.uniroma1.it
-    </div>-->
     <div id="nav_bassa">
         <nav_bassa></nav_bassa>
     </div>

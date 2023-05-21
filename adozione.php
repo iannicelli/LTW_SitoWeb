@@ -13,7 +13,8 @@
     <style>
         .w3-button {width:150px;}
     </style>
-    
+
+
 
     <title>Modulo adozione</title>
 </head>
@@ -29,7 +30,7 @@
 	<div class="banneradozione">
     <nav class="navbar fixed-top navbar-expand-md navbar-light" style="background-color: #E19853;">
         <div class="container">
-            <a class ="navbar-brand mb-0 h1" href="#">
+            <a class ="navbar-brand mb-0 h1" href="./nav.php">
             <img class = "d-inline-block" src ="./Immagini logo/SITO WEB (1).png" height="40" />
             Tale of Tails - Racconti di animali
             </a>
@@ -46,8 +47,8 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item active">
-                    <a class="nav-link active" href="#"> <!-- disabled-->
-                        Home<span class="sr-only">(current)</span></a>
+                    <a class="nav-link active" href="./nav.php"> <!-- disabled-->
+                        Home<span class="sr-only"></span></a>
                     </a>
                 </li>
                 <li class="nav-item active" href="#" >
@@ -133,7 +134,7 @@
         <br>
         
     <!-- aggiungere un js con controlli -->
-    <form name="adozione" action="adozioneBD?id=<?php echo $id; ?>" class="formadozione" method="post" enctype="multipart/form-data">
+    <form name="adozione" action="adozioneDB.php?id=<?php echo $id; ?>" class="formadozione" method="post" enctype="multipart/form-data">
     
     <!--<form name="adozione" action="./adozioneDB.php?id=10" class="formadozione" method="post" enctype="multipart/form-data">-->
     <div class="row">
@@ -145,22 +146,22 @@
     <!---------primo colonna------------>
     <div class="col">
         <div class="mb-3">
-            <label for="nome" class="form-label">Nome di chi adotterà l'animale*</label>
-            <input type="text" required name= "nome" class="form-control" id="nome" aria-describedby="emailHelp">
+            <label for="validationDefault01" class="form-label">Nome di chi adotterà l'animale</label>
+            <input type="text" required name= "nome" class="form-control" id="validationDefault01">
         </div>
         
         <div class="mb-3">
-            <label for="indirizzo" class="form-label">Indirizzo di residenza*</label>
+            <label for="indirizzo" class="form-label">Indirizzo di residenza</label>
             <input type="text" required name="indirizzo" class="form-control" id="indirizzo">
         </div>
         
         <div class="mb-3">
-            <label for="provincia" class="form-label">Provincia di residenza*</label>
+            <label for="provincia" class="form-label">Provincia di residenza</label>
             <input type="text"required  name = "provincia" class="form-control" id="provincia">
         </div>
         
         <div class="mb-3">
-            <label for="telefono" class="form-label">Recapito telefonico*</label>
+            <label for="telefono" class="form-label">Recapito telefonico</label>
             <input type="text"required name="telefono" class="form-control" id="telefono">
         </div>
         
@@ -168,22 +169,22 @@
 
     <div class="col">
         <div class="mb-3">
-            <label for="cognome" class="form-label">Cognome di chi adotterà l'animale*</label>
+            <label for="cognome" class="form-label">Cognome di chi adotterà l'animale</label>
             <input type="text" required name="cognome" class="form-control" id="cognome" aria-describedby="emailHelp">
         </div>
         
         <div class="mb-3">
-            <label for="indirizzo" class="form-label">Città di residenza*</label>
+            <label for="indirizzo" class="form-label">Città di residenza</label>
             <input type="text" required name="citta" class="form-control" id="citta">
         </div>
         
         <div class="mb-3">
-            <label for="provincia" class="form-label">CAP*</label>
+            <label for="provincia" class="form-label">CAP</label>
             <input type="text" required name="cap" class="form-control" id="cap">
         </div>
         
         <div class="mb-3">
-            <label for="telefono" class="form-label">Email*</label>
+            <label for="telefono" class="form-label">Email</label>
             <input type="text" required name="email" class="form-control" id="email">
         </div>
               
@@ -306,11 +307,7 @@
 </div>
 
 <br><br><br>
-<!--aggiungere footer-->
-
-
-        <br>
-            <!--follie di chiara-->
+      <br>
                    
         <!-- CSS only -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">

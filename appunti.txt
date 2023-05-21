@@ -92,4 +92,5 @@ FEDE:
 
 
 CHIARA:
-- veditela tu
+- completare more
+

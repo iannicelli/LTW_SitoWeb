@@ -7,7 +7,7 @@ $(document).ready(function() {
     $("#login").addClass("visible");
 });
 
-function controlli(){
+function controlli_reg(){
     if (document.reg.nome.value == ""){
         alert("Devi inserire un nome");
         reg.nome.focus();
@@ -46,5 +46,18 @@ function controlli(){
     return true;
 };
 
+function controlli_login(){
+    if(document.login.email.value == ""){
+        alert("Devi indicare un indirizzo email");
+        reg.email.focus();
+        return false;
+    }
+    if(document.login.password.value == ""){
+        alert("Devi indicare un indirizzo email");
+        reg.email.focus();
+        return false;
+    }
+
+};
 
 

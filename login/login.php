@@ -23,7 +23,7 @@
                         
                 }
             ?>  
-            <form action="loginUtente.php" class="formlogin" method="post">
+            <form name="login" action="loginUtente.php" class="formlogin" method="post" onsubmit="return controlli_login();">
                 <label>Email:</label>
                 <input type="text" required="required" name="email" class="testo" placeholder="Email..." /><br>
                 <label>Password:</label>
