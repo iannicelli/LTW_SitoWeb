@@ -2,7 +2,7 @@
     function inserisci($x){
 
         // Connessione al database
-    include '../../login/loginDB.php';
+    include '../login/loginDB.php';
 
     // Query per recuperare i primi 10 animali dal database
         $query = "SELECT * FROM animali order by id";

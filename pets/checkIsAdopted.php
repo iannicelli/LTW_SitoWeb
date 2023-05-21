@@ -1,6 +1,6 @@
 <?php
     function isAdopted($x){
-        include '../../login/loginDB.php';
+        include '../login/loginDB.php';
         $query = "SELECT * FROM animali where id=$x";
         $result = pg_query($db, $query);
     
