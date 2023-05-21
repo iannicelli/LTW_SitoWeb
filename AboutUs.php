@@ -26,6 +26,14 @@
     <title>AboutUs</title>
   </head>
   <body style="height:600px">
+    <?php
+    include "./login/checkIsLogged.php";
+
+   if(isLogged()){
+       echo '<i>'.$_SESSION['nome'].' '.$_SESSION['cognome'].'</i>';
+   }
+   ?>
+   
 
     <nav class="navbar fixed-top navbar-expand-md navbar-light" style="background-color: #E19853;">
         <div class="container">
@@ -78,7 +86,19 @@
                           </svg>
                     </i>
                 </a>
-    
+				<li class="nav-item active" href="#">
+					<?php
+						if(isLogged())
+							echo '<a href="#" class="nav-link active">
+								<img src="omino.png" height="37" width="37"></img>
+							</a>';
+						else 
+							echo '<a href="./login/login.php" class="nav-link active">
+								Login
+							</a>';
+					?>
+
+                </li>   
     
 
             </ul>
@@ -87,7 +107,9 @@
 
         </div>
     </nav>
+    </div>
 
+    
     <div class="wrapper" id="wrapperAU" >
         <div class="testimonial" id="testimonialAU">
             <article >

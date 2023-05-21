@@ -120,11 +120,12 @@ nav a:hover {
     height: 100vh;
     background-image: linear-gradient(rgba(0,0,0,0.40),rgba(0,0,0,0.40));
     background-position: center;
-    background-size: center;
+    background-size: cover;
     margin: 0;
     padding: 0;
     font-family: sans-serif;
     box-sizing: border-box;
+    position: relative;
 }
 
 .banner video{
