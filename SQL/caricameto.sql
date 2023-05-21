@@ -1,7 +1,7 @@
 CREATE TABLE caricamento (
-  email VARCHAR PRIMARY KEY,
+  email VARCHAR ,
   nome_animale VARCHAR,
-  id_animale VARCHAR,
+  id_animale VARCHAR PRIMARY KEY,
   foto_animale BYTEA,
   indirizzo VARCHAR,
   città VARCHAR,
@@ -10,5 +10,10 @@ CREATE TABLE caricamento (
   tipologia VARCHAR,
   descrizione VARCHAR
 );
+
+select * from animali
+
+drop table caricamento
+
 	
 	

@@ -28,7 +28,7 @@
             <label>Email:</label>
             <input type="text" name="email" class="testo" placeholder="Email..."/><br>
             <label>Password:</label>
-            <input type="password" id="txt" name="pass1"  onkeyup="validator()" pattern="[\S\s]" class="testo" placeholder="Password..." /><br>
+            <input type="password" id="pass" name="pass1"  onkeyup="validator()" class="testo" placeholder="Password..." /><br>
             <div id="ProgressBar">
                 <div id="bar">
                 </div>
@@ -46,9 +46,9 @@
         <script>
     function validator() {
       var x = 0;
-      var password = document.getElementById('txt').value;
+      var password = document.getElementById('pass').value;
       var bar = document.getElementById("bar");
-      var al = document.getElementById("alert");
+  
     
       //controllo numeri
       var check=/[0-9]/;
@@ -110,7 +110,7 @@
       //controllo spazi bianchi
       var check5=/\s\S/;
       if(check5.test(password)){
-        bar.innerHTML = "Password must not contain white spaces";
+        bar.innerHTML = "NO white spaces";
         bar.style.backgroundColor = "red";
       }
     }
