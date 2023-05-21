@@ -253,7 +253,7 @@ nav a:hover {
 }
 
 /*-------------------about us------------*/
-.wrapper{
+#wrapperAU{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
@@ -265,13 +265,13 @@ nav a:hover {
 
     min-height:100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url('./son-you-were-copied-and-pasted-fb-cover.jpg');
+    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url('./sfondo_about_us/BONUS-ANIAMLI-DOMESTICI-696x464.webp');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-.testimonial{
+#testimonialAU{
     padding: 30px 100px;
     box-sizing: border-box;
     font-family: 'Lovelo', sans-serif;
@@ -281,7 +281,7 @@ nav a:hover {
     letter-spacing: 1px;
 }
 
-article h1{
+article h8{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
@@ -289,13 +289,13 @@ article h1{
     text-align: center;
     color:#fff;
     line-height: 1.5;
-    letter-spacing: 1px;
     font-size: 50px;
     font-weight: 800;
+    letter-spacing: 1.5px;
 
 }
 
-article h1:after{
+article h8:after{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
@@ -315,7 +315,7 @@ article h1:after{
 
 }
 
-article img{
+#ImmagineAU{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
@@ -330,5 +330,50 @@ article img{
     width: 200px;
     border: 2px solid #fff;
     border-radius: 50%;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
 
+#blockquoteAU{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Lovelo', sans-serif;
+    text-align: center;
+    color:#fff;
+    line-height: 1.5;
+    letter-spacing: 1px;
+
+    margin-top: 30px;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+article h9{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Lovelo', sans-serif;
+    text-align: center;
+    color:#fff;
+    line-height: 1.5;
+
+
+    text-transform: uppercase;
+    font-size: 28px;
+    margin-top: 30px;
+    letter-spacing: 1.5px;
+}
+
+article p{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Lovelo', sans-serif;
+    text-align: center;
+    color:#fff;
+    line-height: 1.5;
+    letter-spacing: 1px;
+
+    font-size: 17px;
 }

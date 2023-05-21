@@ -146,22 +146,22 @@
     <!---------primo colonna------------>
     <div class="col">
         <div class="mb-3">
-            <label for="nome" class="form-label">Nome di chi adotterà l'animale*</label>
-            <input type="text" required name= "nome" class="form-control" id="nome" aria-describedby="emailHelp">
+            <label for="validationDefault01" class="form-label">Nome di chi adotterà l'animale</label>
+            <input type="text" required name= "nome" class="form-control" id="validationDefault01">
         </div>
         
         <div class="mb-3">
-            <label for="indirizzo" class="form-label">Indirizzo di residenza*</label>
+            <label for="indirizzo" class="form-label">Indirizzo di residenza</label>
             <input type="text" required name="indirizzo" class="form-control" id="indirizzo">
         </div>
         
         <div class="mb-3">
-            <label for="provincia" class="form-label">Provincia di residenza*</label>
+            <label for="provincia" class="form-label">Provincia di residenza</label>
             <input type="text"required  name = "provincia" class="form-control" id="provincia">
         </div>
         
         <div class="mb-3">
-            <label for="telefono" class="form-label">Recapito telefonico*</label>
+            <label for="telefono" class="form-label">Recapito telefonico</label>
             <input type="text"required name="telefono" class="form-control" id="telefono">
         </div>
         
@@ -169,22 +169,22 @@
 
     <div class="col">
         <div class="mb-3">
-            <label for="cognome" class="form-label">Cognome di chi adotterà l'animale*</label>
+            <label for="cognome" class="form-label">Cognome di chi adotterà l'animale</label>
             <input type="text" required name="cognome" class="form-control" id="cognome" aria-describedby="emailHelp">
         </div>
         
         <div class="mb-3">
-            <label for="indirizzo" class="form-label">Città di residenza*</label>
+            <label for="indirizzo" class="form-label">Città di residenza</label>
             <input type="text" required name="citta" class="form-control" id="citta">
         </div>
         
         <div class="mb-3">
-            <label for="provincia" class="form-label">CAP*</label>
+            <label for="provincia" class="form-label">CAP</label>
             <input type="text" required name="cap" class="form-control" id="cap">
         </div>
         
         <div class="mb-3">
-            <label for="telefono" class="form-label">Email*</label>
+            <label for="telefono" class="form-label">Email</label>
             <input type="text" required name="email" class="form-control" id="email">
         </div>
               
@@ -308,7 +308,6 @@
 
 <br><br><br>
       <br>
-            <!--follie di chiara-->
                    
         <!-- CSS only -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
