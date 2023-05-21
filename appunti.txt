@@ -16,7 +16,10 @@ una votla inviato il form dell'adozione -> che succede?
 
 
 
-
+1 gatto
+2 cane
+3 uccello o criceto
+4 coniglio
 
 
 Gioco "Animal Match - Trova il tuo compagno perfetto":
@@ -64,6 +67,7 @@ Ti paice viaggiare?
     Sono sempre con la valigia in mano
     Non amo i viaggi 
     Mi piacciono ma brevi
+    Mi piacciono poco
 
 Com'è la tua casa?
     Vissuta
@@ -81,9 +85,9 @@ compagni che fanno per te
 
 
 FEDE:
-- moduo carica animale
-- giochino
-- about us
+- moduo carica animale ok
+- giochino 16/05
+- about us 17/08
 - home about us
 
 
