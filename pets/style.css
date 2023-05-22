@@ -147,6 +147,7 @@ h3::before{
   cursor: pointer;
   /*da eliminare se non funziona*/
   position: relative;
+
 }
 
 /*da eliminare se non funziona*/
@@ -181,8 +182,8 @@ h3::before{
   bottom: 0;
   left: 0;
   border-radius: 10px;
+  box-shadow: 2px 2px 30px rgba(0,0,0,0.2);
   height: 0;
-  background-color: rgba(0, 0, 0, .4);
   transition: .3s;
   margin-top: -100%; /* Modifica qui */
 }

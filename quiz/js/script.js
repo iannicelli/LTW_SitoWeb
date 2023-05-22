@@ -29,17 +29,22 @@ let result = document.querySelector("#result");
 let points = document.querySelector("#points");
 let quit = document.querySelector("#quit");
 let startAgain = document.querySelector("#startAgain");
+let home = document.querySelector("#home");
 
 //Get All 'H4' From Quiz Section (MCQS)
 let choice_que = document.querySelectorAll(".choice_que");
 
 
 let index = 0;
-let timer = 0;
-let interval = 0;
 
-//total points
-let correct = 0;
+
+
+
+//animal points
+let gatto = 0;
+let cane = 0;
+let criceto = 0;
+let coniglio = 0;
 
 //store Answer Value
 let UserAns = undefined;
@@ -57,19 +62,7 @@ exit.addEventListener("click", () => {
 });
 
 
-//Creating Timer For Quiz Timer Section
 
-let countDown = () => {
-    if (timer === 20) {
-        clearInterval(interval);
-        next_question.click();
-    } else {
-        timer++;
-        time.innerText = timer;
-    }
-}
-
-//setInterval(countDown,1000);
 
 let loadData = () => {
     questionNo.innerText = index + 1 + ". ";
@@ -79,8 +72,7 @@ let loadData = () => {
     option3.innerText = MCQS[index].choice3;
     option4.innerText = MCQS[index].choice4;
 
-    //    timer start
-    timer = 0;
+
 }
 
 loadData();
@@ -90,7 +82,7 @@ continueBtn.addEventListener("click", () => {
     quiz.style.display = "block";
     guide.style.display = "none";
 
-    interval = setInterval(countDown, 1000);
+
     loadData();
 
     //    remove All Active Classes When Continue Button Will Click
@@ -99,20 +91,28 @@ continueBtn.addEventListener("click", () => {
         removeActive.classList.remove("active");
     })
 
-    total_correct.innerHTML = `${correct = 0} Out Of ${MCQS.length} Questions`;
+    total_correct.innerHTML = " ";
 });
 
 choice_que.forEach((choices, choiceNo) => {
     choices.addEventListener("click", () => {
         choices.classList.add("active");
+
         //check answer
-        if (choiceNo === MCQS[index].answer) {
-            correct++;
-        } else {
-            correct += 0;
+        if (choiceNo == 0) {
+            gatto++;
         }
-        //stop Counter
-        clearInterval(interval);
+        if (choiceNo == 1) {
+            cane++;
+        }
+        if (choiceNo == 2) {
+            criceto++;
+        }
+        if (choiceNo == 3){
+            coniglio++;
+        }
+
+
 
         //disable All Options When User Select An Option
         for (i = 0; i <= 3; i++) {
@@ -135,17 +135,59 @@ next_question.addEventListener("click", () => {
 
         //result
         total_correct.style.display = "block";
-        total_correct.innerHTML = `${correct} Out Of ${MCQS.length} Questions`;
-        clearInterval(interval);
-        interval = setInterval(countDown, 1000);
+
+
+        if (index == 1){
+            total_correct.innerHTML = `Il cane è l'unico animale che guarda in faccia gli esseri umani per comunicare`;
+        }
+
+        if (index == 3){
+            total_correct.innerHTML = "Il gatto è uno dei pochi che non hanno la capacità di percepire il gusto dolce";
+        }
+
+        if (index == 5){
+            total_correct.innerHTML = "Le femmine di criceto potrebbero mangiare alcuni cuccioli";
+        }
+
+        if (index == 7){
+            total_correct.innerHTML = "I conigli fanno le fusa in segno di felicità";
+        }
+
+        if (index == 9){
+            total_correct.innerHTML = `Gli uccelli non hanno denti ad eccezione della gallina`;
+        }
+
+        if ((index == 2) || (index == 4) || (index == 6) || (index == 8) || (index == 10)){
+            total_correct.innerHTML = " ";
+        }
+
+
+
+
     } else {
         index = 0;
 
 
         //when Quiz Question Complete Display Result Section
-        clearInterval(interval);
         quiz.style.display = "none";
-        points.innerHTML = `You Got ${correct} Out Of ${MCQS.length}`;
+        //points.innerHTML = `i gatti ${gatto}, criceti ${criceto}, cani ${cane}, conigli ${coniglio}`;
+        if (gatto > criceto && gatto > cane && gatto > coniglio){
+            points.innerHTML = "Il tuo animale da compagnia perfetto è il gatto";
+        }
+
+        if (criceto > gatto && criceto > coniglio && criceto > cane){
+            points.innerHTML = "Il tuo animale da compagnia perfetto è il criceto";
+        }
+
+        if (cane > gatto && cane > coniglio && criceto < cane){
+            points.innerHTML = "Il tuo animale da compagnia perfetto è il cane";
+        }
+
+        if (coniglio > gatto && criceto < coniglio && coniglio > cane){
+            points.innerHTML = "Il tuo animale da compagnia perfetto è il criceto";
+        }
+
+
         result.style.display = "block";
     }
     for (i = 0; i <= 3; i++) {
@@ -157,10 +199,21 @@ next_question.addEventListener("click", () => {
 quit.addEventListener("click", () => {
     start.style.display = "block";
     result.style.display = "none";
+
 });
 
 //Start Again When 'Start Again' Button Will Clicked
 startAgain.addEventListener("click", () => {
     guide.style.display = "block";
     result.style.display = "none";
+    criceto = 0;
+    gatto = 0;
+    cane = 0;
+    coniglio = 0;
+});
+
+home.addEventListener("click", () => {
+    guide.style.display = "block";
+    result.style.display = "none";
+
 });
