@@ -26,7 +26,7 @@
             $_SESSION['ruolo']= $row['ruolo'] == 'ADMIN' ? $row['ruolo'] : 'LOGGED';
             $_SESSION['isLogged'] = true;
             
-            header("location: ../nav.php");
+            header("location: ../home.php");
         }
         else {
             header("location: ../generica.php?messaggio=passwordErrata");

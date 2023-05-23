@@ -37,7 +37,7 @@
             <input type="password" name="password2" class="testo" placeholder="Conferma password..." /><br>
         
             <div class="button-wrapper">
-                    <a href="../nav.php"><input type="button" class="button" id="register" name="Register" value="Home" /></a>
+                    <a href="../home.php"><input type="button" class="button" id="register" name="Register" value="Home" /></a>
                     <input type="submit" class="button" name="submit" value="Registrati!" />
                    </div>
             </form>

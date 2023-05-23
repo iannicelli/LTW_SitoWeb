@@ -55,7 +55,7 @@
                     </div>
 
                     &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-                        <a href="./nav.php"><input type="button" class="button" id="button" name="Register" value="Home" /></a>
+                        <a href="./home.php"><input type="button" class="button" id="button" name="Register" value="Home" /></a>
 
 
                     </div>';
@@ -109,7 +109,7 @@
                  </div>
          
                  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-                 <a href="./nav.php"><input type="button" class="button" id="button" name="Register" value="Home" /></a>
+                 <a href="./home.php"><input type="button" class="button" id="button" name="Register" value="Home" /></a>
                      </div>';
              }
              else if($messaggio == 'nonLoggato2'){
@@ -125,7 +125,7 @@
                  </div>
          
                  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-                 <a href="./nav.php"><input type="button" class="button" id="button" name="Register" value="Home" /></a>
+                 <a href="./home.php"><input type="button" class="button" id="button" name="Register" value="Home" /></a>
                      </div>';
              }
             else if($messaggio=='modificaEffettuata'){
@@ -141,7 +141,7 @@
                     </div>
 
                     &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-                        <a href="./nav.php"><input type="button" class="button" id="button" name="Register" value="Home" /></a>
+                        <a href="./home.php"><input type="button" class="button" id="button" name="Register" value="Home" /></a>
 
                     </div>';
             }
@@ -194,7 +194,7 @@
                  </div>
          
                  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-                 <a href="./nav.php"><input type="button" class="button" id="button" name="Register" value="Home" /></a>
+                 <a href="./home.php"><input type="button" class="button" id="button" name="Register" value="Home" /></a>
 
                      </div>';
              }
@@ -211,7 +211,7 @@
                  </div>
          
                  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-                 <a href="./nav.php"><input type="button" class="button" id="button" name="Register" value="Home" /></a>
+                 <a href="./home.php"><input type="button" class="button" id="button" name="Register" value="Home" /></a>
 
                      </div>';
              }

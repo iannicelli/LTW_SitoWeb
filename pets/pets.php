@@ -111,7 +111,7 @@
     <div class="row">
         <a href="./more.php"> <input type="button" class="btn-btn-primary" value="More"></a>
         &emsp;&emsp;
-        <a href="../../nav.php"> <input type="button" class="btn-btn-primary" value="Home"></a>
+        <a href="../../home.php"> <input type="button" class="btn-btn-primary" value="Home"></a>
         &emsp;&emsp;
         <?php
           if(isLogged()){
