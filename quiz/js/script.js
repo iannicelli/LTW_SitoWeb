@@ -30,6 +30,7 @@ let points = document.querySelector("#points");
 let quit = document.querySelector("#quit");
 let startAgain = document.querySelector("#startAgain");
 let home = document.querySelector("#home");
+let img = document.querySelector("#img");
 
 //Get All 'H4' From Quiz Section (MCQS)
 let choice_que = document.querySelectorAll(".choice_que");
