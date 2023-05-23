@@ -3,6 +3,7 @@ let start = document.querySelector("#start");
 
 //guide Section
 let guide = document.querySelector("#guide");
+let exit = document.querySelector("#exit");
 let continueBtn = document.querySelector("#continue");
 
 //Quiz Section
@@ -28,7 +29,7 @@ let result = document.querySelector("#result");
 let points = document.querySelector("#points");
 let quit = document.querySelector("#quit");
 let startAgain = document.querySelector("#startAgain");
-let img = document.querySelector("#img");
+let home = document.querySelector("#home");
 
 //Get All 'H4' From Quiz Section (MCQS)
 let choice_que = document.querySelectorAll(".choice_que");
@@ -54,7 +55,10 @@ start.addEventListener("click", () => {
     guide.style.display = "block";
 });
 
-
+exit.addEventListener("click", () => {
+    start.style.display = "block";
+    guide.style.display = "none";
+});
 
 let loadData = () => {
     questionNo.innerText = index + 1 + ". ";
@@ -204,3 +208,8 @@ startAgain.addEventListener("click", () => {
     coniglio = 0;
 });
 
+home.addEventListener("click", () => {
+    guide.style.display = "block";
+    result.style.display = "none";
+
+});
