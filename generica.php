@@ -19,7 +19,6 @@
             - adottato
             - emailPresente
             - caricamentoRiuscito
-            - adozioneRiuscita
             - nessunaAdozione
             - nessunCaricamento
         */
@@ -198,23 +197,7 @@
 
                      </div>';
              }
-             else if($messaggio == 'adozioneRiuscita'){
-                echo' <div id="login"><div id="titolologin"><label>Adozione Completata</label></div>
-             
-                     <div id="testo">
-                     <br>
-                     <br>
-                     
-                 Adozione completata con successo!<br>
-                 Speriamo tratterai questo animale con amore, affetto e rispetto.<br>
-                 Clicca sul tasto Home per essere rendirizzato alla pagina principale. </label>
-                 </div>
-         
-                 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-                 <a href="./home.php"><input type="button" class="button" id="button" name="Register" value="Home" /></a>
-
-                     </div>';
-             }
+            
              else if($messaggio == 'nessunaAdozione'){
                 echo' <div id="login"><div id="titolologin"><label>Nessuna Adozione</label></div>
              

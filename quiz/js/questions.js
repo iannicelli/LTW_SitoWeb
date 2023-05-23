@@ -61,7 +61,7 @@ let MCQS = [{
     choice4: "Mi piacciono poco"
 },
             {
-               question: "Quanto puoi investire in termini di denato?",
+               question: "Quanto puoi investire in termini di denaro?",
     choice1: "Abbastanza",
     choice2: "Tanto",
     choice3: "Molto poco",

@@ -82,7 +82,7 @@
 
 
     //decidere dove deve finire l'adozione
-    header("location: ./generica.php?messaggio=adozioneRiuscita")
+    header("location: ./postAdozione.php?id=$id")
     
     
 ?>
