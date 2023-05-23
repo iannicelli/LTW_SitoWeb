@@ -389,3 +389,8 @@ article p{
 #foto_carica{
     width: 49.3%;
 }
+
+.btn text-white{
+    height: 100px;
+    width: 100px;
+}
