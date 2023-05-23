@@ -63,7 +63,7 @@
 
 
 
-    </script>
+        </script>
     </head>
     <body background="./sfondo/giusta.jpg">
         
