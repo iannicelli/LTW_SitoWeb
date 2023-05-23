@@ -2,140 +2,136 @@ body {
     background-color:#fff;
 }
     
-   #login {
-    width:450px;
-    border:1px solid black;
-    height:485px;
-    font-family: 'Arial';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-top: -200px;
-    margin-left: -225px;
+#login {
+  width:450px;
+  border:1px solid black;
+  height:485px;
+  font-family: 'Arial';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -200px;
+  margin-left: -225px;
     
-    background-color:#fff;
-    
-    border-radius:25px;
-    -webkit-border-radius:25px;
-    -moz-border-radius: 25px;
-      /* Imposta la visibilità del box a nascosto */
-      opacity: 0;
-      visibility: hidden;
-      transition: all 1s ease-out; /* Imposta la transizione con una durata di 1 secondo e una funzione di accelerazione */
+  background-color:#fff;
+
+  border-radius:25px;
+  -webkit-border-radius:25px;
+  -moz-border-radius: 25px;
+  /* Imposta la visibilità del box a nascosto */
+  opacity: 0;
+  visibility: hidden;
+  transition: all 1s ease-out; /* Imposta la transizione con una durata di 1 secondo e una funzione di accelerazione */
   
-      }
+}
       
-      #login.visible {
-          /* Imposta la visibilità del box a visibile */
-          opacity: 1;
-          visibility: visible;
-        }
+#login.visible {
+  /* Imposta la visibilità del box a visibile */
+  opacity: 1;
+  visibility: visible;
+}
     
-   #titolologin{
-    font-family: 'Arial';
-    border-bottom:1px solid #918A8A;
-    height:25px;
-    width:425px;
-    float:left;
-    padding:20px 0 15px 25px;
-    font-size:30px;
+#titolologin{
+  font-family: 'Arial';
+  border-bottom:1px solid #918A8A;
+  height:25px;
+  width:425px;
+  float:left;
+  padding:20px 0 15px 25px;
+  font-size:30px;
     
-    border-radius:25px 25px 0 0;
-    -webkit-border-radius:25px 25px 0 0;
-    -moz-border-radius: 25px 25px 0 0;
+  border-radius:25px 25px 0 0;
+  -webkit-border-radius:25px 25px 0 0;
+  -moz-border-radius: 25px 25px 0 0;
     
-    background: #E19853;
+  background: #E19853;
    
-   }
+}
    
-   #register{
-    margin-right:90px;}
+#register{
+  margin-right:90px;
+}
 
-    .button-wrapper {
-        text-align: right;
-        margin-top: 10px;
-    }
+.button-wrapper {
+  text-align: right;
+  margin-top: 10px;
+}
 
-    #centrato{
-        text-align: center;
-        
-
-    }
+#centrato{
+  text-align: center;
+}
     
-   .button {
-    width:125px;
-    height:35px;
-    text-shadow:2px 2px 5px rgba(212,212,212,1);
-    color:#000;
-    font-size:20px;
-    border-radius: 10px;
-    border:1px solid #fff;
+.button {
+  width:125px;
+  height:35px;
+  text-shadow:2px 2px 5px rgba(212,212,212,1);
+  color:#000;
+  font-size:20px;
+  border-radius: 10px;
+  border:1px solid #fff;
    
-    background: #E19853;
-    box-shadow: 2px 2px 5px #000;
-    }
+  background: #E19853;
+  box-shadow: 2px 2px 5px #000;
+}
 
-   .button:hover {
-    box-shadow: 2px 2px 5px #000;
-    background: #d8761a;
-    }
-   .button:active{
-    box-shadow:none;
-    }
+.button:hover {
+  box-shadow: 2px 2px 5px #000;
+  background: #d8761a;
+}
+.button:active{
+  box-shadow:none;
+}
    
-   .formlogin{
-    margin:75px 50px 50px 50px;
-    margin-top:75px;
-    }
+.formlogin{
+  margin:75px 50px 50px 50px;
+  margin-top:75px;
+}
    
-   .testo {
-    height:30px;
-    width:350px;
-    margin-bottom:15px;
-    border-radius: 8px;
-    background: #FFFFFF; /* Old browsers */
-   background: -moz-linear-gradient(top, #FFF 0%, #DBDBDB 100%); /* FF3.6+ */
-   background: -webkit-linear-gradient(top, #FFFFFF 0%, #DBDBDB 100%); /* Chrome10+,Safari5.1+ */
-   background: -o-linear-gradient(top, #FFFFFF 0%, #DBDBDB 100%); /* Opera 11.10+ */
-   background: -ms-linear-gradient(top, #FFFFFF 0%, #DBDBDB 100%); /* IE10+ */
-   background: linear-gradient(to bottom, #FFFFFF 0%, #DBDBDB 100%); /* W3C */
-   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#dbdbdb',GradientType=0 ); /* IE6-9 */
-   
+.testo {
+  height:30px;
+  width:350px;
+  margin-bottom:15px;
+  border-radius: 8px;
+  background: #FFFFFF; /* Old browsers */
+  background: -moz-linear-gradient(top, #FFF 0%, #DBDBDB 100%); /* FF3.6+ */
+  background: -webkit-linear-gradient(top, #FFFFFF 0%, #DBDBDB 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #FFFFFF 0%, #DBDBDB 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #FFFFFF 0%, #DBDBDB 100%); /* IE10+ */
+  background: linear-gradient(to bottom, #FFFFFF 0%, #DBDBDB 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#dbdbdb',GradientType=0 ); /* IE6-9 */
+  padding:5px;
+}
     
-    padding:5px;}
+.testo:hover{
+  box-shadow:2px 2px 5px #c35d09 ;
+}
     
-   .testo:hover{
-        box-shadow:2px 2px 5px #c35d09 ;
-    }
-    
-   .testo:focus, .testo:hover{
-        box-shadow:2px 2px 5px #c35d09 ;
+.testo:focus, .testo:hover{
+   box-shadow:2px 2px 5px #c35d09 ;
+}
 
-    }
-
-    #ProgressBar {
-        width: 100%;
-        background-color: #ddd;
-        max-width:300px;
-      }
-      #bar {
-        width: 1%;
-    
-        height: 17px;
-        background-color: #4CAF50;
-        max-width:300px;
-          text-align:center;
-          color: antiquewhite;
-          margin-bottom:15px;
+#ProgressBar {
+  width: 100%;
+  background-color: #ddd;
+  max-width:300px;
+}
+#bar {
+  width: 1%;
+  height: 17px;
+  background-color: #4CAF50;
+  max-width:300px;
+  text-align:center;
+  color: antiquewhite;
+  margin-bottom:15px;
   
-      }
-      #txt {
-        margin-bottom:5px;
-        padding:5px;
+}
+#txt {
+  margin-bottom:5px;
+  padding:5px;
   
-      }
-      #alert {
-        font-weight:bold;
-        text-align:center;
-        color: antiquewhite;
-      }
+}
+#alert {
+  font-weight:bold;
+  text-align:center;
+  color: antiquewhite;
+}

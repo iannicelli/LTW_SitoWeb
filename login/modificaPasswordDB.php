@@ -30,7 +30,7 @@
 
             header("location: ../generica.php?messaggio=modificaEffettuata");
         }else{
-        header("location: ModificaPassword.php?errore=1");
+        header("location: ../generica.php?messaggio=passwordErrata2");
         }
     }
 
