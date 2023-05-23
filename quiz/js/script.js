@@ -3,7 +3,6 @@ let start = document.querySelector("#start");
 
 //guide Section
 let guide = document.querySelector("#guide");
-let exit = document.querySelector("#exit");
 let continueBtn = document.querySelector("#continue");
 
 //Quiz Section
@@ -55,13 +54,6 @@ start.addEventListener("click", () => {
     start.style.display = "none";
     guide.style.display = "block";
 });
-
-//what happen when 'Exit' Button Will Click
-exit.addEventListener("click", () => {
-    start.style.display = "block";
-    guide.style.display = "none";
-});
-
 
 
 
