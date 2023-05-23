@@ -143,6 +143,18 @@ h3::before{
 }
 }
 
+@media only screen and (max-width: 600px){
+  ul li{
+    margin: 3px;
+    font-size: 3vmin;
+  }
+}
+
+
+
+
+
+
 .image-container{
   cursor: pointer;
   /*da eliminare se non funziona*/
