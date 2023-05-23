@@ -78,9 +78,15 @@
         <!--   Result Section              <i class="fas fa-trophy"></i>-->
         <div id="result">
             <h6 id="points">Adotta un animale</h6>
+            <br><br><br><br>
+            <div class="image-container2">
+
+
             <div class="image-container">
-                <img src="./js/animali_quiz.jpg" id="img">
+                    <img calss="itemBox" src="./js/animali_quiz.jpg" id="img">
+                    <a href="../pets/pets.php"><input type="button" class="image-overlay-button" value="Adotta!"></a>
               </div>
+            </div>
             
             <button id="quit">Vedi altri animali da adottare</button>
             <button id="startAgain">Start Again</button>
