@@ -7,7 +7,23 @@
     </head>
     <body background="./login/sfondo/giusta.jpg">
         <?php
-            
+
+        /*
+        MESSAGGI DI ERRORE POSSIBILI
+            - emailNonEsistente
+            - registrazioneCompletata
+            - passwordErrata
+            - nonLoggato
+            - nonLoggato2
+            - modificaEffettuata
+            - adottato
+            - emailPresente
+            - caricamentoRiuscito
+            - adozioneRiuscita
+            - nessunaAdozione
+            - nessunCaricamento
+        */
+          
             $messaggio = $_GET['messaggio'];
             if($messaggio == 'emailNonEsistente'){
                 echo '<div id="login"><div id="titolologin"><label>Email non esistente</label></div>
@@ -58,6 +74,24 @@
 
                     &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
                         <a href="./login/login.php"><input type="button" class="button" id="button" name="Register" value="Login" /></a>
+
+
+                    </div>';
+            }
+            else if($messaggio=='passwordErrata2'){
+                echo' <div id="login"><div id="titolologin"><label>Errore Password</label></div>
+            
+                    <div id="testo">
+                        <br>
+                        <br>
+                        <br>
+                    La password risulta errata <br>
+                        Riprovare.
+                    </label><br>
+                    </div>
+
+                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                        <a href="./login/modificaPassword.php"><input type="button" class="button" id="button" name="Register" value="Riprovaw" /></a>
 
 
                     </div>';
@@ -181,6 +215,42 @@
 
                      </div>';
              }
+             else if($messaggio == 'nessunaAdozione'){
+                echo' <div id="login"><div id="titolologin"><label>Nessuna Adozione</label></div>
+             
+                     <div id="testo">
+                     <br>
+                     <br>
+                     
+                 Sembra tu non abbia adottato ancora alcun animale!<br>
+                 Clicca sul pulsante in basso per conoscere tutti gli animali che hanno bisogno di una casa e di tanto affetto.
+                  </label>
+                 </div>
+         
+                 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                 <a href="./pets/pets.php"><input type="button" class="button" id="button" name="Register" value="Pets" /></a>
+
+                     </div>';
+             }
+             else if($messaggio == 'nessunCaricamento'){
+                echo' <div id="login"><div id="titolologin"><label>Nessun Caricamento</label></div>
+             
+                     <div id="testo">
+                     <br>
+                    
+                     
+                 Sembra tu non abbia inserito alcun animale!<br>
+                 Se conosci qualche trovatello che ha bisogno di una nuova casa e di una nuova famiglia, non esitare a farcelo conoscere.
+                 Clicca sul pulsante in basso per essere reindirizzato alla pagina pets.
+                 </label>
+                 </div>
+         
+                 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                 <a href="./pets/pets.php"><input type="button" class="button" id="button" name="Register" value="Pets" /></a>
+
+                     </div>';
+             }
+             
              
              
         ?>

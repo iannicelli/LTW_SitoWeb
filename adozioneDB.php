@@ -60,7 +60,7 @@
      }
     $query3 = "UPDATE utenti
                 SET n_adottati = n_adottati + 1
-                WHERE email = 'email';
+                WHERE email = '$mail';
     ";
     $res3=pg_query($db, $query3);
     if(!$res3){

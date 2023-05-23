@@ -153,13 +153,17 @@
                 echo "<p><b>Cognome:</b> ".$row["cognome"]."<p>"; 
                 echo "<p><b>E-mail:</b> ".$row["email"]."</p>";
                 echo "<p><b>N animali adottati:</b> ".$row["n_adottati"]."</p>";
+                echo '<a href="adottatiUtente.php?email='.$mail.'"><input type="button" value="Visualizza"></a>';
                 echo "<p><b>N animali inseriti:</b> ".$row["n_caricati"]."</p>";
+                echo '<a href="caricatiUtente.php?email='.$mail.'"><input type="button" value="Visualizza"></a>';
                 }
                 ?>
                 <br>
 
                 <p style="text-align:center">
                     <a href="ModificaPassword.php"> <input type='submit' id="pass" value='Modifica Password'></a>
+                    <a href="ModificaDati.php"> <input type='submit' id="pass" value='Modifica Dati'></a>
+
                 </p>
     
             </div>
@@ -170,6 +174,7 @@
     &emsp;
     <a href="../caricaAnimale.php"><input type="button" id="bot_2" value="Aggiungi un 
     amico">
+    </a>
     </div>
     <br><br><br><br>
 
