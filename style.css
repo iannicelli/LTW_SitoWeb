@@ -357,6 +357,10 @@ article p{
     width: 49.3%;
 }
 
+.btn text-white{
+    height: 100px;
+    width: 100px;
+}
 
 /*------------------Parte gioco home-----------*/
 .game{
