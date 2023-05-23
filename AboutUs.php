@@ -117,7 +117,7 @@
                 <br>
                 <br>
                 <h8> About us </h8>
-                <img id="ImmagineAU" height="300px" width="300px" src="C:\Users\chiar\OneDrive\Desktop\8B8771D3-0AFB-4A6A-B40C-8ED0A1DF0F3D.jpg">
+                <img id="ImmagineAU" height="500px" width="500px" src=".\sfondo_about_us\AboutUS.jpg">
                 <blockquote id="blockquoteAU">
                     Benvenuti nel nostro sito dedicato all'adozione di animali! Siamo due amiche unite dalla stessa passione e dalla convinzione profonda che tutte le vite siano importanti.
                     Grazie alla nostra determinazione abbiamo creato questo sito, con l'obiettivo di facilitare l'adozione responsabile.

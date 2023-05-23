@@ -14,13 +14,9 @@
         .w3-button {width:150px;}
     </style>
     
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://unpkg.com/vue@3"></script>
-    
-
-    
-
-
+    <!-----<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://unpkg.com/vue@3"></script>---->
+        
     <title>Modulo adozione</title>
 </head>
 
@@ -57,12 +53,12 @@
                     </a>
                 </li>
                 <li class="nav-item active" href="#" >
-                    <a href="./AboutUs.html" class="nav-link active" >
+                    <a href="./AboutUs.php" class="nav-link active" >
                         AboutUs
                     </a>    
                 </li>
                 <li class="nav-item active" href="#">
-                    <a href="./pets.html" class="nav-link active">
+                    <a href="./pets/pets.php" class="nav-link active">
                         Pets
                     </a>
                 </li>
@@ -208,12 +204,7 @@
     </div>
   </div>
 
-
-
-  <div class="row">
-  <div class="col1">
-        <br>
-    </div>
+ 
 
   <br>
   <div class="row">

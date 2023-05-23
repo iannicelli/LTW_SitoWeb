@@ -46,17 +46,17 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item active">
-                    <a class="nav-link active" href="#"> <!-- disabled-->
+                    <a class="nav-link active" href="./home.php"> <!-- disabled-->
                         Home<span class="sr-only">(current)</span></a>
                     </a>
                 </li>
                 <li class="nav-item active" href="#" >
-                    <a href="./AboutUs.html" class="nav-link active" >
+                    <a href="./AboutUs.php" class="nav-link active" >
                         AboutUs
                     </a>    
                 </li>
                 <li class="nav-item active" href="#">
-                    <a href="./pets.html" class="nav-link active">
+                    <a href="./pets/pets.php" class="nav-link active">
                         Pets
                     </a>
                 </li>
