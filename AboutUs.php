@@ -125,7 +125,7 @@
                     Speriamo che possiate trovare l'amico a quattro zampe che riempirà la vostra vita di gioia e amore.
                 </blockquote>
                 <h9>Chiara e Federica</h9>
-                <p>Lorem ipsum dolor sit amet</p>  
+                <p>Fai la tua parte!</p>  
             </article>
 
 
