@@ -17,6 +17,18 @@
 </style>
 
 <body background="imgSfondo.gif">
+
+<?php
+    include '../login/loginDB.php';
+
+    $query = "SELECT * FROM animali";
+    $res = pg_query($db, $query);  
+    if(!$res){
+        echo "ERRORE QUERY: " . pg_last_error($db);
+        exit;
+    } 
+    $animali = pg_fetch_all($res);
+?>
     <div id="container">
         <!--    Start Section     -->
         <div id="start">Iniziamo</div>

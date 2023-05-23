@@ -31,11 +31,8 @@
     
     <link rel="icon" href="../Immagini logo/favicon.png" type="image/png">
 
-    <!--da martina -->
-    <link rel="stylesheet", type="text/css", href="./daMartina/Layout.css">
-       <link rel="stylesheet", type="text/css", href="./daMartina/ProfiloUtente.css">
-       <link rel="stylesheet", type="text/css", href="./daMartina/card.css">
-    <!--da martina -->
+    <link rel="stylesheet", type="text/css", href="./ProfiloUtente.css">
+
 
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <style>
@@ -55,7 +52,7 @@
 	<div class="banner_profiloUtente">
     <nav class="navbar fixed-top navbar-expand-md navbar-light" style="background-color: #E19853;">
         <div class="container">
-            <a class ="navbar-brand mb-0 h1" href="../nav.php">
+            <a class ="navbar-brand mb-0 h1" href="../home.php">
             <img class = "d-inline-block" src ="../Immagini logo/SITO WEB (1).png" height="40" />
             Tale of Tails - Racconti di animali
             </a>
@@ -72,7 +69,7 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item active">
-                    <a class="nav-link active" href="../nav.php"> <!-- disabled-->
+                    <a class="nav-link active" href="../home.php"> <!-- disabled-->
                         Home<span class="sr-only"></span></a>
                     </a>
                 </li>
