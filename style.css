@@ -145,7 +145,7 @@ nav a:hover {
 .content h3{
     position: absolute;
     right: 100px;
-    font-size: 6vw;
+    font-size: 10vmin;
     font-weight: bolder;
     padding-bottom: 10px;
     color: #E19853;
@@ -155,46 +155,11 @@ nav a:hover {
 }
 
 
-@media only screen and (max-aspect-ratio: 16/9) {
-
-    .centrato_bottone{
-        position: absolute;
-        left: 50%;
-        top: 94%;
-        transform: translate(-50%, -50%);
-        justify-content: center;
-        align-items: center;
-        margin: auto;
-        text-align: center;
-
-    }
-    .content h3{
-        font-size: 5em;
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        justify-content: center;
-        align-items: center;
-        margin: auto;
-        text-align: center;
-
-    }
-
-    /*-------------------sotto------------*/
-    .footer {
-        background-color: #E19853; 
-        padding: 10px;
-        position: relative;
-        bottom: 0;
-        width: 100%;
-    }
-
-}
 
 .form-control{
     border-color: #E19854 ;
 }
+
 .container-text-center h4{
     font-size: 4em;
     font-weight: bolder;
@@ -348,6 +313,7 @@ article h8:after{
     margin-top: 30px;
     font-size: 20px;
     font-family: sans-serif;
+    margin-bottom: 15px;
 }
 
 article h9{
@@ -363,6 +329,7 @@ article h9{
     text-transform: uppercase;
     font-size: 28px;
     margin-top: 30px;
+    margin-bottom: 10px;
     letter-spacing: 1.5px;
 }
 
@@ -420,6 +387,7 @@ article p{
 
 .game-content g1{
     color: rgba(221,221,221);
+    font-size: 2.5vmin;
 }
 
 .game-content .ctn{
@@ -430,10 +398,114 @@ article p{
     margin-top: 13px;
     background-image: url("./login/sfondo/per_bottone.jpg");
     padding: 10px 35px;
+    border-radius: 8px;
+    font-family: 'Arial';
+    src: url('/Lovelo/Lovelo/Commercial/TTF/Lovelo-Black.ttf') format('truetype');
+    outline: none;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    border: solid 1px #E19854;
+    font-weight : bold ;
+
+
 }
 
 #game_bottone:hover {
-    background-color: #e47e1f;
-   /* text-decoration: underline;*/
-    border-radius: 8px;
+    background-image: url("./login/sfondo/per_bottone_premuto.jpg");
+    
+}
+
+
+
+
+
+@media only screen and (max-aspect-ratio: 16/9) and (max-width: 800px) {
+
+    .centrato_bottone{
+        position: absolute;
+        left: 50%;
+        top: 90%;
+        transform: translate(-50%, -50%);
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        text-align: center;
+        margin-top: 0.5px;
+
+    }
+    .content h3{
+        font-size: 4em;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        text-align: center;
+
+    }
+
+    /*-------------------sotto------------*/
+    .footer {
+        background-color: #E19853; 
+        padding: 10px;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+    }
+
+
+    .game{
+        width: 100%;
+        height: 40vh;
+        background-color: #E19853;
+        margin-bottom: 20px;
+    }
+    
+    .game-content{
+        width: 100%;
+        padding: 50px;
+        color: whitesmoke;
+    }
+    
+    .game-content g2{
+        font-size: 6vmin;
+        margin: 10px;
+    }
+    
+    .game-content g1{
+        color: rgba(221,221,221);
+        font-size: 3vmin;
+    }
+    
+    .game-content .ctn{
+        margin-top: 40px;
+    }
+    
+    #game_bottone{
+        margin-top: 13px;
+        background-image: url("./login/sfondo/per_bottone.jpg");
+        padding: 10px 35px;
+        border-radius: 8px;
+        font-family: 'Arial';
+        src: url('/Lovelo/Lovelo/Commercial/TTF/Lovelo-Black.ttf') format('truetype');
+        outline: none;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        color: #000;
+        border: solid 1px #E19854;
+        font-weight : bold ;
+    
+    
+    }
+    
+    #game_bottone:hover {
+        background-image: url("./login/sfondo/per_bottone_premuto.jpg");
+        
+    }
+
 }

@@ -28,7 +28,6 @@ let result = document.querySelector("#result");
 let points = document.querySelector("#points");
 let quit = document.querySelector("#quit");
 let startAgain = document.querySelector("#startAgain");
-let home = document.querySelector("#home");
 let img = document.querySelector("#img");
 
 //Get All 'H4' From Quiz Section (MCQS)
@@ -205,8 +204,3 @@ startAgain.addEventListener("click", () => {
     coniglio = 0;
 });
 
-home.addEventListener("click", () => {
-    guide.style.display = "block";
-    result.style.display = "none";
-
-});

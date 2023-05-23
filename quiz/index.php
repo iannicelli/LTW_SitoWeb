@@ -91,10 +91,9 @@
                     <a href="../pets/pets.php"><input type="button" class="image-overlay-button" value="Adotta!"></a>
               </div>
             </div>
-            
-            <button id="quit">Vedi altri animali da adottare</button>
+
             <button id="startAgain">Start Again</button>
-            <button id="home">Torna alla Home</button>
+            <button onclick="window.location.href = '../home.php';" id="home">Torna alla Home</button>
         </div>
     </div>
     <script src="js/questions.js"></script>
