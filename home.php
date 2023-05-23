@@ -141,8 +141,7 @@
                             <input type="hidden" name="messaggio" value="nonLoggato2">';
                 }
             ?>
-
-                <button type="submit" class="pulsante"> Carica un amico! </button>
+                <button type="submit" class="pulsante" href="./pets/pets.php"> Carica un amico! </button>
 
             </form>
         </div>
@@ -151,7 +150,6 @@
 		</video>
 
 	</div>
-
 
 
 
@@ -245,7 +243,17 @@
 </section>
 
 
+<section class="game">
+    <div class="game-content">
+    <g2>Animal match - trova il tuo compagno perfetto</g2>
+    <g1>è un divertente quiz interattivo che ti aiuterà a scoprire quale animale domestico è più adatto alla tua personalità e al tuo stile di vita. </g1>
+    
+    <button onclick="window.location.href = './quiz/index.php';" id="game_bottone" class="pulsante"> Gioca! </button>
+    </div>
+    
 
+
+</section>
 
 
 

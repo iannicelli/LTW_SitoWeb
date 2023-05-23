@@ -7,6 +7,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@600&family=Exo:ital,wght@1,600&display=swap" rel="stylesheet">
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
     <link rel="stylesheet" href="css/style.css">
+
+    
+    <link rel="icon" href="../Immagini logo/favicon.png" type="image/png">
 </head>
 
 <style>
@@ -41,7 +44,7 @@
                 adotta un trovatello!! Inoltre verrano mostrate alcune curiosità sugli animali.
                 Divertiti.</h4>
             <div id="button">
-                <button id="exit">Exit</button>
+                <button onclick="window.location.href = '../home.php';" id="exit">Exit</button>
                 <button id="continue">Inizia</button>
             </div>
         </div>
@@ -75,7 +78,8 @@
                 <h3 id="next_question">Next</h3>
             </div>
         </div>
-        <!--   Result Section              <i class="fas fa-trophy"></i>-->
+
+        <!--   Result Section-->
         <div id="result">
             <h6 id="points">Adotta un animale</h6>
             <br><br><br><br>
