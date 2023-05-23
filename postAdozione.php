@@ -4,6 +4,7 @@
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src="./login/animazione.js"></script>
         <link rel="stylesheet" href="./login/stylelogin.css" type="text/css" />
+        <link rel="icon" href="./Immagini logo/favicon.png" type="image/png">
     </head>
     <body background="./login/sfondo/giusta.jpg">
         <?php

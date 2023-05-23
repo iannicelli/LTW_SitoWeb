@@ -4,6 +4,7 @@
         <link rel="stylesheet" href="styleregistrazione.css" type="text/css" />
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src="Controlli_form.js"></script>
+        <link rel="icon" href="../Immagini logo/favicon.png" type="image/png">
     </head>
     <body background="./sfondo/giusta.jpg">
        <?php

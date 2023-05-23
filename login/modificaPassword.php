@@ -2,6 +2,7 @@
     <head>
         <title>Modifica-Password</title>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <link rel="icon" href="../Immagini logo/favicon.png" type="image/png">
         <script src="./animazione.js"></script>
         
         <link rel="stylesheet" href="stylelogin.css" type="text/css" />

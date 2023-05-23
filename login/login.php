@@ -5,6 +5,7 @@
         <script src="./animazione.js"></script>
         <script src="Controlli_form.js"></script>
         <link rel="stylesheet" href="stylelogin.css" type="text/css" />
+        <link rel="icon" href="../Immagini logo/favicon.png" type="image/png">
 
         <script>
           window.onload = function() {
