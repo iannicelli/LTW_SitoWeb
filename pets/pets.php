@@ -4,6 +4,7 @@
 	<title>Pets</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
   <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+  <link rel="icon" href="../Immagini logo/favicon.png" type="image/png">
     
 </head>
 

@@ -47,7 +47,7 @@ let MCQS = [{
     choice3: "Un animale abbastanza piccolo da poter essere raccolto e trasposrtato",
     choice4: "Piccolo"
 },{
-               question: "Per quanto tempo intendi prenderti cura dell'animale una volta preso?",
+               question: "Per quanto tempo intendi prenderti cura dell'animale?",
     choice1: "12-18 anni",
     choice2: "10-13 anni",
     choice3: "2-4 anni",
