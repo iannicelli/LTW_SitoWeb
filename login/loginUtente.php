@@ -4,7 +4,6 @@
     $email = $_POST['email'];
     $pass = $_POST['password'];
 
-
     $query = "SELECT *
                 FROM utenti
                 WHERE email = '$email'
@@ -32,6 +31,7 @@
             header("location: ../generica.php?messaggio=passwordErrata");
         }
     }else{
+        echo $email;
         header("location: ../generica.php?messaggio=emailNonEsistente");
     }
 ?>

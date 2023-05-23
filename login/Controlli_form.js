@@ -48,7 +48,7 @@ function controlli_reg(){
 
 function controlli_login(){
     if(document.login.email.value == ""){
-        alert("Devi indicare un indirizzo email");
+        alert("Devi indicare un indirizzo email nel form Login");
         reg.email.focus();
         return false;
     }

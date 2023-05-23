@@ -8,42 +8,42 @@
 
     <script>
         window.onload = function() {
-  loadLoginData();
+            loadLoginData();
 
-  document.getElementById("myForm").onsubmit = function() {
-    const email = document.getElementById('email').value;
-    const password = document.getElementById('password').value;
-    const remember = document.getElementById('remember').checked;
+            document.getElementById("login").onsubmit = function() {
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            const remember = document.getElementById('remember').checked;
 
-    if (remember) {
-      saveLoginData(email, password);
-    } else {
-      removeLoginData();
-    }
+            if (remember) {
+                saveLoginData(email, password);
+            } else {
+                removeLoginData();
+            }
 
-    return false;
-  };
-};
+            return false;
+            };
+        };
 
-function loadLoginData() {
-  const email = localStorage.getItem('loginEmail');
-  const password = localStorage.getItem('loginPassword');
+        function loadLoginData() {
+        const email = localStorage.getItem('loginEmail');
+        const password = localStorage.getItem('loginPassword');
 
-  if (email && password) {
-    document.getElementById('email').value = email;
-    document.getElementById('password').value = password;
-  }
-}
+            if (email && password) {
+                document.getElementById('email').value = email;
+                document.getElementById('password').value = password;
+            };
+        };
 
-function saveLoginData(email, password) {
-  localStorage.setItem('loginEmail', email);
-  localStorage.setItem('loginPassword', password);
-}
+        function saveLoginData(email, password) {
+        localStorage.setItem('loginEmail', email);
+        localStorage.setItem('loginPassword', password);
+        };
 
-function removeLoginData() {
-  localStorage.removeItem('loginEmail');
-  localStorage.removeItem('loginPassword');
-}
+        function removeLoginData() {
+        localStorage.removeItem('loginEmail');
+        localStorage.removeItem('loginPassword');
+        };
 
 
 
@@ -51,7 +51,7 @@ function removeLoginData() {
     </script>
 </head>
 <body>
-    <form id="myForm" method="post">
+    <form id="login" method="post">
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" required>
       
