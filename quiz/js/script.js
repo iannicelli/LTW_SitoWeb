@@ -38,8 +38,6 @@ let choice_que = document.querySelectorAll(".choice_que");
 let index = 0;
 
 
-
-
 //animal points
 let gatto = 0;
 let cane = 0;
