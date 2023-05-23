@@ -52,7 +52,7 @@
     
         <a 
         class ="navbar-brand mb-0 h1"
-        href="#">
+        href="./home.php">
         <img class = "d-inline-block" src ="./Immagini logo/SITO WEB (1).png" height="40" />
         Tale of Tails - Racconti di animali
         </a>
@@ -69,17 +69,17 @@
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav">
             <li class="nav-item active">
-                <a class="nav-link active" href="./nav.html"> <!-- disabled-->
+                <a class="nav-link active" href="./home.php"> <!-- disabled-->
                     Home<span class="sr-only"></span></a>
                 </a>
             </li>
-            <li class="nav-item active" href="#" >
-                <a href="#" class="nav-link active">
-                    AboutUs (current)
+            <li class="nav-item active" href="./AboutUs.php" >
+                <a href="./AboutUs.php" class="nav-link active">
+                    AboutUs
                 </a>    
             </li>
-            <li class="nav-item active" href="#">
-                <a href="./pets.html" class="nav-link active">
+            <li class="nav-item active" href="./pets/pets.php">
+                <a href="./pets/pets.php" class="nav-link active">
                     Pets
                 </a>
             </li>

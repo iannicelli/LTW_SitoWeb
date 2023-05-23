@@ -52,12 +52,12 @@
                         Home<span class="sr-only"></span></a>
                     </a>
                 </li>
-                <li class="nav-item active" href="#" >
+                <li class="nav-item active" href="./AboutUs.php" >
                     <a href="./AboutUs.php" class="nav-link active" >
                         AboutUs
                     </a>    
                 </li>
-                <li class="nav-item active" href="#">
+                <li class="nav-item active" href="./pets/pets.php">
                     <a href="./pets/pets.php" class="nav-link active">
                         Pets
                     </a>
