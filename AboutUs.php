@@ -78,13 +78,13 @@
                 </a>
 
     
-                <a class="btn text-white" href="#!" role="button">
+                <a class="btn text-white" href="https://www.instagram.com/_taleoftails/" role="button">
                     <i class="fab fa-instagram" height="40"></i>
                 </a>
 				<li class="nav-item active" href="#">
 					<?php
 						if(isLogged())
-							echo '<a href="#" class="nav-link active">
+							echo '<a href="./login/profiloUtente.php" class="nav-link active">
 								<img src="omino.png" height="37" width="37"></img>
 							</a>';
 						else 

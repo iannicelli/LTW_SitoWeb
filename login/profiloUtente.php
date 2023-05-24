@@ -93,7 +93,7 @@
                 </a>
 
     
-                <a class="btn text-white" href="#!" role="button">
+                <a class="btn text-white" href="https://www.instagram.com/_taleoftails/" role="button">
                     <i class="fab fa-instagram" height="40"></i>
                 </a>
 				
@@ -172,9 +172,26 @@
     </div>
     <br><br><br><br>
 
-    <div id="nav_bassa">
+    <!-- 
+                <div id="nav_bassa">
         <nav_bassa></nav_bassa>
     </div>
+
+    -->
+
+    
+    <div class="footer">
+        <img src="../Immagini logo/favicon.png" alt="Tale of Tails" width="40" height="40"/>
+        &nbsp;
+        &copy; 2023 Tale of Tails
+        &nbsp;
+        <a href="https://protezionedatipersonali.it/informativa">Privacy</a>  &emsp;
+        <a href="./AboutUs.php">Chi siamo</a>
+        &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+        Contatti: iannicelli.1957045@studenti.uniroma1.it / lavini.1941986@studenti.uniroma1.it
+    </div>
+
 
     <script type="application/javascript" src="../nav_bassa.js"></script>
 

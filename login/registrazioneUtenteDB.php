@@ -3,6 +3,8 @@
 
     $email = $_POST['email'];
     $password = $_POST['pass1'];
+    $criptata = password_hash($password, PASSWORD_DEFAULT);
+    
     $nome = $_POST['nome'];
     $cognome = $_POST['cognome'];
 
@@ -19,7 +21,7 @@
     }
 
     $query= "INSERT INTO utenti (cognome, nome, email, password) 
-            VALUES ('$cognome', '$nome', '$email', '$password');";
+            VALUES ('$cognome', '$nome', '$email', '$criptata');";
 
     $res=pg_query($db, $query);
     if(!$res){

@@ -14,7 +14,7 @@
         echo "password inserita: $pass";
         $corretta =  $row['password'];
         echo "password richiesta: $corretta";
-        if($pass == $corretta){
+        if(password_verify($pass, $corretta)){
             
             
             session_start();

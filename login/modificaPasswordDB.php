@@ -17,9 +17,11 @@
 
     if(pg_num_rows($result) == 1) {                                              
         $row=pg_fetch_assoc($result);
-        if($pass == $row['password']){
+        $corretta = $row['password'];
+        if(password_verify($pass, $corretta)){
+            $criptata = password_hash($pass1, PASSWORD_DEFAULT);
             $query1= "UPDATE utenti
-            SET password='$pass1'
+            SET password='$criptata'
             WHERE email = '$mail';";
 
             $res1=pg_query($db, $query1);

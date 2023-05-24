@@ -92,5 +92,6 @@ FEDE:
 
 
 CHIARA:
-- completare more
+- password
+- profilo utentet footer
 
