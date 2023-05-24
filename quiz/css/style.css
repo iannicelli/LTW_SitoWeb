@@ -187,7 +187,8 @@ body {
 #quiz #answersSection h3 {
     margin: 0px 30px;
     display: none;
-    font-size: 12px;
+    font-size: 17px;
+    width: 60%;
 }
 
 #quiz #answersSection h3:last-child {
@@ -388,7 +389,7 @@ body {
 
 
 @media only screen and (max-width: 600px){
-#guide { /*quiz*/
+#guide {
     width: 450px;
     text-align: center;
 }
@@ -447,19 +448,10 @@ body {
     width: 400px;
 }
 
-#quiz #optionList h4:hover {
-    background: #e47e1f;
+#quiz #answersSection h3 {
+    margin: 0px 30px;
+    display: none;
+    font-size: 15px;
+    width: 60%;
 }
-
-#quiz #optionList .active {
-    background: #e47e1f;
-}
-
-#quiz #optionList .disabled {
-    pointer-events: none;
-}
-
-
-
-
 }
