@@ -144,10 +144,12 @@
                 echo "<p><b>Nome:</b> ".$row["nome"]."</p>";
                 echo "<p><b>Cognome:</b> ".$row["cognome"]."<p>"; 
                 echo "<p><b>E-mail:</b> ".$row["email"]."</p>";
-                echo "<p><b>N animali adottati:</b> ".$row["n_adottati"]."</p>";
-                echo '<a href="adottatiUtente.php?email='.$mail.'"><input type="button" value="Visualizza"></a>';
-                echo "<p><b>N animali inseriti:</b> ".$row["n_caricati"]."</p>";
-                echo '<a href="caricatiUtente.php?email='.$mail.'"><input type="button" value="Visualizza"></a>';
+                echo "<p><b>N animali adottati:</b> ".$row["n_adottati"];
+                echo '&emsp;&emsp;&emsp;&emsp;   ';
+                echo '<a href="adottatiUtente.php?email='.$mail.'"><input type="button" class="pulsante" value="Visualizza"></a></p>';
+                echo "<p><b>N animali inseriti:</b> ".$row["n_caricati"];
+                echo '&emsp;&emsp;&emsp;&emsp;&emsp;';
+                echo '<a href="caricatiUtente.php?email='.$mail.'"><input type="button" class="pulsante"  value="Visualizza"></a> </p>';
                 }
                 ?>
                 <br>
